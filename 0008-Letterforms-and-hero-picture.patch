@@ -1,0 +1,165 @@
+From c92559313ce940312285e65c3d5a2e6fd898823e Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Fri, 23 Oct 2026 23:21:31 +0000
+Subject: [PATCH] Letterforms: J, F and f from Literata; cover picture beside
+ the saint on the home page
+
+The cover picture appears only while the Listen card is hidden (no podcast links yet).
+npm run cover now also makes public/cover-800.png.
+---
+ public/fonts/literata-j.woff2  | Bin 1180 -> 0 bytes
+ public/fonts/literata-jf.woff2 | Bin 0 -> 1704 bytes
+ src/pages/index.astro          |   3 +++
+ src/styles/site.css            |   2 ++
+ src/styles/tokens.css          |   4 ++--
+ tools/make-cover-images.mjs    |   4 +++-
+ 6 files changed, 10 insertions(+), 3 deletions(-)
+ delete mode 100644 public/fonts/literata-j.woff2
+ create mode 100644 public/fonts/literata-jf.woff2
+
+diff --git a/public/fonts/literata-j.woff2 b/public/fonts/literata-j.woff2
+deleted file mode 100644
+index 4c25e1ed88e0d643fb99f4e704f47434d0eb616f..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+HcmV?d00001
+
+literal 1180
+zcmV;N1Y`SmPew8T0RR9100f)>7XSbN00}Gr00b%k0~%fc00000000000000000000
+z0000Q6dNEMHa|#KK~h9NO;$ltP6l8<Q&d4zfifp505mTo5eN!!eK3JW0X7080|*NS
+z00bZfg?0xZ3<nn^7zP`o2Pm!vY-766wIH!5OC_6o9dR>cMg5FGU9c}6{(pab``q_F
+zj1iKMn1rYVH>XL&>JyTX+?Zxf{AoxZT5JF2FiR$by3C5rvO9-KC3z`?Mx>D`k!Jco
+zLAKoN(Vayoj6k^3jd<d5bYsA^CN#mBYQ)-F#Js5_3x$wKh3VFAm`(~Lu_`L>n*W@I
+z!R!<FPMhNMwFYQPbJJS1!MmtFV1k|h1=3!WC(>o#T43De?>^I~f9;awNs`HSxo&_!
+zIUr;=O0`Qu7IgNHBTx?i0YLJ}%K36BuCe17NbfjINBVF@SV+&^3jylEtl+BU0_})&
+z4`sj{&5)1~Pci_cAV9H9f5TS9fA#zil|+Epr^ups%0KKMU7n_sV+y3BDGFF*`iTuF
+zjfr3c{3^@pfO{f(^O+xzpASDEAbyk2=;kAYVj1cMVJy#9+ubEx_I4COC}N9PF^C8r
+zwUXqj)oIis%_bs<+(Qt8D2TCuOh{1}$4Ivjf+&hF4vNz%ptA%-Y1R#7%CaMc{A5uJ
+zAgm5T@jaBStpVlFg2S;FBxQpeDazEjXOqMOGd{v-`sxNbKe7w||0VI?ma|jMBh-W9
+zCH@oKLmVSJ0+9*vp9qjZj=%sI10V;)z{KgRN{X*@9Ab}bVZP3Ci0g<%Ik+-T5}pN<
+z1=4}%l;<B#8l}Zdt#9ZoY6yFpcw3OCzm04yC)9VP9YOA_2_sJ(gR^1o0}u$%$^%*f
+zE3$-Y1DP8v&D0=$eEdw%pO^d9bUIz^jyI3*@K?*Cq8}f-UBB07+MzZ&QT{yNp68wo
+zt*m#K%PrGAe|||N4fXX0=@O!;u6y^C%8aY}v>?ghjZ|s2sHv$-|DKk8%Rz6u4b-li
+zou{ou#we}~YR{iDHbd%zJq@<;6Q<tO_?G{jc0KOjdT2NMI=>?VS?l6*)v9?ZBJ>uR
+z%SHfRKVp8s+i}9#|AIK*f0Qi>B@le=ctIt?o9_XFxt8J!O4B%GBS^OMvz{+JWiC+X
+z5k=%BxC#fM+6|IQH;|d^9=UGcC@?Kr6@|KEnL%XAV;6GuaR3EM<5Z$hOFW8F;wvat
+z9amAJIBuX+Z9G7k(s+(?&G7~`2#s&ou0?Q4=HqNT94eVYph^`hQH2_(V5oj7fpM%5
+zR#3xyc}~Nu5vUekf`W6nsB8*Bu(@g#DI!xbHm_BM)^KLTIUFZ5FcQupxQZCPggHav
+zMjeUF%iuIenL;Ism8mmsTwRKw;I@aX(cmPIajDa~Y0r0)Nd%5FxaJfqRHIO-8Vmh}
+zDQxq4hiw9n_6J^jkO9m(m6vG@V^X!^4C~^pX^EX}v}<%jY=X+sTw$Qb>bsbpaY5q*
+uN8jUND=a?1|5fReuEl>FYFbo-eEH+%M*JGszA1(MfIz<BGFgy00002)d=o(c
+
+diff --git a/public/fonts/literata-jf.woff2 b/public/fonts/literata-jf.woff2
+new file mode 100644
+index 0000000000000000000000000000000000000000..ead901d8e3f77569ce5f21f2c426d677b0d4a999
+GIT binary patch
+literal 1704
+zcmV;Z23PraPew8T0RR9100yW47XSbN01Mav00uPx0~%fc00000000000000000000
+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
+
+literal 0
+HcmV?d00001
+
+diff --git a/src/pages/index.astro b/src/pages/index.astro
+index 65580f0..1968110 100644
+--- a/src/pages/index.astro
++++ b/src/pages/index.astro
+@@ -7,6 +7,8 @@ import KalIndex from '../components/KalIndex.astro';
+ import Cover from '../components/Cover.astro';
+ import { dayByKey, entries, rankOf, titleOf, inline, site, hasPodcast } from '../lib/data';
+ import { keyOf, seasonOf, RANK_LABEL } from '../lib/church-year';
++import fs from 'node:fs';
++const heroArt = !hasPodcast && fs.existsSync('public/cover-800.png');
+ 
+ const now = new Date();
+ const year = now.getUTCFullYear(), month = now.getUTCMonth() + 1, day = now.getUTCDate();
+@@ -36,6 +38,7 @@ const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k])
+             </div>
+           </div>
+           <div class="hero-side">
++            {heroArt && <img class="hero-art" src="/cover-800.png" width="800" height="800" alt="An Anglican Synaxarium" />}
+             {hasPodcast && (
+               <section id="listen" class="card">
+                 <div class="listen-head">
+diff --git a/src/styles/site.css b/src/styles/site.css
+index 8e36a57..c8f8b50 100644
+--- a/src/styles/site.css
++++ b/src/styles/site.css
+@@ -73,6 +73,8 @@ a { color: inherit; }
+ .hero-first { font-size: 19px; line-height: 30px; max-width: 34rem; text-wrap: pretty; }
+ .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px; }
+ .hero-side { flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
++.hero-art { display: block; width: min(100%, 360px); height: auto; border-radius: 4px; box-shadow: var(--shadow-leaf); }
++@media (max-width: 700px) { .hero-art { width: min(100%, 280px); } }
+ .card { background: var(--surface-raised); border: 1px solid var(--hairline); border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+ .card h2 { font-family: var(--font-display); font-weight: 600; font-size: 24px; line-height: 28px; }
+ .card p { font-size: 17px; line-height: 24px; }
+diff --git a/src/styles/tokens.css b/src/styles/tokens.css
+index 868d264..09dd638 100644
+--- a/src/styles/tokens.css
++++ b/src/styles/tokens.css
+@@ -3,8 +3,8 @@
+ @font-face { font-family: "Fraunces"; src: url("/fonts/fraunces-latin-opsz-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
+ @font-face { font-family: "Newsreader"; src: url("/fonts/newsreader-latin-opsz-normal.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
+ @font-face { font-family: "Newsreader"; src: url("/fonts/newsreader-latin-opsz-italic.woff2") format("woff2"); font-weight: 200 800; font-style: italic; font-display: swap; }
+-/* Fraunces draws a capital J that hangs below the line. Only the letter J comes from Literata, which sits on the baseline. */
+-@font-face { font-family: "Fraunces J"; src: url("/fonts/literata-j.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: swap; unicode-range: U+004A; }
++/* Fraunces draws a J that hangs below the line and an F and f with odd flagged shapes. Only those three letters come from Literata. */
++@font-face { font-family: "Fraunces J"; src: url("/fonts/literata-jf.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: swap; unicode-range: U+004A, U+0046, U+0066; }
+ @font-face { font-family: "Instrument Sans"; src: url("/fonts/instrument-sans-latin-wght-normal.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+ 
+ :root {
+diff --git a/tools/make-cover-images.mjs b/tools/make-cover-images.mjs
+index 01ee8a7..c290287 100644
+--- a/tools/make-cover-images.mjs
++++ b/tools/make-cover-images.mjs
+@@ -1,6 +1,7 @@
+ // Makes the two images the site needs from the full-size green cover.
+ // Put synaxarium-cover-green-3000.png in public/assets/, then run:  npm run cover
+ //   public/cover-400.png  the Listen card (shown at 96 px, sharp on phones)
++//   public/cover-800.png  the large picture beside the saint on the home page (until podcast links exist)
+ //   public/og.png         the sharing image, 1200 x 1200
+ import fs from 'node:fs';
+ import sharp from 'sharp';
+@@ -11,5 +12,6 @@ if (!fs.existsSync(src)) {
+   process.exit(1);
+ }
+ await sharp(src).resize(400, 400).png({ compressionLevel: 9 }).toFile('public/cover-400.png');
++await sharp(src).resize(800, 800).png({ compressionLevel: 9 }).toFile('public/cover-800.png');
+ await sharp(src).resize(1200, 1200).png({ compressionLevel: 9 }).toFile('public/og.png');
+-console.log('wrote public/cover-400.png and public/og.png');
++console.log('wrote public/cover-400.png, public/cover-800.png and public/og.png');
+-- 
+2.43.0
+
