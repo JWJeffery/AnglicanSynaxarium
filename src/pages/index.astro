@@ -7,6 +7,8 @@ import KalIndex from '../components/KalIndex.astro';
 import Cover from '../components/Cover.astro';
 import { dayByKey, entries, rankOf, titleOf, inline, site, hasPodcast } from '../lib/data';
 import { keyOf, seasonOf, RANK_LABEL } from '../lib/church-year';
+import fs from 'node:fs';
+const heroArt = !hasPodcast && fs.existsSync('public/cover-800.png');
 
 const now = new Date();
 const year = now.getUTCFullYear(), month = now.getUTCMonth() + 1, day = now.getUTCDate();
@@ -36,6 +38,7 @@ const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k])
             </div>
           </div>
           <div class="hero-side">
+            {heroArt && <img class="hero-art" src="/cover-800.png" width="800" height="800" alt="An Anglican Synaxarium" />}
             {hasPodcast && (
               <section id="listen" class="card">
                 <div class="listen-head">

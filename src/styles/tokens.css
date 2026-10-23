@@ -3,8 +3,8 @@
 @font-face { font-family: "Fraunces"; src: url("/fonts/fraunces-latin-opsz-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
 @font-face { font-family: "Newsreader"; src: url("/fonts/newsreader-latin-opsz-normal.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
 @font-face { font-family: "Newsreader"; src: url("/fonts/newsreader-latin-opsz-italic.woff2") format("woff2"); font-weight: 200 800; font-style: italic; font-display: swap; }
-/* Fraunces draws a capital J that hangs below the line. Only the letter J comes from Literata, which sits on the baseline. */
-@font-face { font-family: "Fraunces J"; src: url("/fonts/literata-j.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: swap; unicode-range: U+004A; }
+/* Fraunces draws a J that hangs below the line and an F and f with odd flagged shapes. Only those three letters come from Literata. */
+@font-face { font-family: "Fraunces J"; src: url("/fonts/literata-jf.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: swap; unicode-range: U+004A, U+0046, U+0066; }
 @font-face { font-family: "Instrument Sans"; src: url("/fonts/instrument-sans-latin-wght-normal.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
 
 :root {
