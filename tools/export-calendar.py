@@ -14,7 +14,8 @@ OVERRIDES = {
     # Curator decisions of October 23, 2026.
     "12-31": {"name": "Samuel Ajayi Crowther", "designation": "Bishop in the Niger Territories", "period": "1891"},
     "11-28": {"period": "1863 and 1885"},  # matches the approved entry heading; the BCP calendar prints 1864
-    "08-14": {"name": "Jonathan Myrick Daniels", "designation": "Seminarian and Martyr", "period": "1965"},
+    "08-14": {"name": "Jonathan Myrick Daniels", "designation": "Seminarian and Martyr", "period": "1965",
+              "alternates": [{"name": "Maximilian Kolbe", "designation": "Priest and Martyr", "period": "1941"}]},  # Kolbe kept as another commemoration (curator, Oct 23)
     # Section I, curator decision October 21, 2026.
     "12-16": {"name": "Richard Upjohn", "designation": "Architect", "period": "1878"},
 }
@@ -25,12 +26,15 @@ days = []
 for key in sorted(decisions):
     rec = decisions[key]
     p = dict(rec["primary"])
-    p.update(OVERRIDES.get(key, {}))
-    alts = [
-        {"name": a["name"], "designation": a.get("designation", ""), "period": a.get("period", "")}
-        for a in rec.get("alternates", [])
-        if a.get("curator_approved") is True and key not in OVERRIDES
-    ]
+    p.update({k: v for k, v in OVERRIDES.get(key, {}).items() if k != "alternates"})
+    if "alternates" in OVERRIDES.get(key, {}):
+        alts = OVERRIDES[key]["alternates"]
+    else:
+        alts = [
+            {"name": a["name"], "designation": a.get("designation", ""), "period": a.get("period", "")}
+            for a in rec.get("alternates", [])
+            if a.get("curator_approved") is True and key not in OVERRIDES
+        ]
     month, day = (int(x) for x in key.split("-"))
     days.append({
         "key": key, "month": month, "day": day,
