@@ -1,11 +1,15 @@
 ---
 import fs from 'node:fs';
-const rose = fs.existsSync('public/assets/anglican-communion-compass-rose-transparent.png');
+// The real cover, once `npm run cover` has made it. Until then, a plain drawn stand-in.
+const real = fs.existsSync('public/cover-400.png');
 ---
-<svg viewBox="0 0 600 600" width="96" height="96" role="img" aria-label="An Anglican Synaxarium podcast cover">
-  <rect width="600" height="600" fill="#1F4A33"></rect>
-  <text x="56" y="170" font-family="Fraunces" font-style="italic" font-weight="500" font-size="84" fill="#E2BE5A">An</text>
-  <text x="52" y="282" font-family="Fraunces" font-weight="600" font-size="104" fill="#FBFAF7" letter-spacing="-2.5">Anglican</text>
-  <text x="52" y="394" font-family="Fraunces" font-weight="600" font-size="104" fill="#FBFAF7" letter-spacing="-3.5">Synaxarium</text>
-  {rose && <image href="/assets/anglican-communion-compass-rose-transparent.png" x="450" y="456" width="120" height="117.4"></image>}
-</svg>
+{real ? (
+  <img src="/cover-400.png" width="96" height="96" alt="An Anglican Synaxarium podcast cover" />
+) : (
+  <svg viewBox="0 0 600 600" width="96" height="96" role="img" aria-label="An Anglican Synaxarium podcast cover">
+    <rect width="600" height="600" fill="#1F4A33"></rect>
+    <text x="56" y="170" font-family="Fraunces" font-style="italic" font-weight="500" font-size="84" fill="#E2BE5A">An</text>
+    <text x="52" y="282" font-family="Fraunces" font-weight="600" font-size="104" fill="#FBFAF7" letter-spacing="-2.5">Anglican</text>
+    <text x="52" y="394" font-family="Fraunces" font-weight="600" font-size="104" fill="#FBFAF7" letter-spacing="-3.5">Synaxarium</text>
+  </svg>
+)}

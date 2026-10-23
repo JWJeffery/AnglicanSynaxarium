@@ -2,10 +2,10 @@
 key: "11-27"
 title: "Virgil of Salzburg, Bishop and Missionary"
 status: approved
-opening: church
+opening: greater-church
 ---
 
-Today the Church commemorates Virgil of Salzburg, who left Ireland for the love of Christ and cared for the people entrusted to him through teaching, prayer, and the ministry of the Church.
+Today the Greater Church commemorates Virgil of Salzburg, who left Ireland for the love of Christ and cared for the people entrusted to him through teaching, prayer, and the ministry of the Church.
 
 Virgil was an Irish monk. In the eighth century he left his homeland and traveled to the Frankish kingdom, where Pippin received him at his court. After a time there, Virgil went to Bavaria. Duke Odilo entrusted him with the leadership of the Church at Salzburg.
 

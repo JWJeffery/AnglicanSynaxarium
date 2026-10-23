@@ -2,10 +2,10 @@
 key: "11-29"
 title: "Dorothy Day, Writer and Worker of Mercy"
 status: approved
-opening: church
+opening: greater-church
 ---
 
-Today the Church commemorates Dorothy Day, who sought Christ in prayer and the Eucharist and shared her life with people who needed food, shelter, and companionship.
+Today the Greater Church commemorates Dorothy Day, who sought Christ in prayer and the Eucharist and shared her life with people who needed food, shelter, and companionship.
 
 Dorothy was born in Brooklyn, New York, on November 8, 1897. When she was a child, her family lived in California. After the earthquake of 1906, she watched her mother and their neighbors care for people who had lost their homes. The family later moved to Chicago, where Dorothy began attending an Episcopal church. She learnt its hymns and prayers and received baptism.
 

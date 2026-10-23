@@ -11,6 +11,9 @@ cites its date in Calendar and Admission Decisions (Google Drive).
 import json, sys
 
 OVERRIDES = {
+    # Curator decisions of October 23, 2026.
+    "12-31": {"name": "Samuel Ajayi Crowther", "designation": "Bishop in the Niger Territories", "period": "1891"},
+    "08-14": {"name": "Jonathan Myrick Daniels", "designation": "Seminarian and Martyr", "period": "1965"},
     # Section I, curator decision October 21, 2026.
     "12-16": {"name": "Richard Upjohn", "designation": "Architect", "period": "1878"},
 }
