@@ -45,18 +45,23 @@ export function seasonOf(year: number, month: number, day: number): Season {
   return 'ordinary';
 }
 
+// Season names as the 1979 Book of Common Prayer titles them (Calendar, pp. 30-33).
+// The BCP never uses "Ordinary Time": it says Epiphany Season and The Season After Pentecost.
 export function seasonLabel(s: Season): string {
-  return { advent: 'Advent', festal: 'Christmas', lent: 'Lent', holyweek: 'Holy Week', pentecost: 'Pentecost', ordinary: 'Ordinary Time' }[s];
+  return { advent: 'Advent Season', festal: 'Christmas Season', lent: 'Lenten Season', holyweek: 'Holy Week', pentecost: 'The Day of Pentecost', ordinary: 'Season After Pentecost' }[s];
 }
 
-// Label shown beside the date. The festal band is Christmas, the Epiphany, or Easter by date.
+// Label shown beside the date.
 export function seasonName(year: number, month: number, day: number): string {
   const s = seasonOf(year, month, day);
-  if (s !== 'festal') return seasonLabel(s);
   const t = utc(year, month - 1, day), e = easter(year);
-  if (t >= e && t < e + 49 * DAY) return 'Easter';
-  if (month === 1 && day === 6) return 'The Epiphany';
-  return 'Christmas';
+  if (s === 'festal') {
+    if (t >= e && t < e + 49 * DAY) return 'Easter Season';
+    if (month === 1 && day === 6) return 'The Epiphany';
+    return 'Christmas Season';
+  }
+  if (s === 'ordinary') return t < e ? 'Epiphany Season' : 'The Season After Pentecost';
+  return seasonLabel(s);
 }
 
 export function pad(n: number): string { return String(n).padStart(2, '0'); }

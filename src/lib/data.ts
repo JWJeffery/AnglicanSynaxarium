@@ -50,8 +50,15 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith('.md')).sort()) {
 }
 
 // Escape, then turn *italic* into <em>. Entry words are otherwise untouched.
+function curl(text: string): string {
+  let out = text.replace(/(\w)'(\w)/g, '$1\u2019$2').replace(/(\w)'(\s|$|[.,;:!?)])/g, '$1\u2019$2');
+  let open = true;
+  out = out.replace(/"/g, () => { const q = open ? '\u201C' : '\u201D'; open = !open; return q; });
+  return out;
+}
+
 export function inline(text: string): string {
-  const esc = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const esc = curl(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   return esc.replace(/\*([^*]+)\*/g, '<em>$1</em>');
 }
 
@@ -71,7 +78,7 @@ export function neighbors(key: string) {
 // What the browser needs for every day: names, ranks, alternates, whether an entry exists.
 export function kalendarIndex() {
   return days.map((d) => ({
-    k: d.key, n: d.name, t: titleOf(d), p: d.period, r: rankOf(d.key),
+    k: d.key, n: d.name.split(' / ')[0], t: titleOf(d), p: d.period, r: rankOf(d.key),
     e: entries.has(d.key) ? 1 : 0,
     a: d.alternates.map((a) => a.name),
   }));

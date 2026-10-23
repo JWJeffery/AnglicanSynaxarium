@@ -15,3 +15,6 @@ Static site (Astro) for anglicansynaxarium.com. Build it, then upload the conten
 - `data/rank.json` holds the Prayer Book ranks (principal, lord, major; everything else is a commemoration). `data/reception.json` lists the Greater Church dates.
 - `site.config.json` holds the podcast links. A button with an empty link is hidden, and so is the Listen card when all are empty.
 - Cover art: add `public/assets/anglican-communion-compass-rose-transparent.png` and the cover shows the compass rose. Replace `public/og.png` with the 1200 px version of the green cover when you want it.
+- `python3 tools/verify-entries.py <zip>` compares every entry with the approved Google Docs, word for word. Download Completed Hagiographies from Drive as a zip, run `pip install python-docx` once, then run the script on the zip.
+- `npm run cover` makes `public/cover-400.png` and `public/og.png` from `public/assets/synaxarium-cover-green-3000.png`.
+- Season names follow the 1979 Book of Common Prayer (Calendar, pp. 30-33); the BCP does not use "Ordinary Time".

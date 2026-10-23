@@ -13,6 +13,7 @@ import json, sys
 OVERRIDES = {
     # Curator decisions of October 23, 2026.
     "12-31": {"name": "Samuel Ajayi Crowther", "designation": "Bishop in the Niger Territories", "period": "1891"},
+    "11-28": {"period": "1863 and 1885"},  # matches the approved entry heading; the BCP calendar prints 1864
     "08-14": {"name": "Jonathan Myrick Daniels", "designation": "Seminarian and Martyr", "period": "1965"},
     # Section I, curator decision October 21, 2026.
     "12-16": {"name": "Richard Upjohn", "designation": "Architect", "period": "1878"},
