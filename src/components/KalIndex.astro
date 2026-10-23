@@ -1,0 +1,5 @@
+---
+import { kalendarIndex } from '../lib/data';
+const json = JSON.stringify(kalendarIndex()).replace(/</g, '\\u003c');
+---
+<script type="application/json" id="kal-index" set:html={json}></script>

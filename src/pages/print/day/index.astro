@@ -1,0 +1,18 @@
+---
+import Base from '../../../layouts/Base.astro';
+import KalIndex from '../../../components/KalIndex.astro';
+---
+<Base title="Print the day | An Anglican Synaxarium" description="A sheet to read beside the Book of Common Prayer." path="/print/day/">
+  <div class="sheet-bar no-print">
+    <div class="wrap">
+      <a class="step" href="/print/"><span aria-hidden="true">‹</span>Back to Print</a>
+      <button class="btn btn-primary" type="button" data-do-print>Print</button>
+    </div>
+  </div>
+  <main class="sheet-stage" data-sheets data-kind="day"></main>
+  <KalIndex />
+  <script>
+    import { initSheet } from '../../../scripts/print-sheet';
+    initSheet();
+  </script>
+</Base>

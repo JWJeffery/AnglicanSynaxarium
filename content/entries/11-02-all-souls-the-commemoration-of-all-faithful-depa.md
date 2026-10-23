@@ -1,0 +1,36 @@
+---
+key: "11-02"
+title: "All Souls: The Commemoration of All Faithful Departed"
+status: approved
+opening: church
+---
+
+Today the Church commemorates All Soul’s Day, the feast of the faithful departed: those whom we love but see no longer, those whose names have been forgotten on earth, all who died trusting in the mercy of Jesus Christ, and those whose faith is known to God alone.
+
+Yesterday, on All Saints’ Day, the Church rejoiced in the one communion and fellowship into which Christ gathers his people. Today we remember that same communion more personally. We speak the names of parents and children, friends and teachers, parishioners and strangers. We give thanks for the grace that was at work in them. We mourn what death has taken from our sight. We entrust to God both the holiness that became visible in their lives and everything in them that remained wounded, incomplete, or unknown to us.
+
+The distinction between these two days is not that All Saints belongs to Christians who succeeded in becoming saints, while All Souls belongs to those who did not. In the New Testament, the saints are the people whom God has called into Christ. Every Christian is called through Baptism to grow into the likeness of Jesus, and every member of Christ’s Body lives by grace rather than achievement. All Saints celebrates that communion in the light of God’s promised victory. All Souls gathers the Church around her dead in remembrance, grief, and intercession.
+
+The New Testament speaks cautiously about the life of the departed, but it does not speak only of waiting. The Letter to the Hebrews tells us that the faithful who died before us could not be made perfect apart from us. Yet when it opens our eyes upon the heavenly Jerusalem, it reveals “the spirits of the righteous made perfect.” Their perfection is not something they achieved apart from Christ. It is God's gift, accomplished through the saving work of the one who brings his people into the heavenly sanctuary.
+
+Writing to the Church at Corinth, Saint Paul compared himself to a builder who had laid a foundation on which others would build. That foundation was Jesus Christ. On the Day of judgment, fire would test the work of each builder. Work that could not endure would be burned away, and its builder would suffer loss. The builder would be saved, but only as through fire. In this image, the destruction of worthless work did not mean the destruction of the person who had built it.
+
+The Church entrusts her dead to the God whose judgment serves his saving purpose. He judges, heals, purifies, and perfects his people. The precise manner of this work remains hidden from us, but its end does not. God brings the righteous departed into the perfection of Christ.
+
+This is also what Anglicans pray. The Book of Common Prayer asks God to grant those who have died in faith continual growth in love and service. Its burial rites commend the dead to God and ask him, in his loving wisdom and almighty power, to work in them the good purpose of his perfect will. The proper collect for this day asks that the faithful departed receive the unsearchable benefits of Christ’s passion and be revealed as God’s children when Christ appears.
+
+These prayers confess the character of God. The Father does not abandon the work of his hands. The risen Christ does not lose those whom he has made members of his Body. The Holy Spirit brings to completion the sanctifying work begun in them.
+
+The Christian life is the life of theosis: by grace, human beings are drawn into communion with God and changed into the likeness of Christ. That transformation begins now in repentance, prayer, mercy, the Scriptures, and the Eucharist. It remains entirely the work of divine love, even as we freely answer that love. Because our perfection is communion with the infinite God, growth into the divine likeness cannot be exhausted by any earthly measure.
+
+On All Souls’ Day, the Church entrusts the faithful departed to that same perfecting love. Nothing unfinished in those who belong to Christ lies beyond the power of his resurrection. Nothing wounded lies beyond his healing. Nothing false can withstand the fire of his truth. What God began in Baptism, nourished in the Eucharist, and sustained through a lifetime of grace, God is able to bring to its appointed fullness.
+
+Prayer for the dead is therefore an act of communion and hope. We pray for the departed because they remain alive to God and joined with us in Christ. We ask for them what we ask for ourselves: mercy, healing, light, peace, and the fulfillment of God’s perfect will. Yet the Church awaits more than the blessedness of souls in paradise. We await the resurrection of the body, when Christ shall raise the dead, renew creation, and bring his redeemed people into the fullness of everlasting life.
+
+Their remembrance also summons us to holiness. We cannot ask God to heal what remained wounded in them while refusing his healing in ourselves. We cannot pray that they may grow in love while clinging to hatred, or ask that they may enter the fullness of Christ while resisting the life of Christ today. The faithful departed remind us that our own lives are unfinished and that the time given to us is a gift. Therefore we forgive, make peace, feed the hungry, receive the sacraments, and surrender ourselves again to the Holy Spirit, who changes the children of God from glory to glory.
+
+Today, then, let the names of the dead be spoken without fear. Let gratitude and sorrow stand together before God. Let injuries be released into his judgment and acts of love be remembered with thanksgiving. And let the whole Church—on earth and in paradise—await the day when Christ shall be all in all, and God’s work in every one of his children shall be brought to its appointed fullness.
+
+## Collect
+
+O God, the Maker and Redeemer of all believers: Grant to the faithful departed the unsearchable benefits of the passion of your Son; that on the day of his appearing they may be manifested as your children; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.

@@ -1,0 +1,18 @@
+---
+import { dayByKey, neighbors } from '../lib/data';
+import { MONTHS, seasonName, weekdayOf } from '../lib/church-year';
+interface Props { key: string; year: number; mode?: 'home' | 'entry'; }
+const { key, year, mode = 'home' } = Astro.props;
+const d = dayByKey.get(key)!;
+const { prev, next } = neighbors(key);
+const dateLabel = `${weekdayOf(year, d.month, d.day)}, ${MONTHS[d.month - 1]} ${d.day}`;
+---
+<div class="stepper" data-stepper>
+  <a class="step" data-prev href={`/saint/${prev.key}/`}><span aria-hidden="true">‹</span><span data-prev-name>{prev.name}</span></a>
+  <div class="stepper-mid">
+    {mode === 'home' && <span class="lab date-label" data-date-label>{dateLabel}</span>}
+    {mode === 'home' && <span class="lab season-label" data-season-label>{seasonName(year, d.month, d.day)}</span>}
+    <a class="step" data-today-link href="/#today" hidden>Back to today</a>
+  </div>
+  <a class="step" data-next href={`/saint/${next.key}/`}><span data-next-name>{next.name}</span><span aria-hidden="true">›</span></a>
+</div>

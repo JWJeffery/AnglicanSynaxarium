@@ -1,0 +1,77 @@
+---
+import Base from '../layouts/Base.astro';
+import Stepper from '../components/Stepper.astro';
+import MonthSection from '../components/MonthSection.astro';
+import PrintSection from '../components/PrintSection.astro';
+import KalIndex from '../components/KalIndex.astro';
+import Cover from '../components/Cover.astro';
+import { dayByKey, entries, rankOf, titleOf, inline, site, hasPodcast } from '../lib/data';
+import { keyOf, seasonOf, RANK_LABEL } from '../lib/church-year';
+
+const now = new Date();
+const year = now.getUTCFullYear(), month = now.getUTCMonth() + 1, day = now.getUTCDate();
+const key = keyOf(month, day);
+const d = dayByKey.get(key)!;
+const entry = entries.get(key);
+const rank = rankOf(key);
+const names: [string, string][] = [['spotify', 'Spotify'], ['apple_podcasts', 'Apple Podcasts'], ['youtube', 'YouTube'], ['substack', 'Substack'], ['rss', 'RSS feed']];
+const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k]);
+---
+<Base title="An Anglican Synaxarium" description="One saint for every day of the year, read in the Anglican manner." path="/">
+  <main id="top">
+    <section id="today" class="today" data-season={seasonOf(year, month, day)} data-hero data-key={key} data-year={year} data-month={month}>
+      <div class="wrap">
+        <Stepper key={key} year={year} />
+        <div class="hero-row">
+          <div class="hero-main">
+            <span class="rank" data-rank={rank} data-slot="rank">{RANK_LABEL[rank]}</span>
+            <h1 class="hero-title" data-slot="title">{titleOf(d)}</h1>
+            <p class="hero-period" data-slot="period" hidden={!d.period}>{d.period}</p>
+            <p class="hero-lede" data-slot="lede" hidden={!entry} set:html={entry ? inline(entry.body[0]) : ''}></p>
+            <p class="hero-first" data-slot="first" hidden={!entry} set:html={entry ? inline(entry.body[1] ?? '') : ''}></p>
+            <p class="hero-first" data-slot="prep" hidden={!!entry} style="color:var(--ink-muted)">The entry for this day is in preparation.</p>
+            <div class="hero-actions" data-slot="actions" hidden={!entry}>
+              <a class="btn btn-primary" data-slot="read" href={`/saint/${key}/`}>Read the full entry</a>
+              <a class="btn" href="#print">Print this saint</a>
+            </div>
+          </div>
+          <div class="hero-side">
+            {hasPodcast && (
+              <section id="listen" class="card">
+                <div class="listen-head">
+                  <Cover />
+                  <div class="listen-copy">
+                    <h2>Listen to the podcast</h2>
+                    <p>Hear this saint’s story read aloud.</p>
+                  </div>
+                </div>
+                <div class="platforms">
+                  {links.map(([k, label]) => <a class="platform" href={(site.podcast as Record<string, string>)[k]} rel="noopener"><span>{label}</span><span aria-hidden="true">→</span></a>)}
+                </div>
+              </section>
+            )}
+            <section class="card others" data-slot="others" hidden={d.alternates.length === 0}>
+              <h2>Other Saints Commemorated Today</h2>
+              <ul data-slot="others-list">
+                {d.alternates.map((a) => <li>{a.name}{(a.designation || a.period) && <> <span class="alt-sub">{[a.designation, a.period].filter(Boolean).join(', ')}</span></>}</li>)}
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendar" class="kal-section">
+      <div class="wrap">
+        <MonthSection year={year} month={month} todayKey={key} selectedKey={key} />
+      </div>
+    </section>
+
+    <PrintSection key={key} />
+  </main>
+  <KalIndex />
+  <script>
+    import { initHome } from '../scripts/home';
+    initHome();
+  </script>
+</Base>

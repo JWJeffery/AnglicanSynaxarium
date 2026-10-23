@@ -1,0 +1,38 @@
+---
+key: "11-30"
+title: "Andrew the Apostle, Apostle and Martyr"
+status: approved
+opening: church
+---
+
+Today the Church celebrates Andrew the Apostle, who answered the call of Christ, brought others to him, and followed his Lord through suffering and death.
+
+Andrew came from Bethsaida in Galilee and worked as a fisherman with his brother Simon. He became a disciple of John the Baptist and waited with him for the One whom God would send.
+
+One day John saw Jesus passing and named him as the Lamb of God. Andrew and another disciple followed Jesus. The Lord turned and asked what they wanted. They asked where he was staying, and he invited them to come and see. They went with him and remained there that day.
+
+Andrew then sought his brother. "We have found the Messiah," he told Simon: the Anointed One for whom Israel waited. He brought Simon to Jesus, who gave him the name Peter.
+
+Beside the Sea of Galilee, Jesus called the brothers from their work with the nets. They left their fishing and followed him. Andrew became one of the Twelve whom Jesus chose to accompany him and whom he sent out to preach and heal.
+
+When a great crowd followed Jesus to a hillside, the disciples could see no way to feed them. Philip calculated that a large sum of money would buy only a little bread for each person. Andrew drew attention to a boy who had five barley loaves and two fish. He asked what such a small provision could mean among so many people.
+
+Jesus told the people to sit down. He took the bread, gave thanks, and distributed it with the fish. The people ate until they were satisfied, and the disciples gathered twelve baskets of what remained. Andrew had named the little that was there, and the Lord had fed the crowd.
+
+Later, in Jerusalem, some Greeks came to Philip and asked to see Jesus. Philip went to Andrew, and the two disciples carried the request to their Lord. Jesus spoke of a grain of wheat falling into the earth and dying so that it could bear fruit. He spoke also of the servant who followed him and would be where he was.
+
+Andrew remained among the disciples as Jesus went towards his Passion. When armed men seized their Master, the disciples fled. The risen Lord gathered them again. After his Ascension, Andrew joined the others in an upstairs room in Jerusalem. With Mary, the mother of Jesus, and certain women, they continued in prayer as they waited for the Holy Spirit.
+
+According to ancient tradition, Andrew's preaching later carried him to Patras in Greece. There the Roman Governor, Aegeates, tried to force Christians to sacrifice to the gods. Andrew confronted him and spoke of Christ's cross. The Governor called the cross a punishment. Andrew told him of the Savior who had accepted death freely and given immortal life to human beings.
+
+Aegeates imprisoned him. People gathered at the prison and wanted to kill the Governor and release Andrew by force. Andrew restrained them, recalling the patience with which Jesus had faced his captors. He continued to speak to the people through the night.
+
+The next day Aegeates ordered him to sacrifice. Andrew refused. The Governor had him beaten and bound to a cross. For several days Andrew spoke to those who stood nearby and commended them to Christ.
+
+When the crowd pressed for his release, Andrew entrusted himself to the Lord he had followed. He prayed to be received by the Teacher he loved. A brilliant light shone around him, hiding him from the people's sight. As it withdrew, Andrew died. Maximilla, the Governor's wife, had separated from him and joined the Christians. She took down Andrew's body, prepared it with spices, and laid it in her own tomb.
+
+The Lord's invitation took Andrew from a day's companionship to a life given in his service. His call reaches us in the midst of the work already in our hands, and his welcome has room for those we love.
+
+## Collect
+
+Almighty God, who gave such grace to your apostle Andrew that he readily obeyed the call of your Son Jesus Christ, and brought his brother with him: Give us, who are called by your Word, grace to follow him without delay, and to bring those near to us into his gracious presence; who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.

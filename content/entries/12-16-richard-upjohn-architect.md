@@ -1,0 +1,24 @@
+---
+key: "12-16"
+title: "Richard Upjohn, Architect"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Richard Upjohn, an architect who offered his skill to the worship of God and gave his work to congregations that could not afford it.
+
+Richard was born in England in 1802 and trained as a cabinetmaker. He emigrated to the United States with his family and eventually settled in Boston, where he worked as a draftsman, teacher, and architect.
+
+In 1839 the parish of Trinity Church in New York commissioned him to design a new building. Its old church had become unsafe. Richard designed in the Gothic style, drawing on the pointed arches and tall spires of medieval English churches. The new Trinity Church was completed and consecrated in 1846.
+
+His work grew from his Episcopal faith. He arranged the church around the altar, making the celebration of Holy Communion the center of its worship. He wanted a church to draw worshipers into prayer and help them respond to God with heart and spirit.
+
+Small parishes also asked for his help. Richard donated plans for many churches and made it his practice to design one mission church each year.
+
+He also prepared designs that local carpenters could build in wood. In 1852 he published a book of plans for a church, a chapel, a house for a priest, and a schoolhouse. Congregations adapted these designs to their own needs and resources. Pointed windows, a simple space for the congregation, and a place set apart for the altar brought the forms of his larger churches into small towns and villages.
+
+Richard died in 1878. His plans remained in the hands of congregations and craftsmen, serving the worship for which he had made them. May we place our own skills at the service of our neighbors, making room for others to receive the gifts of Christ.
+
+## Collect
+
+Gracious God, we thank you for your servant Richard Upjohn, who offered his skill for the building of your churches. Grant that the beauty of our worship may draw us closer to you, and teach us to offer our own skills in the service of your people; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, in glory everlasting. Amen.

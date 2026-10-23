@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import MonthSection from '../../components/MonthSection.astro';
+import KalIndex from '../../components/KalIndex.astro';
+import { keyOf, MONTHS, MONTH_SLUGS } from '../../lib/church-year';
+export function getStaticPaths() { return MONTH_SLUGS.map((m, i) => ({ params: { month: m }, props: { n: i + 1 } })); }
+const { n } = Astro.props;
+const now = new Date();
+const year = now.getUTCFullYear();
+const todayKey = now.getUTCMonth() + 1 === n ? keyOf(n, now.getUTCDate()) : null;
+---
+<Base title={`${MONTHS[n - 1]} | Kalendar | An Anglican Synaxarium`} description={`The saints of ${MONTHS[n - 1]}.`} path={`/kalendar/${MONTH_SLUGS[n - 1]}/`}>
+  <main>
+    <section class="kal-section" style="border-top:0">
+      <div class="wrap">
+        <MonthSection year={year} month={n} todayKey={todayKey} heading="h1" />
+      </div>
+    </section>
+  </main>
+  <KalIndex />
+  <script>
+    import { initKalendar } from '../../scripts/kalendar';
+    initKalendar();
+  </script>
+</Base>

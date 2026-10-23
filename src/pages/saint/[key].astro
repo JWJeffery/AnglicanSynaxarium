@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import Stepper from '../../components/Stepper.astro';
+import KalIndex from '../../components/KalIndex.astro';
+import { days, dayByKey, entries, rankOf, titleOf, inline, hasPodcast } from '../../lib/data';
+import { MONTHS, MONTH_SLUGS, seasonOf, weekdayOf, RANK_LABEL } from '../../lib/church-year';
+export function getStaticPaths() { return days.map((d) => ({ params: { key: d.key } })); }
+const { key } = Astro.params as { key: string };
+const d = dayByKey.get(key)!;
+const entry = entries.get(key);
+const rank = rankOf(key);
+const year = new Date().getUTCFullYear();
+const season = seasonOf(year, d.month, d.day);
+const title = titleOf(d);
+const first = entry ? entry.body[0].replace(/<[^>]+>|\*/g, '') : `${title}.`;
+---
+<Base title={`${title} | An Anglican Synaxarium`} description={first.slice(0, 200)} path={`/saint/${key}/`}>
+  <main data-entry data-key={key} data-season={season} data-year={year}>
+    <div class="entry-wrap">
+      <div class="stepper" style="border-bottom:1px solid var(--hairline)">
+        <a class="step" href={`/kalendar/${MONTH_SLUGS[d.month - 1]}/`}><span aria-hidden="true">‹</span>Back to the Kalendar</a>
+        <div class="tools">
+          <div class="seg" role="group" aria-label="Text size">
+            <button type="button" data-size="normal" aria-pressed="true" aria-label="Normal text" style="font-size:15px">A</button>
+            <button type="button" data-size="large" aria-pressed="false" aria-label="Large text" style="font-size:21px">A</button>
+          </div>
+          {hasPodcast && <a class="btn" href="/#listen">Listen</a>}
+          {entry && <a class="btn btn-primary" href={`/print/day/?d=${key}&collect=1&others=0&large=0&notes=1&print=1`}>Print</a>}
+        </div>
+      </div>
+
+      <Stepper key={key} year={year} mode="entry" />
+
+      <article class="entry-card">
+        <header class="entry-head">
+          <div class="entry-meta">
+            <span class="lab date-label" data-date-label>{weekdayOf(year, d.month, d.day)}, {MONTHS[d.month - 1]} {d.day}</span>
+            <span class="rank" data-rank={rank}>{RANK_LABEL[rank]}</span>
+          </div>
+          <h1 class="entry-title">{title}</h1>
+          {d.period && <p class="entry-period">{d.period}</p>}
+        </header>
+        {entry ? (
+          <>
+            <div class="prose" data-prose>
+              {entry.body.map((p, i) => <p class={i === 0 ? 'lede' : undefined} set:html={inline(p)} />)}
+            </div>
+            {entry.collect.length > 0 && (
+              <div class="collect" data-collect>
+                <p class="lab let">Let us pray</p>
+                {entry.collect.map((p) => {
+                  const m = inline(p).match(/^([\s\S]*?)\s*(Amen\.)$/);
+                  return m ? <p class="text">{<Fragment set:html={m[1]} />} <span class="amen">{m[2]}</span></p> : <p class="text" set:html={inline(p)} />;
+                })}
+              </div>
+            )}
+          </>
+        ) : (
+          <p class="empty">The entry for this day is in preparation.</p>
+        )}
+        {d.alternates.length > 0 && (
+          <div class="also">
+            <h2>Other Saints Commemorated Today</h2>
+            <ul>{d.alternates.map((a) => <li>{a.name}{(a.designation || a.period) && <span style="color:var(--ink-muted);font-family:var(--font-sans);font-size:14px"> {[a.designation, a.period].filter(Boolean).join(', ')}</span>}</li>)}</ul>
+          </div>
+        )}
+      </article>
+
+      <Stepper key={key} year={year} mode="entry" />
+    </div>
+  </main>
+  <KalIndex />
+  <script>
+    import { initEntry } from '../../scripts/entry';
+    initEntry();
+  </script>
+</Base>

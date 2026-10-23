@@ -1,0 +1,44 @@
+---
+key: "11-22"
+title: "Clive Staples Lewis, Apologist and Spiritual Writer"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Clive Staples Lewis, who gave his learning and imagination to Christ and helped others to seek the Lord through wonder, thought, and the trials of faith.
+
+Lewis was born in Belfast on November 29, 1898. As a boy he loved stories and invented an imaginary country with his brother, Warren. Their mother died when Lewis was nine. He prayed for her recovery, but she did not recover. His father sent him away to school, and during his adolescence he abandoned the Christian faith in which he had been brought up.
+
+He entered Oxford in 1917, but the war interrupted his studies. He served as an officer in France, where he saw men die and suffered wounds himself. Before going to the front, Lewis and his friend Paddy Moore had agreed to look after each other's families if one of them died. Paddy died in the war. After his return, Lewis shared a home with Paddy's mother, Janie, and her daughter. He continued to care for Mrs Moore as she grew old.
+
+Lewis returned to Oxford and became a teacher of English literature. He loved the old stories of gods, heroes, sacrifice, and beauty. At times a landscape, a piece of music, or a book awakened a longing that no earthly pleasure could satisfy. He wanted what the longing seemed to promise, yet resisted the thought that God might be its end.
+
+Friends and books unsettled his unbelief. Some of the writers whose work he loved were Christians. His friendship with J. R. R. Tolkien brought him into sustained conversation with a man whose faith and imagination belonged together.
+
+In 1929 Lewis admitted that God was God. Alone in his room at Oxford, he knelt and prayed. He had not arrived there eagerly. He had yielded to the One whom he had been trying to avoid.
+
+Belief in God did not at once become belief in Christ. Lewis still struggled to understand how the death of one man could bring salvation to others. Tolkien and another friend, Hugo Dyson, helped him to see the Gospel as the fulfillment of the truths he had loved in stories. In Christ, the divine self-giving towards which those stories reached had entered human history.
+
+In 1931 Lewis traveled with his brother to Whipsnade Zoo. When they set out, he did not believe that Jesus Christ was the Son of God. By the time they arrived, he did. He returned to the worship of the Church of England. The scholar who had resisted God now began to offer him the work of his mind.
+
+During the Second World War, the BBC invited Lewis to speak about Christian belief. He addressed people who carried the fears and weariness of war, many of whom had little knowledge of the faith. He used ordinary language to speak of sin, forgiveness, and the life Christ gave. In the later broadcasts, he described Christ drawing human beings into his own life and changing them. He called his listeners to give Christ their whole lives. Those talks later became Mere Christianity.
+
+Lewis gave away payments from his wartime broadcasts and from The Screwtape Letters. With the help of his friend and lawyer, Owen Barfield, he supported people in poverty, clergy widows, and others in need. Much of this giving was private. He was willing to risk being cheated. He feared turning away someone who truly needed help.
+
+In 1950 Lewis began publishing The Chronicles of Narnia. Children entered a world where courage, treachery, repentance, and mercy had consequences. The lion Aslan gave his life for a traitor and rose again. Through him, Lewis gave young readers a way to imagine the costly love and living presence of Christ.
+
+In 1954 Lewis accepted a Professorship at Cambridge. Two years later he married Joy Davidman in a civil ceremony so that she could remain in Britain. Joy was an American writer, a Christian convert, a divorced woman, and the mother of two sons. Their friendship grew into love. When cancer brought her close to death, Lewis sought to marry her according to the rites of the Church.
+
+On March 21, 1957, the Reverend Peter Bide married them at her hospital bedside. He prayed for her healing and gave them Holy Communion. Joy recovered for a time, and they shared a happiness Lewis had scarcely expected to know. Then the cancer returned. She died on July 13, 1960.
+
+Grief shook the man who had written about suffering. When he reached towards God in desperate need, he felt as though a door had closed against him. His fear was that God might be cruel. He wrote down the anger, bewilderment, and loneliness that came over him. These notes became A Grief Observed.
+
+As the first violence of grief eased, Lewis found that he could remember Joy more clearly. He wanted the woman he had loved, who had challenged his thoughts and wishes, to remain real to him. A comforting picture made by his own mind could not take her place. He also questioned the cruel image of God that his anguish had suggested. He asked whether such a being could have made love, laughter, or beauty.
+
+Lewis's own health failed. He died at his home in Oxford on November 22, 1963. His friends buried him in the churchyard of Holy Trinity, Headington Quarry.
+
+The God who called Lewis through his longing also received his grief. Before him, we can bring the questions we cannot settle and the sorrows we cannot put into words. He calls us into a life whose fullness lies beyond what we can yet imagine.
+
+## Collect
+
+O God of searing truth and surpassing beauty, we give you thanks for Clive Staples Lewis, whose sanctified imagination lit fires of faith in young and old alike; Surprise us also with your joy and draw us into that new and abundant life which is ours in Christ Jesus, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.

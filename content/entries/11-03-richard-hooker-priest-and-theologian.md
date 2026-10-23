@@ -1,0 +1,40 @@
+---
+key: "11-03"
+title: "Richard Hooker, Priest and Theologian"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Richard Hooker, Priest and theologian, who labored to keep Christ’s people together in the faith, prayer, and sacramental life of the Church.
+
+Richard was born about the year 1554 near Exeter. His parents could not afford to send him beyond the local grammar school, but his uncle brought him to John Jewel, the Bishop of Salisbury. Jewel helped Richard enter Corpus Christi College, Oxford, and supported his studies. There, he became a fellow of the college, taught Hebrew, and tutored younger scholars. Two of his pupils, Edwin Sandys and George Cranmer, became lifelong friends.
+
+After ordination and a brief appointment to the parish of Drayton Beauchamp, Richard became Master of the Temple in London in 1585. The congregation included the lawyers who lived and studied nearby. Richard preached in the morning; Walter Travers, the afternoon lecturer, answered him later that day. Travers sought a further reformation of the Church under the government of elders rather than Bishops. From the same pulpit, the congregation heard its ministers contradict one another.
+
+The dispute drew Richard into a defense of the Church’s inherited worship and government. His opponents demanded an express command of Scripture for practices the Church had received and continued. Richard answered that Scripture taught all things necessary for salvation, but did not prescribe every detail of Christian worship. God had also given his people reason, and the Church had received wisdom from generations of Christians who had gone before. Bishops, common prayers, and ceremonies were not to be swept away simply because they were also found in the Church of Rome. The Church's common worship was not merely a matter of human preference, but part of the ordered life in which Christians received God's grace and grew together in holiness.
+
+The Archbishop silenced Travers the following year, but the quarrel continued among Travers’s supporters. Richard remained at the Temple for another five years. During that time he married Joan Churchman. In the years that followed, Richard and Joan lost two sons in infancy.
+
+When Richard left the Temple, he continued writing in his wife’s family home in London. Sandys and Cranmer advised their former tutor as he worked on *Of the Laws of Ecclesiastical Polity*. When Richard struggled to find a publisher, Sandys undertook to pay the printing costs. The first four books appeared with a preface in which Richard addressed those who opposed him as “beloved in our Lord and Saviour Jesus Christ.” Their bitterness, he wrote, could not drown his love for them in Christ.
+
+In 1595 Richard moved with his family to Bishopsbourne, near Canterbury. On Sundays he preached in a quiet voice, using familiar examples so that parishioners could follow his reasons. At Evening Prayer, he or his curate taught them the faith. Before the days set aside for fasting and prayer for the ministry, Richard urged the congregation to pray for learned and holy clergy. He took the church key from the parish clerk and spent hours there alone in prayer.
+
+For the yearly Rogation procession, Richard gathered rich and poor to walk the parish boundaries. The walk helped preserve their common rights and the memory of where those boundaries lay. Among the boys and younger parishioners, he was more talkative than usual. He offered cheerful observations for them to remember when they returned the next year, and urged the neighbors walking beside him to bear with one another’s faults. He also worked to settle their quarrels before they became lawsuits.
+
+When Richard heard that someone was sick or in distress, he went to the house without waiting to be summoned. He prayed with the sick, encouraged them to confess their sins and turn from them, and prepared them to receive Holy Communion. The sacrament would strengthen them in the life they had resolved to lead; if they were dying, it assured them of God’s mercy. As he entered or left a house, he blessed the members of the family by name.
+
+Richard himself became the victim of a false accusation. For months he bore the distress in silence, until Sandys and Cranmer learned of it and exposed the deception. The accusers admitted their wrongdoing and asked his pardon. Richard forgave them and sought to spare them punishment. When he could not obtain their release, he fasted and prayed that God would grant them repentance and patience. He later told Saravia that he had known peace after his name was cleared, but still greater peace after overcoming his desire for revenge.
+
+The controversy over his books followed him to Bishopsbourne. An anonymous tract called A Christian Letter accused him of undermining the Church's teaching and mocked his difficult prose. Richard answered in the margins of his copy. When the writers complained that he did not write like the reformers they admired, he retorted that they might as reasonably complain that he did not look like Calvin.
+
+During his last illness, Richard’s friend Adrian Saravia visited him daily. Richard still wanted to finish the remaining books of the *Laws*. When his house was robbed, Richard asked whether his books and papers were safe. Told that they were, he answered, “Then it matters not.”
+
+As Richard grew weaker, Saravia came to speak with him about the Church's absolution. The following day, the two withdrew together in private. Saravia gave Richard absolution, and afterward administered the Body and Blood of Christ to him and the friends gathered around him. When Saravia returned the following morning, he found Richard absorbed in thought. Asked what occupied him, Richard spoke of the angels and their obedience to God. He longed for the peace of heaven to be known on earth.
+
+“I have lived to see this world is made up of perturbations,” he said, “and I have been long preparing to leave it.” He asked God to forgive his sins through Christ, who had died to pardon sinners. Later he told Saravia that God had heard his daily prayers: he was at peace with all people, and God was at peace with him. Richard Hooker died at Bishopsbourne in 1600.
+
+As we remember Richard, let us ask Christ to preserve our communion with one another. May he teach us to speak the truth in love, to seek out those who need our care, and to receive at his altar the mercy we must also extend to our neighbors.
+
+## Collect
+
+O God of truth and peace, you raised up your servant Richard Hooker in a day of bitter controversy to defend with sound reasoning and great charity the catholic and reformed religion: Grant that, supported by his prayers, we may maintain that middle way, not as a compromise for the sake of peace, but as a comprehension for the sake of truth; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.

@@ -1,0 +1,3322 @@
+{
+ "days": [
+  {
+   "key": "01-01",
+   "month": 1,
+   "day": 1,
+   "name": "The Holy Name of Our Lord Jesus Christ",
+   "designation": "Feast of Our Lord",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "01-02",
+   "month": 1,
+   "day": 2,
+   "name": "Basil the Great and Gregory of Nazianzus",
+   "designation": "Bishops and Teachers of the Faith",
+   "period": "379, 389",
+   "alternates": []
+  },
+  {
+   "key": "01-03",
+   "month": 1,
+   "day": 3,
+   "name": "William Passavant",
+   "designation": "Prophetic Witness",
+   "period": "1894",
+   "alternates": []
+  },
+  {
+   "key": "01-04",
+   "month": 1,
+   "day": 4,
+   "name": "Elizabeth Ann Seton",
+   "designation": "Vowed Religious and Educator",
+   "period": "1821",
+   "alternates": []
+  },
+  {
+   "key": "01-05",
+   "month": 1,
+   "day": 5,
+   "name": "Sarah, Theodora, and Syncletica of Egypt",
+   "designation": "Desert Mothers",
+   "period": "4th-5th century",
+   "alternates": []
+  },
+  {
+   "key": "01-06",
+   "month": 1,
+   "day": 6,
+   "name": "The Epiphany of Our Lord Jesus Christ",
+   "designation": "Principal Feast",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "01-07",
+   "month": 1,
+   "day": 7,
+   "name": "Lucian of Antioch",
+   "designation": "Priest and Martyr",
+   "period": "312",
+   "alternates": []
+  },
+  {
+   "key": "01-08",
+   "month": 1,
+   "day": 8,
+   "name": "Harriet Bedell",
+   "designation": "Deaconess and Missionary",
+   "period": "1969",
+   "alternates": []
+  },
+  {
+   "key": "01-09",
+   "month": 1,
+   "day": 9,
+   "name": "Julia Chester Emery",
+   "designation": "Lay Leader and Missionary",
+   "period": "1922",
+   "alternates": []
+  },
+  {
+   "key": "01-10",
+   "month": 1,
+   "day": 10,
+   "name": "William Laud",
+   "designation": "Archbishop of Canterbury and Martyr",
+   "period": "1645",
+   "alternates": []
+  },
+  {
+   "key": "01-11",
+   "month": 1,
+   "day": 11,
+   "name": "Theodosius the Cenobiarch",
+   "designation": "Monastic",
+   "period": "529",
+   "alternates": []
+  },
+  {
+   "key": "01-12",
+   "month": 1,
+   "day": 12,
+   "name": "Aelred of Rievaulx",
+   "designation": "Monastic and Theologian",
+   "period": "1167",
+   "alternates": []
+  },
+  {
+   "key": "01-13",
+   "month": 1,
+   "day": 13,
+   "name": "Hilary of Poitiers",
+   "designation": "Bishop and Theologian",
+   "period": "367",
+   "alternates": []
+  },
+  {
+   "key": "01-14",
+   "month": 1,
+   "day": 14,
+   "name": "Macrina the Elder",
+   "designation": "Holy woman",
+   "period": "4th century",
+   "alternates": []
+  },
+  {
+   "key": "01-15",
+   "month": 1,
+   "day": 15,
+   "name": "Ita of Killeedy",
+   "designation": "Monastic and teacher",
+   "period": "c. 570",
+   "alternates": []
+  },
+  {
+   "key": "01-16",
+   "month": 1,
+   "day": 16,
+   "name": "Richard Meux Benson and Charles Gore",
+   "designation": "Religious and Bishop",
+   "period": "1915, 1932",
+   "alternates": []
+  },
+  {
+   "key": "01-17",
+   "month": 1,
+   "day": 17,
+   "name": "Antony of Egypt",
+   "designation": "Monastic",
+   "period": "356",
+   "alternates": []
+  },
+  {
+   "key": "01-18",
+   "month": 1,
+   "day": 18,
+   "name": "The Confession of Saint Peter the Apostle",
+   "designation": "Feast of an Apostle",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "01-19",
+   "month": 1,
+   "day": 19,
+   "name": "Macarius the Great",
+   "designation": "Monastic",
+   "period": "390",
+   "alternates": []
+  },
+  {
+   "key": "01-20",
+   "month": 1,
+   "day": 20,
+   "name": "Fabian",
+   "designation": "Bishop and Martyr",
+   "period": "250",
+   "alternates": []
+  },
+  {
+   "key": "01-21",
+   "month": 1,
+   "day": 21,
+   "name": "Agnes and Cecilia of Rome",
+   "designation": "Martyrs",
+   "period": "304, c. 230",
+   "alternates": []
+  },
+  {
+   "key": "01-22",
+   "month": 1,
+   "day": 22,
+   "name": "Vincent of Saragossa",
+   "designation": "Deacon and Martyr",
+   "period": "304",
+   "alternates": []
+  },
+  {
+   "key": "01-23",
+   "month": 1,
+   "day": 23,
+   "name": "Phillips Brooks",
+   "designation": "Bishop",
+   "period": "1893",
+   "alternates": []
+  },
+  {
+   "key": "01-24",
+   "month": 1,
+   "day": 24,
+   "name": "Florence Li Tim-Oi",
+   "designation": "Priest",
+   "period": "1992",
+   "alternates": []
+  },
+  {
+   "key": "01-25",
+   "month": 1,
+   "day": 25,
+   "name": "The Conversion of Saint Paul the Apostle",
+   "designation": "Feast of an Apostle",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "01-26",
+   "month": 1,
+   "day": 26,
+   "name": "Timothy and Titus",
+   "designation": "Companions of Saint Paul / bishops",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "01-27",
+   "month": 1,
+   "day": 27,
+   "name": "John Chrysostom",
+   "designation": "Bishop and Theologian",
+   "period": "407",
+   "alternates": []
+  },
+  {
+   "key": "01-28",
+   "month": 1,
+   "day": 28,
+   "name": "Thomas Aquinas",
+   "designation": "Friar and Theologian",
+   "period": "1274",
+   "alternates": []
+  },
+  {
+   "key": "01-29",
+   "month": 1,
+   "day": 29,
+   "name": "Liliʻuokalani of Hawaiʻi",
+   "designation": "Queen",
+   "period": "1917",
+   "alternates": []
+  },
+  {
+   "key": "01-30",
+   "month": 1,
+   "day": 30,
+   "name": "Charles I",
+   "designation": "King and Martyr",
+   "period": "1649",
+   "alternates": []
+  },
+  {
+   "key": "01-31",
+   "month": 1,
+   "day": 31,
+   "name": "Marcella of Rome",
+   "designation": "Monastic and Scholar",
+   "period": "410",
+   "alternates": []
+  },
+  {
+   "key": "02-01",
+   "month": 2,
+   "day": 1,
+   "name": "Brigid of Kildare",
+   "designation": "Monastic / Abbess",
+   "period": "c. 523",
+   "alternates": []
+  },
+  {
+   "key": "02-02",
+   "month": 2,
+   "day": 2,
+   "name": "The Presentation of Our Lord Jesus Christ in the Temple",
+   "designation": "Feast of Our Lord / Marian-associated feast",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "02-03",
+   "month": 2,
+   "day": 3,
+   "name": "Anskar",
+   "designation": "Archbishop of Hamburg-Bremen and Missionary to Denmark and Sweden",
+   "period": "865",
+   "alternates": []
+  },
+  {
+   "key": "02-04",
+   "month": 2,
+   "day": 4,
+   "name": "Manche Masemola",
+   "designation": "Martyr",
+   "period": "1928",
+   "alternates": []
+  },
+  {
+   "key": "02-05",
+   "month": 2,
+   "day": 5,
+   "name": "Agatha of Sicily",
+   "designation": "Martyr",
+   "period": "c. 251",
+   "alternates": []
+  },
+  {
+   "key": "02-06",
+   "month": 2,
+   "day": 6,
+   "name": "The Martyrs of Japan / Paul Miki and Companions",
+   "designation": "Martyrs",
+   "period": "1597",
+   "alternates": []
+  },
+  {
+   "key": "02-07",
+   "month": 2,
+   "day": 7,
+   "name": "Richard of Wessex",
+   "designation": "Pilgrim and father of saints",
+   "period": "720",
+   "alternates": []
+  },
+  {
+   "key": "02-08",
+   "month": 2,
+   "day": 8,
+   "name": "Bakhita (Josephine Margaret Bakhita)",
+   "designation": "Monastic",
+   "period": "1947",
+   "alternates": []
+  },
+  {
+   "key": "02-09",
+   "month": 2,
+   "day": 9,
+   "name": "Apollonia of Alexandria",
+   "designation": "Deaconess and Martyr",
+   "period": "249",
+   "alternates": []
+  },
+  {
+   "key": "02-10",
+   "month": 2,
+   "day": 10,
+   "name": "Scholastica",
+   "designation": "Monastic",
+   "period": "543",
+   "alternates": []
+  },
+  {
+   "key": "02-11",
+   "month": 2,
+   "day": 11,
+   "name": "Fanny J. Crosby",
+   "designation": "Hymnwriter",
+   "period": "1915",
+   "alternates": []
+  },
+  {
+   "key": "02-12",
+   "month": 2,
+   "day": 12,
+   "name": "Charles Freer Andrews",
+   "designation": "Priest and Friend of the Poor in India",
+   "period": "1940",
+   "alternates": []
+  },
+  {
+   "key": "02-13",
+   "month": 2,
+   "day": 13,
+   "name": "Absalom Jones",
+   "designation": "Priest",
+   "period": "1818",
+   "alternates": []
+  },
+  {
+   "key": "02-14",
+   "month": 2,
+   "day": 14,
+   "name": "Cyril and Methodius",
+   "designation": "Missionaries to the Slavs",
+   "period": "869 and 885",
+   "alternates": []
+  },
+  {
+   "key": "02-15",
+   "month": 2,
+   "day": 15,
+   "name": "Thomas Bray",
+   "designation": "Priest and Missionary",
+   "period": "1730",
+   "alternates": []
+  },
+  {
+   "key": "02-16",
+   "month": 2,
+   "day": 16,
+   "name": "Charles Todd Quintard",
+   "designation": "Bishop of Tennessee",
+   "period": "1898",
+   "alternates": []
+  },
+  {
+   "key": "02-17",
+   "month": 2,
+   "day": 17,
+   "name": "Janani Luwum",
+   "designation": "Archbishop and Martyr",
+   "period": "1977",
+   "alternates": []
+  },
+  {
+   "key": "02-18",
+   "month": 2,
+   "day": 18,
+   "name": "Colman of Lindisfarne",
+   "designation": "Bishop",
+   "period": "676",
+   "alternates": []
+  },
+  {
+   "key": "02-19",
+   "month": 2,
+   "day": 19,
+   "name": "Agnes Tsao Kou Ying, Agatha Lin Zhao, and Lucy Yi Zhenmei",
+   "designation": "Catechists and Martyrs",
+   "period": "1856, 1858, and 1862",
+   "alternates": []
+  },
+  {
+   "key": "02-20",
+   "month": 2,
+   "day": 20,
+   "name": "Frederick Douglass",
+   "designation": "Social Reformer",
+   "period": "1895",
+   "alternates": []
+  },
+  {
+   "key": "02-21",
+   "month": 2,
+   "day": 21,
+   "name": "John Henry Newman",
+   "designation": "Priest and Theologian",
+   "period": "1890",
+   "alternates": []
+  },
+  {
+   "key": "02-22",
+   "month": 2,
+   "day": 22,
+   "name": "Margaret of Cortona",
+   "designation": "Penitent and monastic tertiary",
+   "period": "1297",
+   "alternates": []
+  },
+  {
+   "key": "02-23",
+   "month": 2,
+   "day": 23,
+   "name": "Polycarp of Smyrna",
+   "designation": "Bishop and Martyr",
+   "period": "156",
+   "alternates": []
+  },
+  {
+   "key": "02-24",
+   "month": 2,
+   "day": 24,
+   "name": "Matthias the Apostle",
+   "designation": "Apostle",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "02-25",
+   "month": 2,
+   "day": 25,
+   "name": "Emily Malbone Morgan",
+   "designation": "Lay Leader and Contemplative",
+   "period": "1937",
+   "alternates": []
+  },
+  {
+   "key": "02-26",
+   "month": 2,
+   "day": 26,
+   "name": "Photini, the Samaritan Woman",
+   "designation": "Biblical evangelist",
+   "period": "c. 67",
+   "alternates": []
+  },
+  {
+   "key": "02-27",
+   "month": 2,
+   "day": 27,
+   "name": "George Herbert",
+   "designation": "Priest and Poet",
+   "period": "1633",
+   "alternates": []
+  },
+  {
+   "key": "02-28",
+   "month": 2,
+   "day": 28,
+   "name": "Anna Julia Haywood Cooper",
+   "designation": "Educator",
+   "period": "1964",
+   "alternates": []
+  },
+  {
+   "key": "02-29",
+   "month": 2,
+   "day": 29,
+   "name": "Oswald of Worcester",
+   "designation": "Bishop",
+   "period": "992",
+   "alternates": []
+  },
+  {
+   "key": "03-01",
+   "month": 3,
+   "day": 1,
+   "name": "David of Wales",
+   "designation": "Bishop",
+   "period": "c. 544",
+   "alternates": []
+  },
+  {
+   "key": "03-02",
+   "month": 3,
+   "day": 2,
+   "name": "Chad of Lichfield",
+   "designation": "Bishop",
+   "period": "672",
+   "alternates": []
+  },
+  {
+   "key": "03-03",
+   "month": 3,
+   "day": 3,
+   "name": "John and Charles Wesley",
+   "designation": "Priests and Evangelists",
+   "period": "1791, 1788",
+   "alternates": []
+  },
+  {
+   "key": "03-04",
+   "month": 3,
+   "day": 4,
+   "name": "Adrian of May Island and Companions",
+   "designation": "Abbot and Martyrs",
+   "period": "875",
+   "alternates": []
+  },
+  {
+   "key": "03-05",
+   "month": 3,
+   "day": 5,
+   "name": "Non of Wales",
+   "designation": "Mother of David of Wales",
+   "period": "6th century",
+   "alternates": []
+  },
+  {
+   "key": "03-06",
+   "month": 3,
+   "day": 6,
+   "name": "Baldred",
+   "designation": "Bishop / hermit",
+   "period": "608",
+   "alternates": []
+  },
+  {
+   "key": "03-07",
+   "month": 3,
+   "day": 7,
+   "name": "Perpetua and Felicity",
+   "designation": "Martyrs at Carthage",
+   "period": "202/203",
+   "alternates": []
+  },
+  {
+   "key": "03-08",
+   "month": 3,
+   "day": 8,
+   "name": "Edward King",
+   "designation": "Bishop of Lincoln, Educator and Pastor",
+   "period": "1910",
+   "alternates": []
+  },
+  {
+   "key": "03-09",
+   "month": 3,
+   "day": 9,
+   "name": "Gregory of Nyssa",
+   "designation": "Bishop and Theologian",
+   "period": "c. 394",
+   "alternates": []
+  },
+  {
+   "key": "03-10",
+   "month": 3,
+   "day": 10,
+   "name": "Harriet Ross Tubman",
+   "designation": "Christian Witness and Liberator",
+   "period": "1913",
+   "alternates": []
+  },
+  {
+   "key": "03-11",
+   "month": 3,
+   "day": 11,
+   "name": "Sophronius of Jerusalem",
+   "designation": "Patriarch and theologian",
+   "period": "639",
+   "alternates": []
+  },
+  {
+   "key": "03-12",
+   "month": 3,
+   "day": 12,
+   "name": "Gregory the Great",
+   "designation": "Bishop of Rome and Theologian",
+   "period": "604",
+   "alternates": []
+  },
+  {
+   "key": "03-13",
+   "month": 3,
+   "day": 13,
+   "name": "James Theodore Holly",
+   "designation": "Bishop of Haiti and the Dominican Republic",
+   "period": "1911",
+   "alternates": []
+  },
+  {
+   "key": "03-14",
+   "month": 3,
+   "day": 14,
+   "name": "Matilda of Ringelheim",
+   "designation": "Queen and worker of mercy",
+   "period": "968",
+   "alternates": []
+  },
+  {
+   "key": "03-15",
+   "month": 3,
+   "day": 15,
+   "name": "Vincent de Paul and Louise de Marillac",
+   "designation": "Priest and Vowed Religious, Workers of Charity",
+   "period": "1660",
+   "alternates": []
+  },
+  {
+   "key": "03-16",
+   "month": 3,
+   "day": 16,
+   "name": "Boniface of Ross",
+   "designation": "Bishop",
+   "period": "8th century",
+   "alternates": []
+  },
+  {
+   "key": "03-17",
+   "month": 3,
+   "day": 17,
+   "name": "Patrick of Ireland",
+   "designation": "Bishop and Missionary",
+   "period": "461",
+   "alternates": []
+  },
+  {
+   "key": "03-18",
+   "month": 3,
+   "day": 18,
+   "name": "Cyril of Jerusalem",
+   "designation": "Bishop and Theologian",
+   "period": "386",
+   "alternates": []
+  },
+  {
+   "key": "03-19",
+   "month": 3,
+   "day": 19,
+   "name": "Saint Joseph",
+   "designation": "Guardian of Our Lord",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "03-20",
+   "month": 3,
+   "day": 20,
+   "name": "Cuthbert of Lindisfarne",
+   "designation": "Bishop and monastic",
+   "period": "687",
+   "alternates": []
+  },
+  {
+   "key": "03-21",
+   "month": 3,
+   "day": 21,
+   "name": "Thomas Ken",
+   "designation": "Bishop of Bath and Wells",
+   "period": "1711",
+   "alternates": []
+  },
+  {
+   "key": "03-22",
+   "month": 3,
+   "day": 22,
+   "name": "James De Koven",
+   "designation": "Priest",
+   "period": "1879",
+   "alternates": []
+  },
+  {
+   "key": "03-23",
+   "month": 3,
+   "day": 23,
+   "name": "Gregory the Illuminator",
+   "designation": "Bishop and Missionary of Armenia",
+   "period": "c. 332",
+   "alternates": []
+  },
+  {
+   "key": "03-24",
+   "month": 3,
+   "day": 24,
+   "name": "Óscar Romero and the Martyrs of El Salvador",
+   "designation": "Archbishop and Martyrs",
+   "period": "1980",
+   "alternates": []
+  },
+  {
+   "key": "03-25",
+   "month": 3,
+   "day": 25,
+   "name": "The Annunciation of Our Lord Jesus Christ to the Blessed Virgin Mary",
+   "designation": "Feast of Our Lord / Marian feast",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "03-26",
+   "month": 3,
+   "day": 26,
+   "name": "Harriet Monsell",
+   "designation": "Monastic",
+   "period": "1883",
+   "alternates": []
+  },
+  {
+   "key": "03-27",
+   "month": 3,
+   "day": 27,
+   "name": "Charles Henry Brent",
+   "designation": "Bishop",
+   "period": "1929",
+   "alternates": []
+  },
+  {
+   "key": "03-28",
+   "month": 3,
+   "day": 28,
+   "name": "James Solomon Russell",
+   "designation": "Priest",
+   "period": "1935",
+   "alternates": []
+  },
+  {
+   "key": "03-29",
+   "month": 3,
+   "day": 29,
+   "name": "John Keble",
+   "designation": "Priest and Poet",
+   "period": "1866",
+   "alternates": []
+  },
+  {
+   "key": "03-30",
+   "month": 3,
+   "day": 30,
+   "name": "John Climacus",
+   "designation": "Monastic and spiritual writer",
+   "period": "649",
+   "alternates": []
+  },
+  {
+   "key": "03-31",
+   "month": 3,
+   "day": 31,
+   "name": "John Donne",
+   "designation": "Priest and Poet",
+   "period": "1631",
+   "alternates": []
+  },
+  {
+   "key": "04-01",
+   "month": 4,
+   "day": 1,
+   "name": "Frederick Denison Maurice",
+   "designation": "Priest",
+   "period": "1872",
+   "alternates": []
+  },
+  {
+   "key": "04-02",
+   "month": 4,
+   "day": 2,
+   "name": "James Lloyd Breck",
+   "designation": "Priest",
+   "period": "1876",
+   "alternates": []
+  },
+  {
+   "key": "04-03",
+   "month": 4,
+   "day": 3,
+   "name": "Richard of Chichester",
+   "designation": "Bishop",
+   "period": "1253",
+   "alternates": []
+  },
+  {
+   "key": "04-04",
+   "month": 4,
+   "day": 4,
+   "name": "Isidore of Seville",
+   "designation": "Bishop and Teacher of the Faith",
+   "period": "636",
+   "alternates": []
+  },
+  {
+   "key": "04-05",
+   "month": 4,
+   "day": 5,
+   "name": "Harriet Starr Cannon",
+   "designation": "Monastic",
+   "period": "1896",
+   "alternates": []
+  },
+  {
+   "key": "04-06",
+   "month": 4,
+   "day": 6,
+   "name": "Celestine I",
+   "designation": "Bishop of Rome",
+   "period": "432",
+   "alternates": []
+  },
+  {
+   "key": "04-07",
+   "month": 4,
+   "day": 7,
+   "name": "Tikhon of Moscow",
+   "designation": "Bishop and Confessor",
+   "period": "1925",
+   "alternates": []
+  },
+  {
+   "key": "04-08",
+   "month": 4,
+   "day": 8,
+   "name": "William Augustus Muhlenberg and Anne Ayres",
+   "designation": "Priest and religious founder",
+   "period": "1877 and 1896",
+   "alternates": []
+  },
+  {
+   "key": "04-09",
+   "month": 4,
+   "day": 9,
+   "name": "Dietrich Bonhoeffer",
+   "designation": "Pastor and Theologian",
+   "period": "1945",
+   "alternates": []
+  },
+  {
+   "key": "04-10",
+   "month": 4,
+   "day": 10,
+   "name": "William Law",
+   "designation": "Priest and Spiritual Writer",
+   "period": "1761",
+   "alternates": []
+  },
+  {
+   "key": "04-11",
+   "month": 4,
+   "day": 11,
+   "name": "George Augustus Selwyn",
+   "designation": "Bishop of New Zealand and Lichfield",
+   "period": "1878",
+   "alternates": []
+  },
+  {
+   "key": "04-12",
+   "month": 4,
+   "day": 12,
+   "name": "Zeno of Verona",
+   "designation": "Bishop",
+   "period": "c. 371",
+   "alternates": []
+  },
+  {
+   "key": "04-13",
+   "month": 4,
+   "day": 13,
+   "name": "Martin I",
+   "designation": "Bishop of Rome and Martyr",
+   "period": "655",
+   "alternates": []
+  },
+  {
+   "key": "04-14",
+   "month": 4,
+   "day": 14,
+   "name": "Zenaida, Philonella, and Hermione",
+   "designation": "Unmercenary Physicians",
+   "period": "c. 100, c. 117",
+   "alternates": []
+  },
+  {
+   "key": "04-15",
+   "month": 4,
+   "day": 15,
+   "name": "Damien of Molokai and Marianne Cope of Hawaii",
+   "designation": "Priest and Monastic of Hawaii",
+   "period": "1889, 1918",
+   "alternates": []
+  },
+  {
+   "key": "04-16",
+   "month": 4,
+   "day": 16,
+   "name": "Peter Williams Cassey and Anna Besant Cassey",
+   "designation": "Deacon and lay witness",
+   "period": "1917, 1875",
+   "alternates": []
+  },
+  {
+   "key": "04-17",
+   "month": 4,
+   "day": 17,
+   "name": "Kateri Tekakwitha",
+   "designation": "Lay Contemplative",
+   "period": "1680",
+   "alternates": []
+  },
+  {
+   "key": "04-18",
+   "month": 4,
+   "day": 18,
+   "name": "Juana Ines de la Cruz",
+   "designation": "Monastic and Theologian",
+   "period": "1695",
+   "alternates": []
+  },
+  {
+   "key": "04-19",
+   "month": 4,
+   "day": 19,
+   "name": "Alphege of Canterbury",
+   "designation": "Archbishop of Canterbury and Martyr",
+   "period": "1012",
+   "alternates": []
+  },
+  {
+   "key": "04-20",
+   "month": 4,
+   "day": 20,
+   "name": "Maelrubha of Applecross",
+   "designation": "Abbot",
+   "period": "722",
+   "alternates": []
+  },
+  {
+   "key": "04-21",
+   "month": 4,
+   "day": 21,
+   "name": "Anselm of Canterbury",
+   "designation": "Archbishop of Canterbury and Theologian",
+   "period": "1109",
+   "alternates": []
+  },
+  {
+   "key": "04-22",
+   "month": 4,
+   "day": 22,
+   "name": "Hadewijch of Brabant",
+   "designation": "Poet and Mystic",
+   "period": "13th century",
+   "alternates": []
+  },
+  {
+   "key": "04-23",
+   "month": 4,
+   "day": 23,
+   "name": "George of Lydda",
+   "designation": "Soldier and Martyr",
+   "period": "c. 304",
+   "alternates": []
+  },
+  {
+   "key": "04-24",
+   "month": 4,
+   "day": 24,
+   "name": "Mellitus of Canterbury",
+   "designation": "Bishop of London and Archbishop of Canterbury",
+   "period": "624",
+   "alternates": []
+  },
+  {
+   "key": "04-25",
+   "month": 4,
+   "day": 25,
+   "name": "Mark the Evangelist",
+   "designation": "Evangelist",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "04-26",
+   "month": 4,
+   "day": 26,
+   "name": "Albert Ernest Laurie",
+   "designation": "Priest",
+   "period": "1937",
+   "alternates": []
+  },
+  {
+   "key": "04-27",
+   "month": 4,
+   "day": 27,
+   "name": "Zita of Tuscany",
+   "designation": "Worker of Charity",
+   "period": "1271",
+   "alternates": [
+    {
+     "name": "Tertullian of Bologna",
+     "designation": "Bishop",
+     "period": "Late fifth century?"
+    }
+   ]
+  },
+  {
+   "key": "04-28",
+   "month": 4,
+   "day": 28,
+   "name": "Peter Chanel",
+   "designation": "Priest and Martyr in Oceania",
+   "period": "1841",
+   "alternates": []
+  },
+  {
+   "key": "04-29",
+   "month": 4,
+   "day": 29,
+   "name": "Catherine of Siena",
+   "designation": "Mystic and Prophetic Witness",
+   "period": "1380",
+   "alternates": []
+  },
+  {
+   "key": "04-30",
+   "month": 4,
+   "day": 30,
+   "name": "Marie de l'Incarnation",
+   "designation": "Monastic, educator, and spiritual teacher in New France",
+   "period": "1672",
+   "alternates": []
+  },
+  {
+   "key": "05-01",
+   "month": 5,
+   "day": 1,
+   "name": "Saint Philip and Saint James",
+   "designation": "Apostles",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "05-02",
+   "month": 5,
+   "day": 2,
+   "name": "Athanasius of Alexandria",
+   "designation": "Bishop and Theologian",
+   "period": "373",
+   "alternates": []
+  },
+  {
+   "key": "05-03",
+   "month": 5,
+   "day": 3,
+   "name": "Elisabeth Cruciger",
+   "designation": "Poet and Hymnographer",
+   "period": "1535",
+   "alternates": []
+  },
+  {
+   "key": "05-04",
+   "month": 5,
+   "day": 4,
+   "name": "Monica",
+   "designation": "Mother of Augustine of Hippo",
+   "period": "387",
+   "alternates": []
+  },
+  {
+   "key": "05-05",
+   "month": 5,
+   "day": 5,
+   "name": "Jutta of Kulmsee",
+   "designation": "Hermit",
+   "period": "1260",
+   "alternates": []
+  },
+  {
+   "key": "05-06",
+   "month": 5,
+   "day": 6,
+   "name": "John before the Latin Gate",
+   "designation": "Apostolic devotion",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "05-07",
+   "month": 5,
+   "day": 7,
+   "name": "John of Beverley",
+   "designation": "Bishop",
+   "period": "721",
+   "alternates": []
+  },
+  {
+   "key": "05-08",
+   "month": 5,
+   "day": 8,
+   "name": "Julian of Norwich",
+   "designation": "Mystic and Theologian",
+   "period": "c. 1417",
+   "alternates": []
+  },
+  {
+   "key": "05-09",
+   "month": 5,
+   "day": 9,
+   "name": "Gregory of Nazianzus",
+   "designation": "Bishop and Theologian",
+   "period": "389",
+   "alternates": []
+  },
+  {
+   "key": "05-10",
+   "month": 5,
+   "day": 10,
+   "name": "Nicolaus Ludwig von Zinzendorf",
+   "designation": "Renewer of the Church",
+   "period": "1760",
+   "alternates": [
+    {
+     "name": "Comgall of Bangor",
+     "designation": "Abbot",
+     "period": "602"
+    }
+   ]
+  },
+  {
+   "key": "05-11",
+   "month": 5,
+   "day": 11,
+   "name": "Johann Arndt and Jacob Boehme",
+   "designation": "Mystics",
+   "period": "1621 and 1624",
+   "alternates": []
+  },
+  {
+   "key": "05-12",
+   "month": 5,
+   "day": 12,
+   "name": "Thomas Rattray",
+   "designation": "Bishop",
+   "period": "1743",
+   "alternates": []
+  },
+  {
+   "key": "05-13",
+   "month": 5,
+   "day": 13,
+   "name": "Frances Perkins",
+   "designation": "Social Reformer",
+   "period": "1965",
+   "alternates": []
+  },
+  {
+   "key": "05-14",
+   "month": 5,
+   "day": 14,
+   "name": "Carthach of Lismore",
+   "designation": "Bishop and Abbot",
+   "period": "637",
+   "alternates": []
+  },
+  {
+   "key": "05-15",
+   "month": 5,
+   "day": 15,
+   "name": "Pachomius of Tabenissi",
+   "designation": "Monastic",
+   "period": "348",
+   "alternates": []
+  },
+  {
+   "key": "05-16",
+   "month": 5,
+   "day": 16,
+   "name": "Brendan the Navigator",
+   "designation": "Abbot",
+   "period": "c. 577",
+   "alternates": []
+  },
+  {
+   "key": "05-17",
+   "month": 5,
+   "day": 17,
+   "name": "Restituta of Carthage",
+   "designation": "Martyr",
+   "period": "304",
+   "alternates": []
+  },
+  {
+   "key": "05-18",
+   "month": 5,
+   "day": 18,
+   "name": "John I",
+   "designation": "Bishop of Rome and Martyr",
+   "period": "526",
+   "alternates": []
+  },
+  {
+   "key": "05-19",
+   "month": 5,
+   "day": 19,
+   "name": "Dunstan",
+   "designation": "Archbishop of Canterbury",
+   "period": "988",
+   "alternates": []
+  },
+  {
+   "key": "05-20",
+   "month": 5,
+   "day": 20,
+   "name": "Alcuin of York",
+   "designation": "Deacon",
+   "period": "804",
+   "alternates": []
+  },
+  {
+   "key": "05-21",
+   "month": 5,
+   "day": 21,
+   "name": "Lydia of Thyatira",
+   "designation": "Coworker of the Apostle Paul",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "05-22",
+   "month": 5,
+   "day": 22,
+   "name": "Julia of Corsica",
+   "designation": "Martyr",
+   "period": "5th century",
+   "alternates": []
+  },
+  {
+   "key": "05-23",
+   "month": 5,
+   "day": 23,
+   "name": "Petroc of Cornwall",
+   "designation": "Abbot",
+   "period": "564",
+   "alternates": []
+  },
+  {
+   "key": "05-24",
+   "month": 5,
+   "day": 24,
+   "name": "Vincent of Lérins",
+   "designation": "Monastic and theologian",
+   "period": "c. 445",
+   "alternates": []
+  },
+  {
+   "key": "05-25",
+   "month": 5,
+   "day": 25,
+   "name": "Bede",
+   "designation": "Priest and Historian",
+   "period": "735",
+   "alternates": []
+  },
+  {
+   "key": "05-26",
+   "month": 5,
+   "day": 26,
+   "name": "Augustine of Canterbury",
+   "designation": "First Archbishop of Canterbury",
+   "period": "605",
+   "alternates": []
+  },
+  {
+   "key": "05-27",
+   "month": 5,
+   "day": 27,
+   "name": "Melangell / Monacella",
+   "designation": "Abbess",
+   "period": "7th century",
+   "alternates": []
+  },
+  {
+   "key": "05-28",
+   "month": 5,
+   "day": 28,
+   "name": "Mechthild of Magdeburg",
+   "designation": "Mystic",
+   "period": "c. 1282",
+   "alternates": []
+  },
+  {
+   "key": "05-29",
+   "month": 5,
+   "day": 29,
+   "name": "Maximinus of Trier",
+   "designation": "Bishop",
+   "period": "c. 347",
+   "alternates": []
+  },
+  {
+   "key": "05-30",
+   "month": 5,
+   "day": 30,
+   "name": "Josephine Butler",
+   "designation": "Worker for Social Justice",
+   "period": "1906",
+   "alternates": []
+  },
+  {
+   "key": "05-31",
+   "month": 5,
+   "day": 31,
+   "name": "The Visitation of the Blessed Virgin Mary",
+   "designation": "Marian feast / Feast of the Incarnation economy",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "06-01",
+   "month": 6,
+   "day": 1,
+   "name": "Justin Martyr",
+   "designation": "Martyr",
+   "period": "167",
+   "alternates": []
+  },
+  {
+   "key": "06-02",
+   "month": 6,
+   "day": 2,
+   "name": "Blandina and Her Companions, the Martyrs of Lyons",
+   "designation": "Martyrs",
+   "period": "177",
+   "alternates": []
+  },
+  {
+   "key": "06-03",
+   "month": 6,
+   "day": 3,
+   "name": "The Martyrs of Uganda",
+   "designation": "Martyrs",
+   "period": "1886",
+   "alternates": []
+  },
+  {
+   "key": "06-04",
+   "month": 6,
+   "day": 4,
+   "name": "John XXIII",
+   "designation": "Bishop of Rome",
+   "period": "1963",
+   "alternates": []
+  },
+  {
+   "key": "06-05",
+   "month": 6,
+   "day": 5,
+   "name": "Boniface of Mainz",
+   "designation": "Bishop, Missionary, and Martyr",
+   "period": "754",
+   "alternates": []
+  },
+  {
+   "key": "06-06",
+   "month": 6,
+   "day": 6,
+   "name": "Ini Kopuria",
+   "designation": "Founder of the Melanesian Brotherhood",
+   "period": "1945",
+   "alternates": []
+  },
+  {
+   "key": "06-07",
+   "month": 6,
+   "day": 7,
+   "name": "Willibald of Eichstatt",
+   "designation": "Bishop and Missionary",
+   "period": "786",
+   "alternates": []
+  },
+  {
+   "key": "06-08",
+   "month": 6,
+   "day": 8,
+   "name": "Melania the Elder",
+   "designation": "Monastic",
+   "period": "410",
+   "alternates": []
+  },
+  {
+   "key": "06-09",
+   "month": 6,
+   "day": 9,
+   "name": "Columba of Iona",
+   "designation": "Monastic",
+   "period": "597",
+   "alternates": []
+  },
+  {
+   "key": "06-10",
+   "month": 6,
+   "day": 10,
+   "name": "Ephrem of Nisibis",
+   "designation": "Deacon and Poet",
+   "period": "373",
+   "alternates": []
+  },
+  {
+   "key": "06-11",
+   "month": 6,
+   "day": 11,
+   "name": "Barnabas the Apostle",
+   "designation": "Apostle",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "06-12",
+   "month": 6,
+   "day": 12,
+   "name": "Enmegahbowh",
+   "designation": "Priest and Missionary",
+   "period": "1902",
+   "alternates": []
+  },
+  {
+   "key": "06-13",
+   "month": 6,
+   "day": 13,
+   "name": "Anthony of Padua",
+   "designation": "Priest and teacher",
+   "period": "1231",
+   "alternates": []
+  },
+  {
+   "key": "06-14",
+   "month": 6,
+   "day": 14,
+   "name": "Basil of Caesarea",
+   "designation": "Bishop and Theologian",
+   "period": "379",
+   "alternates": []
+  },
+  {
+   "key": "06-15",
+   "month": 6,
+   "day": 15,
+   "name": "Evelyn Underhill",
+   "designation": "Mystic and Writer",
+   "period": "1941",
+   "alternates": []
+  },
+  {
+   "key": "06-16",
+   "month": 6,
+   "day": 16,
+   "name": "Joseph Butler",
+   "designation": "Bishop and Theologian",
+   "period": "1752",
+   "alternates": []
+  },
+  {
+   "key": "06-17",
+   "month": 6,
+   "day": 17,
+   "name": "Marina the Monk",
+   "designation": "Monastic",
+   "period": "fifth century",
+   "alternates": []
+  },
+  {
+   "key": "06-18",
+   "month": 6,
+   "day": 18,
+   "name": "Bernard Mizeki",
+   "designation": "Martyr",
+   "period": "1896",
+   "alternates": []
+  },
+  {
+   "key": "06-19",
+   "month": 6,
+   "day": 19,
+   "name": "Adelaide Teague Case",
+   "designation": "Educator",
+   "period": "1948",
+   "alternates": []
+  },
+  {
+   "key": "06-20",
+   "month": 6,
+   "day": 20,
+   "name": "Fillan",
+   "designation": "Abbot",
+   "period": "c. 750",
+   "alternates": []
+  },
+  {
+   "key": "06-21",
+   "month": 6,
+   "day": 21,
+   "name": "Aloysius Gonzaga",
+   "designation": "Religious and worker of mercy",
+   "period": "1591",
+   "alternates": []
+  },
+  {
+   "key": "06-22",
+   "month": 6,
+   "day": 22,
+   "name": "Alban",
+   "designation": "Martyr",
+   "period": "c. 304",
+   "alternates": []
+  },
+  {
+   "key": "06-23",
+   "month": 6,
+   "day": 23,
+   "name": "Etheldreda / Audrey of Ely",
+   "designation": "Abbess",
+   "period": "679",
+   "alternates": []
+  },
+  {
+   "key": "06-24",
+   "month": 6,
+   "day": 24,
+   "name": "The Nativity of Saint John the Baptist",
+   "designation": "Feast of a biblical saint",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "06-25",
+   "month": 6,
+   "day": 25,
+   "name": "Moluag of Lismore",
+   "designation": "Bishop",
+   "period": "592",
+   "alternates": []
+  },
+  {
+   "key": "06-26",
+   "month": 6,
+   "day": 26,
+   "name": "Isabel Florence Hapgood",
+   "designation": "Ecumenist",
+   "period": "1928",
+   "alternates": []
+  },
+  {
+   "key": "06-27",
+   "month": 6,
+   "day": 27,
+   "name": "Cyril of Alexandria",
+   "designation": "Bishop and Theologian",
+   "period": "444",
+   "alternates": []
+  },
+  {
+   "key": "06-28",
+   "month": 6,
+   "day": 28,
+   "name": "Irenaeus of Lyons",
+   "designation": "Bishop and Theologian",
+   "period": "c. 202",
+   "alternates": []
+  },
+  {
+   "key": "06-29",
+   "month": 6,
+   "day": 29,
+   "name": "The Apostles Saint Peter and Saint Paul",
+   "designation": "Apostles and Martyrs",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "06-30",
+   "month": 6,
+   "day": 30,
+   "name": "The First Martyrs of Rome under Nero",
+   "designation": "Martyrs",
+   "period": "64",
+   "alternates": []
+  },
+  {
+   "key": "07-01",
+   "month": 7,
+   "day": 1,
+   "name": "Harriet Beecher Stowe",
+   "designation": "Writer",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-02",
+   "month": 7,
+   "day": 2,
+   "name": "Moses the Black",
+   "designation": "Monastic and Martyr",
+   "period": "c. 400",
+   "alternates": []
+  },
+  {
+   "key": "07-03",
+   "month": 7,
+   "day": 3,
+   "name": "Joshua the Prophet (Son of Nun)",
+   "designation": "Prophet and Successor of Moses",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-04",
+   "month": 7,
+   "day": 4,
+   "name": "Elizabeth of Portugal",
+   "designation": "Queen / Peacemaker",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-05",
+   "month": 7,
+   "day": 5,
+   "name": "Palladius",
+   "designation": "Bishop",
+   "period": "c. 450",
+   "alternates": []
+  },
+  {
+   "key": "07-06",
+   "month": 7,
+   "day": 6,
+   "name": "Eva Lee Matthews",
+   "designation": "Monastic",
+   "period": "1928",
+   "alternates": []
+  },
+  {
+   "key": "07-07",
+   "month": 7,
+   "day": 7,
+   "name": "Boisil",
+   "designation": "Prior of Melrose",
+   "period": "c. 642",
+   "alternates": []
+  },
+  {
+   "key": "07-08",
+   "month": 7,
+   "day": 8,
+   "name": "Priscilla and Aquila",
+   "designation": "Coworkers of the Apostle Paul",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-09",
+   "month": 7,
+   "day": 9,
+   "name": "Augustine Zhao Rong and the Martyrs of China",
+   "designation": "Martyrs",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-10",
+   "month": 7,
+   "day": 10,
+   "name": "Anthony and Theodosius of the Kyiv Caves",
+   "designation": "Monastics",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-11",
+   "month": 7,
+   "day": 11,
+   "name": "Benedict of Nursia",
+   "designation": "Monastic",
+   "period": "c. 543",
+   "alternates": []
+  },
+  {
+   "key": "07-12",
+   "month": 7,
+   "day": 12,
+   "name": "Veronica",
+   "designation": "Holy woman / legendary witness",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-13",
+   "month": 7,
+   "day": 13,
+   "name": "Henry",
+   "designation": "Missionary Bishop in Finland",
+   "period": "1156",
+   "alternates": []
+  },
+  {
+   "key": "07-14",
+   "month": 7,
+   "day": 14,
+   "name": "Argula von Grumbach",
+   "designation": "Scholar and Church Reformer",
+   "period": "c. 1554",
+   "alternates": []
+  },
+  {
+   "key": "07-15",
+   "month": 7,
+   "day": 15,
+   "name": "Vladimir of Kyiv",
+   "designation": "Ruler / Equal-to-the-Apostles",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-16",
+   "month": 7,
+   "day": 16,
+   "name": "Osmund of Salisbury",
+   "designation": "Bishop",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-17",
+   "month": 7,
+   "day": 17,
+   "name": "William White",
+   "designation": "Bishop of Pennsylvania",
+   "period": "1836",
+   "alternates": []
+  },
+  {
+   "key": "07-18",
+   "month": 7,
+   "day": 18,
+   "name": "Elizabeth Ferard",
+   "designation": "Deaconess",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-19",
+   "month": 7,
+   "day": 19,
+   "name": "Macrina of Caesarea",
+   "designation": "Monastic and Teacher",
+   "period": "379",
+   "alternates": []
+  },
+  {
+   "key": "07-20",
+   "month": 7,
+   "day": 20,
+   "name": "Elijah the Prophet",
+   "designation": "Prophet",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-21",
+   "month": 7,
+   "day": 21,
+   "name": "Maria Skobtsova",
+   "designation": "Monastic and Martyr",
+   "period": "1945",
+   "alternates": []
+  },
+  {
+   "key": "07-22",
+   "month": 7,
+   "day": 22,
+   "name": "Mary Magdalene",
+   "designation": "Apostle to the Apostles / Biblical saint",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-23",
+   "month": 7,
+   "day": 23,
+   "name": "John Cassian",
+   "designation": "Monastic and Theologian",
+   "period": "435",
+   "alternates": []
+  },
+  {
+   "key": "07-24",
+   "month": 7,
+   "day": 24,
+   "name": "Thomas à Kempis",
+   "designation": "Priest and Mystic",
+   "period": "1471",
+   "alternates": []
+  },
+  {
+   "key": "07-25",
+   "month": 7,
+   "day": 25,
+   "name": "James the Apostle",
+   "designation": "Apostle",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-26",
+   "month": 7,
+   "day": 26,
+   "name": "Joachim and Anne",
+   "designation": "Parents of the Blessed Virgin Mary",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-27",
+   "month": 7,
+   "day": 27,
+   "name": "William Reed Huntington",
+   "designation": "Priest",
+   "period": "1909",
+   "alternates": []
+  },
+  {
+   "key": "07-28",
+   "month": 7,
+   "day": 28,
+   "name": "Johann Sebastian Bach",
+   "designation": "Composer",
+   "period": "1750",
+   "alternates": []
+  },
+  {
+   "key": "07-29",
+   "month": 7,
+   "day": 29,
+   "name": "Mary, Martha, and Lazarus / Mary and Martha of Bethany",
+   "designation": "Biblical household / disciples",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "07-30",
+   "month": 7,
+   "day": 30,
+   "name": "William Wilberforce",
+   "designation": "Social Reformer",
+   "period": "1833",
+   "alternates": []
+  },
+  {
+   "key": "07-31",
+   "month": 7,
+   "day": 31,
+   "name": "Ignatius of Loyola",
+   "designation": "Priest and Spiritual Writer",
+   "period": "1556",
+   "alternates": []
+  },
+  {
+   "key": "08-01",
+   "month": 8,
+   "day": 1,
+   "name": "Joseph of Arimathea",
+   "designation": "Disciple of Jesus / burial witness",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "08-02",
+   "month": 8,
+   "day": 2,
+   "name": "Samuel Ferguson",
+   "designation": "Missionary Bishop for West Africa",
+   "period": "1916",
+   "alternates": []
+  },
+  {
+   "key": "08-03",
+   "month": 8,
+   "day": 3,
+   "name": "Joanna, Mary, and Salome",
+   "designation": "Myrrh-Bearing Women",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "08-04",
+   "month": 8,
+   "day": 4,
+   "name": "Anthony of Sourozh",
+   "designation": "Bishop and spiritual teacher",
+   "period": "2003",
+   "alternates": []
+  },
+  {
+   "key": "08-05",
+   "month": 8,
+   "day": 5,
+   "name": "Addai and Mari",
+   "designation": "Apostolic missionaries to Mesopotamia",
+   "period": "2nd century tradition",
+   "alternates": []
+  },
+  {
+   "key": "08-06",
+   "month": 8,
+   "day": 6,
+   "name": "The Transfiguration of Our Lord Jesus Christ",
+   "designation": "Feast of Our Lord",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "08-07",
+   "month": 8,
+   "day": 7,
+   "name": "John Mason Neale",
+   "designation": "Priest and Hymnographer",
+   "period": "1866",
+   "alternates": []
+  },
+  {
+   "key": "08-08",
+   "month": 8,
+   "day": 8,
+   "name": "Dominic",
+   "designation": "Priest and Friar",
+   "period": "1221",
+   "alternates": []
+  },
+  {
+   "key": "08-09",
+   "month": 8,
+   "day": 9,
+   "name": "Edith Stein (Teresa Benedicta of the Cross)",
+   "designation": "Philosopher / Monastic / Martyr",
+   "period": "1942",
+   "alternates": [
+    {
+     "name": "Mary Sumner",
+     "designation": "Founder of the Mothers’ Union",
+     "period": "1921"
+    }
+   ]
+  },
+  {
+   "key": "08-10",
+   "month": 8,
+   "day": 10,
+   "name": "Laurence of Rome",
+   "designation": "Deacon and Martyr",
+   "period": "258",
+   "alternates": []
+  },
+  {
+   "key": "08-11",
+   "month": 8,
+   "day": 11,
+   "name": "Clare of Assisi",
+   "designation": "Abbess / Monastic",
+   "period": "1253",
+   "alternates": []
+  },
+  {
+   "key": "08-12",
+   "month": 8,
+   "day": 12,
+   "name": "Florence Nightingale",
+   "designation": "Nurse",
+   "period": "1910",
+   "alternates": []
+  },
+  {
+   "key": "08-13",
+   "month": 8,
+   "day": 13,
+   "name": "Maximus the Confessor",
+   "designation": "Monk and theologian",
+   "period": "662",
+   "alternates": []
+  },
+  {
+   "key": "08-14",
+   "month": 8,
+   "day": 14,
+   "name": "Maximilian Kolbe",
+   "designation": "Priest and Martyr",
+   "period": "1941",
+   "alternates": []
+  },
+  {
+   "key": "08-15",
+   "month": 8,
+   "day": 15,
+   "name": "Assumption/Dormition of the Blessed Virgin Mary",
+   "designation": "Marian feast",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "08-16",
+   "month": 8,
+   "day": 16,
+   "name": "Charles Inglis",
+   "designation": "Bishop of Nova Scotia",
+   "period": "1816",
+   "alternates": []
+  },
+  {
+   "key": "08-17",
+   "month": 8,
+   "day": 17,
+   "name": "Samuel Johnson, Timothy Cutler, and Thomas Bradbury Chandler",
+   "designation": "Priests",
+   "period": "1772, 1765, 1790",
+   "alternates": []
+  },
+  {
+   "key": "08-18",
+   "month": 8,
+   "day": 18,
+   "name": "William Porcher DuBose",
+   "designation": "Priest and theologian",
+   "period": "1918",
+   "alternates": []
+  },
+  {
+   "key": "08-19",
+   "month": 8,
+   "day": 19,
+   "name": "John Eudes",
+   "designation": "Priest and founder",
+   "period": "1680",
+   "alternates": []
+  },
+  {
+   "key": "08-20",
+   "month": 8,
+   "day": 20,
+   "name": "Bernard of Clairvaux",
+   "designation": "Abbot and Theologian",
+   "period": "1153",
+   "alternates": []
+  },
+  {
+   "key": "08-21",
+   "month": 8,
+   "day": 21,
+   "name": "Tan Sri John Savarimuthu",
+   "designation": "Bishop of Western Malaysia",
+   "period": "1994",
+   "alternates": []
+  },
+  {
+   "key": "08-22",
+   "month": 8,
+   "day": 22,
+   "name": "Philip Benizi",
+   "designation": "Servite priest / peacemaker",
+   "period": "1285",
+   "alternates": []
+  },
+  {
+   "key": "08-23",
+   "month": 8,
+   "day": 23,
+   "name": "Martin de Porres, Rosa de Lima, and Toribio de Mogrovejo",
+   "designation": "Witnesses to the Faith in South America",
+   "period": "1639, 1617, 1606",
+   "alternates": []
+  },
+  {
+   "key": "08-24",
+   "month": 8,
+   "day": 24,
+   "name": "Bartholomew the Apostle",
+   "designation": "Apostle",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "08-25",
+   "month": 8,
+   "day": 25,
+   "name": "Louis IX of France",
+   "designation": "King",
+   "period": "1270",
+   "alternates": []
+  },
+  {
+   "key": "08-26",
+   "month": 8,
+   "day": 26,
+   "name": "Simeon Bachos the Ethiopian Eunuch",
+   "designation": "Biblical witness",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "08-27",
+   "month": 8,
+   "day": 27,
+   "name": "Thomas Gallaudet and Henry Winter Syle",
+   "designation": "Priests",
+   "period": "1902, 1890",
+   "alternates": []
+  },
+  {
+   "key": "08-28",
+   "month": 8,
+   "day": 28,
+   "name": "Augustine of Hippo",
+   "designation": "Bishop and Theologian",
+   "period": "430",
+   "alternates": []
+  },
+  {
+   "key": "08-29",
+   "month": 8,
+   "day": 29,
+   "name": "The Beheading of Saint John the Baptist",
+   "designation": "Biblical martyrdom",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "08-30",
+   "month": 8,
+   "day": 30,
+   "name": "Margaret Ward, Margaret Clitherow, and Anne Line",
+   "designation": "Martyrs",
+   "period": "1588, 1586, 1601",
+   "alternates": []
+  },
+  {
+   "key": "08-31",
+   "month": 8,
+   "day": 31,
+   "name": "Aidan of Lindisfarne",
+   "designation": "Bishop",
+   "period": "651",
+   "alternates": []
+  },
+  {
+   "key": "09-01",
+   "month": 9,
+   "day": 1,
+   "name": "David Pendleton Oakerhater",
+   "designation": "Deacon and Missionary",
+   "period": "1931",
+   "alternates": []
+  },
+  {
+   "key": "09-02",
+   "month": 9,
+   "day": 2,
+   "name": "The Martyrs of New Guinea",
+   "designation": "Martyrs",
+   "period": "1942",
+   "alternates": []
+  },
+  {
+   "key": "09-03",
+   "month": 9,
+   "day": 3,
+   "name": "Phoebe",
+   "designation": "Deacon",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "09-04",
+   "month": 9,
+   "day": 4,
+   "name": "Paul Jones",
+   "designation": "Bishop and Witness for Peace",
+   "period": "1941",
+   "alternates": []
+  },
+  {
+   "key": "09-05",
+   "month": 9,
+   "day": 5,
+   "name": "Bertin",
+   "designation": "Abbot",
+   "period": "c. 698",
+   "alternates": []
+  },
+  {
+   "key": "09-06",
+   "month": 9,
+   "day": 6,
+   "name": "Hannah More",
+   "designation": "Religious Writer and Philanthropist",
+   "period": "1833",
+   "alternates": []
+  },
+  {
+   "key": "09-07",
+   "month": 9,
+   "day": 7,
+   "name": "Kassiani",
+   "designation": "Poet and Hymnographer",
+   "period": "865",
+   "alternates": []
+  },
+  {
+   "key": "09-08",
+   "month": 9,
+   "day": 8,
+   "name": "The Nativity of the Blessed Virgin Mary",
+   "designation": "Marian feast",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "09-09",
+   "month": 9,
+   "day": 9,
+   "name": "Constance, Thecla, Ruth, Frances, Charles Parsons, and Louis Schuyler",
+   "designation": "Martyrs of Memphis",
+   "period": "1878",
+   "alternates": []
+  },
+  {
+   "key": "09-10",
+   "month": 9,
+   "day": 10,
+   "name": "Alexander Crummell",
+   "designation": "Priest",
+   "period": "1898",
+   "alternates": []
+  },
+  {
+   "key": "09-11",
+   "month": 9,
+   "day": 11,
+   "name": "Deiniol",
+   "designation": "Bishop / monastic founder",
+   "period": "traditionally 6th century",
+   "alternates": []
+  },
+  {
+   "key": "09-12",
+   "month": 9,
+   "day": 12,
+   "name": "John Henry Hobart",
+   "designation": "Bishop of New York",
+   "period": "1830",
+   "alternates": []
+  },
+  {
+   "key": "09-13",
+   "month": 9,
+   "day": 13,
+   "name": "Cyprian of Carthage",
+   "designation": "Bishop and Martyr",
+   "period": "258",
+   "alternates": []
+  },
+  {
+   "key": "09-14",
+   "month": 9,
+   "day": 14,
+   "name": "Albert of Jerusalem",
+   "designation": "Bishop and martyr / Carmelite rule-giver",
+   "period": "1214",
+   "alternates": []
+  },
+  {
+   "key": "09-15",
+   "month": 9,
+   "day": 15,
+   "name": "Catherine of Genoa",
+   "designation": "Mystic and Nurse",
+   "period": "1510",
+   "alternates": []
+  },
+  {
+   "key": "09-16",
+   "month": 9,
+   "day": 16,
+   "name": "Ninian",
+   "designation": "Bishop in Galloway",
+   "period": "c. 430",
+   "alternates": []
+  },
+  {
+   "key": "09-17",
+   "month": 9,
+   "day": 17,
+   "name": "Hildegard of Bingen",
+   "designation": "Mystic and Scholar",
+   "period": "1179",
+   "alternates": []
+  },
+  {
+   "key": "09-18",
+   "month": 9,
+   "day": 18,
+   "name": "Edward Bouverie Pusey",
+   "designation": "Priest",
+   "period": "1882",
+   "alternates": []
+  },
+  {
+   "key": "09-19",
+   "month": 9,
+   "day": 19,
+   "name": "Theodore of Tarsus",
+   "designation": "Archbishop of Canterbury",
+   "period": "690",
+   "alternates": []
+  },
+  {
+   "key": "09-20",
+   "month": 9,
+   "day": 20,
+   "name": "John Coleridge Patteson and his Companions",
+   "designation": "Bishop of Melanesia and Martyrs",
+   "period": "1871",
+   "alternates": []
+  },
+  {
+   "key": "09-21",
+   "month": 9,
+   "day": 21,
+   "name": "Saint Matthew",
+   "designation": "Apostle and Evangelist",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "09-22",
+   "month": 9,
+   "day": 22,
+   "name": "Philander Chase",
+   "designation": "Bishop of Ohio and Illinois",
+   "period": "1852",
+   "alternates": []
+  },
+  {
+   "key": "09-23",
+   "month": 9,
+   "day": 23,
+   "name": "Thecla of Iconium",
+   "designation": "Proto-Martyr Among Women",
+   "period": "c. 70",
+   "alternates": []
+  },
+  {
+   "key": "09-24",
+   "month": 9,
+   "day": 24,
+   "name": "Anna Ellison Butler Alexander",
+   "designation": "Deaconess and Teacher",
+   "period": "1947",
+   "alternates": []
+  },
+  {
+   "key": "09-25",
+   "month": 9,
+   "day": 25,
+   "name": "Sergius of Radonezh",
+   "designation": "Monastic",
+   "period": "1392",
+   "alternates": []
+  },
+  {
+   "key": "09-26",
+   "month": 9,
+   "day": 26,
+   "name": "Lancelot Andrewes",
+   "designation": "Bishop of Winchester",
+   "period": "1626",
+   "alternates": []
+  },
+  {
+   "key": "09-27",
+   "month": 9,
+   "day": 27,
+   "name": "Euphrosyne/Smaragdus of Alexandria",
+   "designation": "Monastic",
+   "period": "5th century",
+   "alternates": []
+  },
+  {
+   "key": "09-28",
+   "month": 9,
+   "day": 28,
+   "name": "Paula and Eustochium of Rome",
+   "designation": "Monastics and Scholars",
+   "period": "404 and c. 419",
+   "alternates": []
+  },
+  {
+   "key": "09-29",
+   "month": 9,
+   "day": 29,
+   "name": "Saint Michael and All Angels",
+   "designation": "Archangelic feast",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "09-30",
+   "month": 9,
+   "day": 30,
+   "name": "Jerome",
+   "designation": "Priest and Scholar",
+   "period": "420",
+   "alternates": []
+  },
+  {
+   "key": "10-01",
+   "month": 10,
+   "day": 1,
+   "name": "Thérèse of Lisieux",
+   "designation": "Monastic",
+   "period": "1897",
+   "alternates": []
+  },
+  {
+   "key": "10-02",
+   "month": 10,
+   "day": 2,
+   "name": "Remigius of Rheims",
+   "designation": "Bishop",
+   "period": "c. 530",
+   "alternates": []
+  },
+  {
+   "key": "10-03",
+   "month": 10,
+   "day": 3,
+   "name": "John Raleigh Mott",
+   "designation": "Ecumenist and Missionary",
+   "period": "1955",
+   "alternates": []
+  },
+  {
+   "key": "10-04",
+   "month": 10,
+   "day": 4,
+   "name": "Francis of Assisi",
+   "designation": "Friar and Deacon",
+   "period": "1226",
+   "alternates": []
+  },
+  {
+   "key": "10-05",
+   "month": 10,
+   "day": 5,
+   "name": "Faustina Kowalska",
+   "designation": "Monastic and Apostle of Divine Mercy",
+   "period": "1938",
+   "alternates": []
+  },
+  {
+   "key": "10-06",
+   "month": 10,
+   "day": 6,
+   "name": "Bruno of Cologne",
+   "designation": "Monastic founder",
+   "period": "1101",
+   "alternates": []
+  },
+  {
+   "key": "10-07",
+   "month": 10,
+   "day": 7,
+   "name": "Birgitta of Sweden",
+   "designation": "Mystic",
+   "period": "1373",
+   "alternates": []
+  },
+  {
+   "key": "10-08",
+   "month": 10,
+   "day": 8,
+   "name": "Alexander Penrose Forbes",
+   "designation": "Bishop of Brechin",
+   "period": "1875",
+   "alternates": []
+  },
+  {
+   "key": "10-09",
+   "month": 10,
+   "day": 9,
+   "name": "Robert Grosseteste",
+   "designation": "Bishop of Lincoln",
+   "period": "1253",
+   "alternates": []
+  },
+  {
+   "key": "10-10",
+   "month": 10,
+   "day": 10,
+   "name": "Vida Dutton Scudder",
+   "designation": "Educator",
+   "period": "1954",
+   "alternates": []
+  },
+  {
+   "key": "10-11",
+   "month": 10,
+   "day": 11,
+   "name": "Philip",
+   "designation": "Deacon and Evangelist",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "10-12",
+   "month": 10,
+   "day": 12,
+   "name": "Edith Cavell",
+   "designation": "Nurse",
+   "period": "1915",
+   "alternates": []
+  },
+  {
+   "key": "10-13",
+   "month": 10,
+   "day": 13,
+   "name": "Edward the Confessor",
+   "designation": "King of England",
+   "period": "1066",
+   "alternates": []
+  },
+  {
+   "key": "10-14",
+   "month": 10,
+   "day": 14,
+   "name": "Samuel Isaac Joseph Schereschewsky",
+   "designation": "Bishop and Missionary",
+   "period": "1906",
+   "alternates": []
+  },
+  {
+   "key": "10-15",
+   "month": 10,
+   "day": 15,
+   "name": "Teresa of Avila",
+   "designation": "Mystic and Monastic Reformer",
+   "period": "1582",
+   "alternates": []
+  },
+  {
+   "key": "10-16",
+   "month": 10,
+   "day": 16,
+   "name": "Current LFF Reformation Martyrs form: Hugh Latimer Nicholas Ridley and Thomas Cranmer",
+   "designation": "Bishops / Archbishop and Martyrs",
+   "period": "1555, 1556",
+   "alternates": []
+  },
+  {
+   "key": "10-17",
+   "month": 10,
+   "day": 17,
+   "name": "Ignatius of Antioch",
+   "designation": "Bishop and Martyr",
+   "period": "c. 115",
+   "alternates": []
+  },
+  {
+   "key": "10-18",
+   "month": 10,
+   "day": 18,
+   "name": "Saint Luke the Evangelist",
+   "designation": "Evangelist",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "10-19",
+   "month": 10,
+   "day": 19,
+   "name": "Henry Martyn",
+   "designation": "Priest and Missionary",
+   "period": "1812",
+   "alternates": []
+  },
+  {
+   "key": "10-20",
+   "month": 10,
+   "day": 20,
+   "name": "Cornelius the Centurion",
+   "designation": "Biblical convert",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "10-21",
+   "month": 10,
+   "day": 21,
+   "name": "Hilarion",
+   "designation": "Monastic",
+   "period": "371",
+   "alternates": []
+  },
+  {
+   "key": "10-22",
+   "month": 10,
+   "day": 22,
+   "name": "Donatus of Fiesole",
+   "designation": "Bishop",
+   "period": "876",
+   "alternates": []
+  },
+  {
+   "key": "10-23",
+   "month": 10,
+   "day": 23,
+   "name": "Saint James of Jerusalem",
+   "designation": "Brother of Our Lord and Martyr",
+   "period": "c. 62",
+   "alternates": []
+  },
+  {
+   "key": "10-24",
+   "month": 10,
+   "day": 24,
+   "name": "Hiram Hisanori Kano",
+   "designation": "Priest",
+   "period": "1986",
+   "alternates": []
+  },
+  {
+   "key": "10-25",
+   "month": 10,
+   "day": 25,
+   "name": "Tabitha (Dorcas) of Joppa",
+   "designation": "Biblical disciple",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "10-26",
+   "month": 10,
+   "day": 26,
+   "name": "Alfred the Great",
+   "designation": "King of the West Saxons",
+   "period": "899",
+   "alternates": []
+  },
+  {
+   "key": "10-27",
+   "month": 10,
+   "day": 27,
+   "name": "Odran of Iona",
+   "designation": "Monastic martyr?",
+   "period": "c. 563",
+   "alternates": []
+  },
+  {
+   "key": "10-28",
+   "month": 10,
+   "day": 28,
+   "name": "Saint Simon and Saint Jude",
+   "designation": "Apostles",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "10-29",
+   "month": 10,
+   "day": 29,
+   "name": "James Hannington and his Companions",
+   "designation": "Bishop and Martyrs",
+   "period": "1885",
+   "alternates": []
+  },
+  {
+   "key": "10-30",
+   "month": 10,
+   "day": 30,
+   "name": "Maryam of Qidun",
+   "designation": "Monastic",
+   "period": "4th century",
+   "alternates": []
+  },
+  {
+   "key": "10-31",
+   "month": 10,
+   "day": 31,
+   "name": "Paul Shinji Sasaki and Philip Lindel Tsen",
+   "designation": "Bishops",
+   "period": "1946, 1954",
+   "alternates": []
+  },
+  {
+   "key": "11-01",
+   "month": 11,
+   "day": 1,
+   "name": "All Saints",
+   "designation": "Principal Feast / communion of saints",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "11-02",
+   "month": 11,
+   "day": 2,
+   "name": "All Souls / All the Faithful Departed",
+   "designation": "Commemoration of the Dead",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "11-03",
+   "month": 11,
+   "day": 3,
+   "name": "Richard Hooker",
+   "designation": "Priest and Theologian",
+   "period": "1600",
+   "alternates": []
+  },
+  {
+   "key": "11-04",
+   "month": 11,
+   "day": 4,
+   "name": "Adeline Blanchard Tyler and her Companions",
+   "designation": "Deaconess and companions",
+   "period": "1875",
+   "alternates": []
+  },
+  {
+   "key": "11-05",
+   "month": 11,
+   "day": 5,
+   "name": "Zechariah and Elizabeth",
+   "designation": "Parents of John the Baptist",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "11-06",
+   "month": 11,
+   "day": 6,
+   "name": "William Temple",
+   "designation": "Archbishop of Canterbury",
+   "period": "1944",
+   "alternates": []
+  },
+  {
+   "key": "11-07",
+   "month": 11,
+   "day": 7,
+   "name": "Willibrord",
+   "designation": "Archbishop of Utrecht and Missionary to Frisia",
+   "period": "739",
+   "alternates": []
+  },
+  {
+   "key": "11-08",
+   "month": 11,
+   "day": 8,
+   "name": "Ammonius",
+   "designation": "Hermit",
+   "period": "c. 403",
+   "alternates": []
+  },
+  {
+   "key": "11-09",
+   "month": 11,
+   "day": 9,
+   "name": "Richard Rolle, Walter Hilton, and Margery Kempe",
+   "designation": "Mystics",
+   "period": "1349, 1396, c. 1440",
+   "alternates": []
+  },
+  {
+   "key": "11-10",
+   "month": 11,
+   "day": 10,
+   "name": "Leo the Great",
+   "designation": "Bishop of Rome and Teacher of the Faith",
+   "period": "461",
+   "alternates": []
+  },
+  {
+   "key": "11-11",
+   "month": 11,
+   "day": 11,
+   "name": "Martin of Tours",
+   "designation": "Bishop",
+   "period": "397",
+   "alternates": []
+  },
+  {
+   "key": "11-12",
+   "month": 11,
+   "day": 12,
+   "name": "Charles Simeon",
+   "designation": "Priest",
+   "period": "1836",
+   "alternates": []
+  },
+  {
+   "key": "11-13",
+   "month": 11,
+   "day": 13,
+   "name": "Frances Xavier Cabrini",
+   "designation": "Religious founder and missionary",
+   "period": "1917",
+   "alternates": []
+  },
+  {
+   "key": "11-14",
+   "month": 11,
+   "day": 14,
+   "name": "Consecration of Samuel Seabury",
+   "designation": "Ecclesial event / first American episcopal consecration",
+   "period": "1784",
+   "alternates": []
+  },
+  {
+   "key": "11-15",
+   "month": 11,
+   "day": 15,
+   "name": "Herman of Alaska",
+   "designation": "Missionary",
+   "period": "1837",
+   "alternates": []
+  },
+  {
+   "key": "11-16",
+   "month": 11,
+   "day": 16,
+   "name": "Margaret of Scotland",
+   "designation": "Queen and helper of the poor",
+   "period": "1093",
+   "alternates": []
+  },
+  {
+   "key": "11-17",
+   "month": 11,
+   "day": 17,
+   "name": "Hugh of Lincoln",
+   "designation": "Bishop",
+   "period": "1200",
+   "alternates": []
+  },
+  {
+   "key": "11-18",
+   "month": 11,
+   "day": 18,
+   "name": "Hilda of Whitby",
+   "designation": "Abbess",
+   "period": "680",
+   "alternates": []
+  },
+  {
+   "key": "11-19",
+   "month": 11,
+   "day": 19,
+   "name": "Elizabeth of Hungary",
+   "designation": "Princess / worker of mercy",
+   "period": "1231",
+   "alternates": []
+  },
+  {
+   "key": "11-20",
+   "month": 11,
+   "day": 20,
+   "name": "Edmund of East Anglia",
+   "designation": "King and Martyr",
+   "period": "870",
+   "alternates": []
+  },
+  {
+   "key": "11-21",
+   "month": 11,
+   "day": 21,
+   "name": "Mechthilde of Hackeborn and Gertrude the Great",
+   "designation": "Mystics and Theologians",
+   "period": "1298 and 1302",
+   "alternates": []
+  },
+  {
+   "key": "11-22",
+   "month": 11,
+   "day": 22,
+   "name": "Clive Staples Lewis",
+   "designation": "Apologist and Spiritual Writer",
+   "period": "1963",
+   "alternates": []
+  },
+  {
+   "key": "11-23",
+   "month": 11,
+   "day": 23,
+   "name": "Clement of Rome",
+   "designation": "Bishop and Martyr",
+   "period": "c. 100",
+   "alternates": []
+  },
+  {
+   "key": "11-24",
+   "month": 11,
+   "day": 24,
+   "name": "Catherine of Alexandria, Barbara of Nicomedia, and Margaret of Antioch",
+   "designation": "Martyrs",
+   "period": "c. 305",
+   "alternates": [
+    {
+     "name": "Lucy Menzies",
+     "designation": "Scholar and Mystic",
+     "period": "1954"
+    }
+   ]
+  },
+  {
+   "key": "11-25",
+   "month": 11,
+   "day": 25,
+   "name": "James Otis Sargent Huntington",
+   "designation": "Monastic and Priest",
+   "period": "1935",
+   "alternates": []
+  },
+  {
+   "key": "11-26",
+   "month": 11,
+   "day": 26,
+   "name": "Sojourner Truth",
+   "designation": "Preacher and abolitionist",
+   "period": "1883",
+   "alternates": []
+  },
+  {
+   "key": "11-27",
+   "month": 11,
+   "day": 27,
+   "name": "Virgil of Salzburg",
+   "designation": "Bishop",
+   "period": "784",
+   "alternates": []
+  },
+  {
+   "key": "11-28",
+   "month": 11,
+   "day": 28,
+   "name": "Kamehameha and Emma of Hawai‘i",
+   "designation": "King and Queen",
+   "period": "1864 and 1885",
+   "alternates": []
+  },
+  {
+   "key": "11-29",
+   "month": 11,
+   "day": 29,
+   "name": "Dorothy Day",
+   "designation": "Writer and worker of mercy",
+   "period": "1980",
+   "alternates": []
+  },
+  {
+   "key": "11-30",
+   "month": 11,
+   "day": 30,
+   "name": "Saint Andrew the Apostle",
+   "designation": "Apostle",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "12-01",
+   "month": 12,
+   "day": 1,
+   "name": "Charles de Foucauld",
+   "designation": "Monastic and Martyr",
+   "period": "1916",
+   "alternates": []
+  },
+  {
+   "key": "12-02",
+   "month": 12,
+   "day": 2,
+   "name": "Channing Moore Williams",
+   "designation": "Bishop and Missionary",
+   "period": "1910",
+   "alternates": []
+  },
+  {
+   "key": "12-03",
+   "month": 12,
+   "day": 3,
+   "name": "Francis Xavier",
+   "designation": "Priest and Missionary",
+   "period": "1552",
+   "alternates": []
+  },
+  {
+   "key": "12-04",
+   "month": 12,
+   "day": 4,
+   "name": "John of Damascus",
+   "designation": "Priest and Theologian",
+   "period": "c. 760",
+   "alternates": []
+  },
+  {
+   "key": "12-05",
+   "month": 12,
+   "day": 5,
+   "name": "Clement of Alexandria",
+   "designation": "Priest and Theologian",
+   "period": "c. 210",
+   "alternates": []
+  },
+  {
+   "key": "12-06",
+   "month": 12,
+   "day": 6,
+   "name": "Nicholas of Myra",
+   "designation": "Bishop",
+   "period": "c. 342",
+   "alternates": []
+  },
+  {
+   "key": "12-07",
+   "month": 12,
+   "day": 7,
+   "name": "Ambrose of Milan",
+   "designation": "Bishop and Theologian",
+   "period": "397",
+   "alternates": []
+  },
+  {
+   "key": "12-08",
+   "month": 12,
+   "day": 8,
+   "name": "Nicholas Ferrar",
+   "designation": "Deacon and founder of Little Gidding",
+   "period": "1637",
+   "alternates": []
+  },
+  {
+   "key": "12-09",
+   "month": 12,
+   "day": 9,
+   "name": "Leocadia of Toledo",
+   "designation": "Martyr",
+   "period": "4th century",
+   "alternates": []
+  },
+  {
+   "key": "12-10",
+   "month": 12,
+   "day": 10,
+   "name": "Thomas Merton",
+   "designation": "Monastic and Spiritual Writer",
+   "period": "1968",
+   "alternates": []
+  },
+  {
+   "key": "12-11",
+   "month": 12,
+   "day": 11,
+   "name": "Frederick Howden Jr.",
+   "designation": "Priest and Chaplain of the Armed Forces",
+   "period": "1941",
+   "alternates": []
+  },
+  {
+   "key": "12-12",
+   "month": 12,
+   "day": 12,
+   "name": "Francis de Sales and Jane de Chantal",
+   "designation": "Bishop and Vowed Religious",
+   "period": "1622, 1641",
+   "alternates": []
+  },
+  {
+   "key": "12-13",
+   "month": 12,
+   "day": 13,
+   "name": "Lucy of Syracuse",
+   "designation": "Martyr",
+   "period": "304",
+   "alternates": []
+  },
+  {
+   "key": "12-14",
+   "month": 12,
+   "day": 14,
+   "name": "John of the Cross",
+   "designation": "Mystic and Monastic Reformer",
+   "period": "1591",
+   "alternates": []
+  },
+  {
+   "key": "12-15",
+   "month": 12,
+   "day": 15,
+   "name": "Nino of Georgia / Christiana",
+   "designation": "Evangelist of Georgia",
+   "period": "c. 332",
+   "alternates": []
+  },
+  {
+   "key": "12-16",
+   "month": 12,
+   "day": 16,
+   "name": "Richard Upjohn",
+   "designation": "Architect",
+   "period": "1878",
+   "alternates": []
+  },
+  {
+   "key": "12-17",
+   "month": 12,
+   "day": 17,
+   "name": "Dorothy L. Sayers",
+   "designation": "Apologist and Spiritual Writer",
+   "period": "1957",
+   "alternates": []
+  },
+  {
+   "key": "12-18",
+   "month": 12,
+   "day": 18,
+   "name": "Charles Wesley",
+   "designation": "Hymnwriter",
+   "period": "1788",
+   "alternates": []
+  },
+  {
+   "key": "12-19",
+   "month": 12,
+   "day": 19,
+   "name": "Lillian Trasher",
+   "designation": "Missionary in Egypt",
+   "period": "1961",
+   "alternates": []
+  },
+  {
+   "key": "12-20",
+   "month": 12,
+   "day": 20,
+   "name": "Ammon and Companions",
+   "designation": "Martyrs",
+   "period": "250",
+   "alternates": []
+  },
+  {
+   "key": "12-21",
+   "month": 12,
+   "day": 21,
+   "name": "Thomas the Apostle",
+   "designation": "Apostle",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "12-22",
+   "month": 12,
+   "day": 22,
+   "name": "Chaeremon of Nilopolis and Companions",
+   "designation": "Martyrs",
+   "period": "250",
+   "alternates": []
+  },
+  {
+   "key": "12-23",
+   "month": 12,
+   "day": 23,
+   "name": "Thorlak of Iceland",
+   "designation": "Bishop",
+   "period": "1193",
+   "alternates": []
+  },
+  {
+   "key": "12-24",
+   "month": 12,
+   "day": 24,
+   "name": "The Eve of the Nativity",
+   "designation": "Major vigil / Christmas Eve",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "12-25",
+   "month": 12,
+   "day": 25,
+   "name": "The Nativity of Our Lord Jesus Christ",
+   "designation": "Principal Feast",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "12-26",
+   "month": 12,
+   "day": 26,
+   "name": "Stephen",
+   "designation": "Deacon and Protomartyr",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "12-27",
+   "month": 12,
+   "day": 27,
+   "name": "John the Apostle and Evangelist",
+   "designation": "Apostle and Evangelist",
+   "period": "1st century",
+   "alternates": []
+  },
+  {
+   "key": "12-28",
+   "month": 12,
+   "day": 28,
+   "name": "The Holy Innocents",
+   "designation": "Martyrs",
+   "period": "",
+   "alternates": []
+  },
+  {
+   "key": "12-29",
+   "month": 12,
+   "day": 29,
+   "name": "Thomas Becket",
+   "designation": "Archbishop of Canterbury and Martyr",
+   "period": "1170",
+   "alternates": []
+  },
+  {
+   "key": "12-30",
+   "month": 12,
+   "day": 30,
+   "name": "Egwin of Worcester",
+   "designation": "Bishop",
+   "period": "717",
+   "alternates": []
+  },
+  {
+   "key": "12-31",
+   "month": 12,
+   "day": 31,
+   "name": "Frances Joseph-Gaudet",
+   "designation": "Educator and Social Reformer",
+   "period": "1934",
+   "alternates": []
+  }
+ ]
+}

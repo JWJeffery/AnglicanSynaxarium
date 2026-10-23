@@ -1,0 +1,12 @@
+---
+import Base from '../../layouts/Base.astro';
+import PrintSection from '../../components/PrintSection.astro';
+import KalIndex from '../../components/KalIndex.astro';
+import { keyOf } from '../../lib/church-year';
+const now = new Date();
+const key = keyOf(now.getUTCMonth() + 1, now.getUTCDate());
+---
+<Base title="Print | An Anglican Synaxarium" description="Print the Saint of the Day or the week to read beside your Prayer Book." path="/print/">
+  <main><PrintSection key={key} /></main>
+  <KalIndex />
+</Base>

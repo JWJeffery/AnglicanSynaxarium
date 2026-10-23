@@ -1,0 +1,32 @@
+---
+key: "12-05"
+title: "Clement of Alexandria, Priest and Theologian"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Clement of Alexandria, priest and theologian, who sought the wisdom of God in Christ and taught that the knowledge of truth must lead to a life transformed by love.
+
+Clement was born about the middle of the second century, probably into a Greek-speaking family. He studied Greek philosophy and traveled through the eastern Mediterranean, seeking instruction from Christian teachers who could help him understand the faith. His travels brought him to Alexandria in Egypt, a great city of commerce and learning, where Greek, Egyptian, and Jewish traditions met.
+
+In Alexandria he met the Christian teacher Pantaenus. Clement became a teacher of the Christian faith, and his writings addressed both believers and people formed by Greek learning. He taught that the Word through whom God made the world had come among us in Jesus Christ. That Word was not merely an object of study, but the Lord who instructs, heals, and saves.
+
+Clement taught in a world where some Christians distrusted Greek philosophy, while other teachers claimed access to hidden religious knowledge and rejected the goodness of the created world. Clement rejected those claims, but he did not reject the pursuit of deeper knowledge. He taught that Scripture opened the true knowledge of Christ to all, not just to a privileged few. He called the mature Christian a true gnostic, using a Greek word meaning “one who knows.” Such knowledge of Christ grew deeper through faith, disciplined living, and love.
+
+In his Exhortation to the Greeks, Clement called his readers to turn from the worship of the gods to the living Word. In his Miscellanies, the Stromata, he drew together Scripture and Greek learning to explore the growth of Christian understanding. He believed that philosophy could prepare minds to receive truth, but that the fullness of truth was given in Christ. Learning therefore belonged to the life of discipleship, not apart from it.
+
+To make this clear, Clement wrote about Jesus as the divine Instructor. In a work later called The Instructor, he described how Christ directs the whole of human life. The Lord does not teach only when Christians gather to hear Scripture. He trains their appetites, speech, habits, use of possessions, and treatment of other people. Clement discussed clothing, food, hospitality, and the temptations of luxury because he believed that nothing ordinary lay beyond the reach of Christ's healing.
+
+Clement also took up the encounter between Jesus and the rich young man in the Gospel. In a work called Who Is the Rich Man That Shall Be Saved?, he taught that possessions must not govern the soul. Those who had wealth were to release its hold upon the heart and use it generously for those in need. A person could possess wealth without being possessed by it.
+
+The Christian life, Clement said, required exercise. As an athlete submitted to training, so a disciple must practice obedience, patience, generosity, and self-command. Christ himself was the teacher and healer of the soul. The knowledge Clement prized could not be separated from a growing likeness to the Lord whom Christians followed.
+
+Clement also preserved a story about the Apostle John. A young man whom John had entrusted to a bishop fell away and became the leader of a band of robbers. When John learned what had happened, he went in search of him. The young man fled in shame, but the elderly apostle pursued him. John brought him back, praying and fasting with him until he was restored to the Church. Clement offered the story as an example of true repentance.
+
+In 202, persecution under Emperor Septimius Severus disrupted Christian life in Alexandria. Clement left the city and continued his life elsewhere in the eastern provinces. The surviving record does not tell us exactly where or when he died. His writings endured, carrying his teaching on Christian knowledge, discipline, and love to later generations.
+
+Clement's books returned again and again to Christ the Word, who calls human beings not only to know the truth but to be formed by it. He placed the work of learning alongside prayer, generosity, and repentance. With him, we ask God for the wisdom to discern what is true and for the grace to follow Christ in the conduct of our lives.
+
+## Collect
+
+O God of unsearchable wisdom, you gave your servant Clement grace to understand and teach the truth as it is in Jesus Christ, the source of all truth: Grant to your church the same grace to discern your Word wherever truth is found; through Jesus Christ our unfailing light, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.

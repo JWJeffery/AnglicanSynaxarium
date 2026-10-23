@@ -1,0 +1,34 @@
+---
+key: "11-05"
+title: "Zechariah and Elizabeth, Parents of John the Baptist"
+status: approved
+opening: greater-church
+---
+
+Today the Greater Church commemorates Zechariah and Elizabeth, the parents of Saint John the Baptist.
+
+Saint Luke tells us that they were both righteous before God, walking faithfully in the commandments of the Lord. Yet they had no child, and both had grown old. Elizabeth bore the public reproach of childlessness. Zechariah continued his priestly service.
+
+When Zechariah’s priestly division was serving in the Temple, the lot fell to him to enter the sanctuary and offer incense. Outside, the people prayed. Inside, beside the altar, the angel Gabriel appeared and announced that Elizabeth would bear a son. The child was to be named John. He would be filled with the Holy Spirit even before his birth. In the spirit and power of Elijah, he would turn many of Israel’s children to the Lord their God, preparing a people for the coming of the Lord.
+
+Zechariah asked how he could know that this promise was true, since he and Elizabeth were both old. Because he had not believed the angel’s word, he would remain unable to speak until it was fulfilled.
+
+Outside the sanctuary, the people wondered why Zechariah had taken so long. When he emerged, he could not speak to them and had to make signs. They understood that he had seen a vision. He completed his days of service and returned home, still unable to speak, but bearing the promise that Elizabeth would have a son.
+
+Elizabeth conceived. For five months she remained in seclusion. She gave thanks that the Lord had looked upon her with favor and taken away her disgrace among her people.
+
+In the sixth month, Mary of Nazareth came to their home in the hill country. When Elizabeth heard Mary’s greeting, the child leaped in her womb, and Elizabeth was filled with the Holy Spirit. She blessed Mary, called her the mother of her Lord, and praised her faith in God’s promise.
+
+Before Christ's birth, Elizabeth, filled with the Holy Spirit, recognized him as her Lord, hidden in the womb of the Virgin Mary. Mary answered with her own song of praise to the God who had looked with favor upon his lowly servant. She stayed with Elizabeth for about three months before returning home.
+
+When Elizabeth’s son was born, neighbors and relatives rejoiced with her. At his circumcision they expected him to receive his father’s name, but Elizabeth said that he was to be called John. When they appealed to Zechariah, he asked for a writing tablet and wrote, “His name is John.” Both parents gave the child the name commanded by the angel. Immediately Zechariah's tongue was released. The priest who had questioned God's promise now opened his mouth to praise the God who had fulfilled it.
+
+Filled with the Holy Spirit, Zechariah praised the God of Israel, who had visited and redeemed his people. He sang of covenant mercy, deliverance, holiness, and peace. Then he addressed the infant John: the child would be called the prophet of the Most High and would go before the Lord to prepare his way. The son whom they had named in obedience would give God’s people knowledge of salvation through the forgiveness of their sins.
+
+Zechariah’s song, the *Benedictus*, has become one of the great canticles of Morning Prayer. In its words, Christians bless the God whose tender mercy brings light to those who sit in darkness and guides our feet into the way of peace. Elizabeth’s blessing resounds wherever the Church remembers the Visitation and honors the faith of Mary.
+
+God’s faithfulness does not mean that every sorrow ends as theirs did. The Church sings Zechariah's words amid grief as well as thanksgiving, bearing witness to the light he proclaimed even when that light seems distant. With Elizabeth, may we recognize and welcome our Lord; with Zechariah, may we find our voice in blessing the God who remembers his people.
+
+## Collect
+
+God of Israel, you remembered your covenant and visited your people with salvation, giving Zechariah and Elizabeth a son to prepare the way of your incarnate Word: Grant us grace to wait faithfully upon your promise, to recognize Christ when he comes among us, and to prepare his way in the lives of others; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.

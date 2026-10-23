@@ -1,0 +1,26 @@
+---
+key: "12-20"
+title: "Ammon and his Companions, Martyrs at Alexandria"
+status: approved
+opening: greater-church
+---
+
+Today the Greater Church commemorates Ammon and his companions, martyrs at Alexandria, who stood beside a Christian in danger of denying Christ.
+
+During the persecution under Emperor Decius, a Christian was brought before the tribunal. As the hearing continued, he began to waver.
+
+Four soldiers stood nearby: Ammon, Zeno, Ptolemy, and Ingen. An elderly man named Theophilus was with them. They saw the man's courage failing and tried to strengthen him. They made signs with their faces, stretched out their hands, and urged him through their gestures to remain faithful.
+
+Their movements drew the attention of the court. Before anyone could seize them, the five went forward and declared that they too were Christians.
+
+The governor and his council were frightened. The men who now faced suffering stood firm, while those who held the power to condemn them trembled. Ammon and his companions left the tribunal rejoicing that they had confessed Christ.
+
+They were put to death for their confession.
+
+Their encouragement had become a public offering of themselves. They had tried to strengthen a frightened believer and then accepted the danger of standing beside him.
+
+May Christ give us eyes to recognize the person whose courage is failing, and charity that stays near when faith becomes costly.
+
+## Collect
+
+Almighty God, you strengthened Ammon and his companions to confess your Son and uphold a fellow Christian in his trial: Give us courage to stand beside those who are afraid, and keep us faithful in the fellowship of your saints; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.

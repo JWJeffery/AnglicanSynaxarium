@@ -1,0 +1,36 @@
+---
+key: "11-06"
+title: "William Temple, Archbishop of Canterbury"
+status: approved
+opening: church
+---
+
+Today the Church commemorates William Temple, Archbishop of Canterbury, teacher of the faith, and servant of Christian unity.
+
+William was born in 1881, the son of Frederick Temple, then Bishop of Exeter and later Archbishop of Canterbury. At Oxford, William distinguished himself in classics and philosophy and became a fellow of Queen’s College. He hoped to enter the priesthood, but his path to ordination was difficult.
+
+In 1906, Bishop Francis Paget declined to ordain him because William was uncertain about the Virgin Birth and the bodily Resurrection of Christ. William continued his studies, and Archbishop Randall Davidson ordained him deacon in 1908 and priest the following year. By 1913, he openly affirmed both doctrines. His own struggle to understand the Church’s confession of Christ would inform a lifetime devoted to teaching the mystery of the Word made flesh.
+
+After serving as headmaster of Repton School, William became Rector of Saint James’s, Piccadilly. In 1917 he resigned to work for the Life and Liberty movement, seeking greater self-government for the Church and a fuller voice for the laity in its councils.
+
+William became Bishop of Manchester in 1921. In that industrial diocese, he encountered the hardships of working families and the insecurity of unemployment. His belief in the Incarnation gave these concerns their urgency. As he wrote, “the personality of every man and woman is sacred.” In 1924 he chaired the Conference on Christian Politics, Economics and Citizenship.
+
+He became Archbishop of York in 1929. Two years later, during a mission at Oxford, a congregation gathered in the University Church to sing “When I Survey the Wondrous Cross.” Before the final verse, William stopped the singing. He asked those who could not sincerely offer their whole lives to Christ to remain silent. Those who meant it only a little, but wanted to mean it more, should sing softly. When the hymn resumed, the congregation sang more quietly. The words they had been singing required an answer from them.
+
+In his Gifford Lectures, William called Christianity “the most avowedly materialist of all the great religions.” God had created the material world and, in Jesus Christ, had himself taken flesh. Bread, wine, and water could serve as instruments of divine grace. The Church could not worship the Word made flesh while remaining indifferent to human suffering.
+
+William also labored for Christian unity. He sought to bring divided churches together in faith, worship, and service, helping prepare the way for the World Council of Churches. In 1938 he became chairman of its provisional committee, although he would not live to see its first assembly.
+
+In his *Readings in St. John's Gospel*, published in 1939 and 1940, William contemplated the eternal Word who became flesh and dwelt among us. In 1941, at Malvern, he gathered Christians to consider how society might be rebuilt after the war.
+
+In 1942 William became Archbishop of Canterbury. At his enthronement, he called the worldwide fellowship of Christians “the great new fact of our era.” That year he helped establish the Council of Christians and Jews to oppose antisemitism and foster understanding between their communities.
+
+As the Nazi murder of Europe’s Jews became known, William demanded that Britain provide refuge. On March 23, 1943, he urged the House of Lords to support immediate assistance and temporary asylum for those threatened with massacre in German-occupied Europe. The Lords adopted his resolution.
+
+Despite worsening illness, William continued preaching, broadcasting, and carrying out his duties. On October 26, 1944, he died at Westgate-on-Sea, aged sixty-three. He had served as Archbishop of Canterbury for only two and a half years. Following his cremation, his ashes were interred in the Great Cloister of Canterbury Cathedral.
+
+For William Temple, faith in the Word made flesh demanded a life of worship, mercy, and courage. May we recognize Christ in those who suffer, defend those who are threatened, and make our faith visible in works of love.
+
+## Collect
+
+O God of light and love, you illumined your Church through the witness of your servant William Temple: Inspire us, we pray, by his teaching and example, that we may rejoice with courage, confidence, and faith in the Word made flesh, and may be led to establish that city which has justice for its foundation and love for its law; through Jesus Christ, the light of the world, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.

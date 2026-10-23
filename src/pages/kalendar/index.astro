@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import MonthSection from '../../components/MonthSection.astro';
+import KalIndex from '../../components/KalIndex.astro';
+import { keyOf, MONTHS, MONTH_SLUGS } from '../../lib/church-year';
+const now = new Date();
+const year = now.getUTCFullYear(), month = now.getUTCMonth() + 1;
+const key = keyOf(month, now.getUTCDate());
+---
+<Base title="Kalendar | An Anglican Synaxarium" description="Every day of the year, with its saint." path="/kalendar/">
+  <main>
+    <section class="kal-section" style="border-top:0">
+      <div class="wrap">
+        <MonthSection year={year} month={month} todayKey={key} heading="h1" />
+        <nav aria-label="Months" class="kal-nav" style="flex-wrap:wrap">
+          {MONTHS.map((m, i) => <a class="btn" href={`/kalendar/${MONTH_SLUGS[i]}/`}>{m}</a>)}
+        </nav>
+      </div>
+    </section>
+  </main>
+  <KalIndex />
+  <script>
+    import { initKalendar } from '../../scripts/kalendar';
+    initKalendar();
+  </script>
+</Base>

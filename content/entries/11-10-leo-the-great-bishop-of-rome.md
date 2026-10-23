@@ -1,0 +1,34 @@
+---
+key: "11-10"
+title: "Leo the Great, Bishop of Rome"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Leo the Great, Bishop of Rome, who taught the faithful to recognize the dignity they had received in Christ and to serve him in the suffering people entrusted to their care.
+
+Leo was born about the year 400 and came from a Tuscan family. As a deacon in the Roman Church, he was entrusted with its possessions, its finances, and the distribution of food. The needs of a great city passed through his hands. Gifts had to reach the hungry; the resources offered by the faithful had to become the means of sustaining their neighbors.
+
+In 440, Leo was away in Gaul on a mission to reconcile two powerful Roman officials when he was elected Bishop of Rome. He returned to a ministry that would occupy the remaining twenty-one years of his life. Across the western provinces, imperial government was weakening, armies were on the move, and communities looked to their Bishops for help. Leo answered letters, intervened in disputes, and sought to maintain the order and communion of the churches. He understood his office as a charge received through the Apostle Peter, whose confession of Christ he was bound to preserve.
+
+In Rome, Leo preached through the seasons of the Christian year. At Christmas he proclaimed the wonder of the eternal Son taking our flesh. The child born of Mary belonged fully to the human family. In him, God had come near enough to share our weakness, bear our suffering, and restore our life.
+
+“Christian, acknowledge your dignity,” Leo told his hearers. Through baptism they had become members of Christ’s body and dwelling places of the Holy Spirit. They had been brought into participation in the divine life. Their conduct was to become worthy of that gift. A person joined to Christ could no longer treat the body as worthless, or the life of a neighbor as something beneath concern.
+
+Leo pressed this teaching into the handling of money, food, and possessions. What God had given was entrusted to its holders for use. Wealth hoarded away from the hungry, the sick, the captive, and the exile failed its purpose. Even a small gift from someone with little could bear abundant fruit. When the churches gathered their offerings, each person had a share in the work of mercy. Christ, who had made human nature his own, received their kindness in those who needed it.
+
+Leo also defended the Church’s confession of Christ. In 449, he wrote to Flavian, Bishop of Constantinople, during a bitter dispute over the Incarnation. His letter, later known as the Tome, insisted that the same Lord Jesus was truly divine and truly human. The Word had taken real flesh from Mary. His humanity had not been swallowed up by his divinity, and his divine life had not been diminished by becoming human. The one Christ who worked wonders also endured weariness and suffering; the Lord of life truly entered death for our salvation.
+
+At the council held in Ephesus in 449, Leo’s letter was not read, and Flavian was deposed. Leo rejected the council’s decisions and appealed for a new council.
+
+When the Council of Chalcedon met in 451, Leo’s letter was examined alongside earlier statements of faith and received as a faithful confession of Christ. The controversy left deep divisions among Christians, but the Bishops assembled at the council affirmed his teaching. For Leo, the mystery concerned the salvation of every person in his care. The Savior who raised humanity into communion with God had truly shared the life he came to heal.
+
+The following year, the danger of war brought Leo’s pastoral charge onto the road. Attila’s army had entered Italy, and Leo went with an embassy to meet him. The envoys sought the army’s withdrawal. Attila turned back, and Rome was spared that invasion.
+
+Three years later, a Vandal army under Genseric approached the city. Leo again went out to plead for its people. This time he could not prevent the sack. The invaders carried off possessions and took captives, although Leo’s intervention helped restrain burning and slaughter. His work continued after the army had gone. Churches had been stripped, households had been broken, and people carried overseas needed help. Leo labored to restore the churches and sent Priests and alms to the captives in Africa.
+
+He died in Rome on November 10, 461. He left sermons and letters in which the mystery of Christ met the daily demands of Christian life: the baptismal font, the common offering, the hungry neighbor, the prisoner far from home. In that mystery the Church continues to seek the healing of human nature and the grace to live as members of Christ, receiving his life and extending his mercy.
+
+## Collect
+
+O Lord our God, grant that your church, following the teaching of your servant Leo of Rome, may hold fast the great mystery of our redemption and adore the one Christ, true God and true Man, neither divided from our human nature nor separate from your divine Being; through the same Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.

@@ -1,0 +1,16 @@
+{
+  "name": "synaxarium-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "entries": "python3 tools/convert-entries.py",
+    "calendar": "python3 tools/export-calendar.py ../PrayerAppNew/data/kalendar/synaxarium/decisions.json",
+    "dev": "astro dev",
+    "build": "python3 tools/convert-entries.py && astro build && node tools/check-output.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  }
+}

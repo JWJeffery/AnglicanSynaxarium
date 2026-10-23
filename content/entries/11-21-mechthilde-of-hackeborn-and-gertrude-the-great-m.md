@@ -1,0 +1,42 @@
+---
+key: "11-21"
+title: "Mechthilde of Hackeborn and Gertrude the Great, Mystics and Theologians"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Mechthilde of Hackeborn and Gertrude the Great, who shared a life of prayer at Helfta and helped others to enter more deeply into the love of Christ.
+
+Mechthilde was born about 1240 into a noble German family. When she was seven, her mother took her to visit the monastery where her older sister lived. Mechthilde begged the nuns to let her remain. Her mother tried to persuade her to come home, but the child went from sister to sister asking to join them. Her family at last consented.
+
+The nuns followed the Rule of Saint Benedict. Mechthilde's sister became their Abbess, the head of the community, and in 1258 they moved to Helfta, near Eisleben. There they prayed, studied, taught, and cared for the children entrusted to them. Mechthilde had a beautiful voice. She led the singing in church and taught in the monastery's school.
+
+In 1261 the community received another child, five-year-old Gertrude. Mechthilde became her teacher. Gertrude learned Latin and loved the study of language and literature. As she grew, she entered the religious life and remained at Helfta. The Scriptures and the writings of the Fathers became familiar to her, but she also delighted in learning for its own sake.
+
+At twenty-five, Gertrude passed through a month of deep distress. She had begun to recognize the pride beneath her eagerness for knowledge. She wore the habit of a nun, yet her heart was far from the Lord to whom she had given herself.
+
+One evening in 1281, after Compline, the prayers at the close of the day, she bowed to an older sister in the dormitory. When she raised her head, Christ stood before her in the form of a young man. He spoke to her with tenderness and promised to deliver her. Then she saw a thorn hedge between them. It stretched beyond her sight, and she could find no way through it.
+
+Gertrude longed to come to him. Christ took her hand and drew her across without difficulty. Looking at the hand that held hers, she recognized the wound of his Passion. The Lord who had suffered for her had come to bring her near.
+
+From then on, Gertrude gave her learning to the study of Scripture, the worship of the Church, and the teaching of her sisters. She prayed with them in the choir, the part of the church where they gathered to sing. The words they sang opened into encounters with Christ. In Holy Communion she received the Lord whose love had drawn her out of her distress.
+
+On the feast of Saint John the Evangelist, Gertrude saw the Apostle beside Christ. John guided her to rest upon the Lord's breast, where she heard his heart beating. She asked John why he had not written of this in his Gospel. He answered that he had first been charged to proclaim the mystery of Christ, God's eternal Word. The sound of Christ's heart had been kept for a later time, when those who had grown cold would need to hear again how deeply he loved them.
+
+All through their shared life at Helfta, Mechthilde had given herself to Christ in the community's worship. She taught her sisters prayers and helped those who came to her in sorrow. Her penance could be severe. During Lent she put broken glass and other sharp objects in her bed and wounded herself upon them, seeking to make reparation for the sins of others. Afterwards the pain prevented her from sitting or lying down.
+
+In her later years, illness brought suffering she had not chosen. She spoke more openly to her companions about the grace Christ had given her. Gertrude and another sister began to write down what she told them. When Mechthilde discovered their work, she was deeply distressed. She had shared these things in confidence.
+
+She brought her sorrow to Christ. He appeared holding the book against his heart and kissed it. He told her that the words had flowed from his heart and would return to it. She asked whether she should stop speaking of the gifts she had received. Christ called her to share him with the generosity of his own heart. The sisters continued their work, and Mechthilde was able to hear and correct what they had written. The book became known as The Book of Special Grace.
+
+Gertrude also wrote of the love Christ had shown her. Her sisters preserved further accounts of her prayer and teaching in The Herald of Divine Love. The grace received by one woman passed through the hands of others and became a gift for the Church.
+
+Mechthilde's pain continued through the last years of her life. In 1298 she received Holy Communion for the last time. When a sudden attack of pain came before dawn, the sisters hurried to bring a Priest to anoint her with oil and pray for her. Gertrude prayed for her friend and saw Christ look upon Mechthilde with love. As the community rose for prayer, the sisters gathered at the bedside with the Abbess who had succeeded Mechthilde's sister. Mechthilde could no longer speak, but her face brightened. As she died, Gertrude saw her received into the light of God and resting upon Christ's breast.
+
+Gertrude lived on at Helfta until her own death in 1302. She had learnt to bring her faults, her desires, and the needs of others to the Lord who had taken her hand.
+
+That wounded hand remains open to us. Christ draws us near through the prayer of his Church and the gift of his own life. May our hearts become places where his love is received and shared.
+
+## Collect
+
+Almighty God, who gave to your servants Mechthilde and Gertrude special gifts of grace to understand and teach the truth in Christ Jesus: Grant that by their teachings we may know you, the one true God, and Jesus Christ your Son; who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.

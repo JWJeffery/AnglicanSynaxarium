@@ -1,0 +1,34 @@
+---
+key: "11-27"
+title: "Virgil of Salzburg, Bishop and Missionary"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Virgil of Salzburg, who left Ireland for the love of Christ and cared for the people entrusted to him through teaching, prayer, and the ministry of the Church.
+
+Virgil was an Irish monk. In the eighth century he left his homeland and traveled to the Frankish kingdom, where Pippin received him at his court. After a time there, Virgil went to Bavaria. Duke Odilo entrusted him with the leadership of the Church at Salzburg.
+
+He became Abbot of Saint Peter's monastery. At first he had not received consecration as a Bishop. Another Irish Bishop who traveled with him performed the duties that required a Bishop, while Virgil led the community and cared for the wider Church.
+
+In 746 a dispute arose over some baptisms. A Priest who did not understand Latin had changed the words for Father and Son into words meaning fatherland and daughter. Boniface, the Archbishop responsible for organizing the Church in much of Germany, ordered that the people be baptized again.
+
+Virgil and his fellow Priest Sidonius appealed to Pope Zachary. The Pope answered that, if the Priest had intended no false teaching and had simply made a mistake through ignorance, the baptisms should stand. He told Boniface to cease ordering their repetition. The people were to retain the gift they had already received.
+
+Boniface accused Virgil of teaching that another world lay beneath this one, with other people and its own sun and moon. The Pope warned that, if the report were true, Virgil could be barred from the Church's communion. Virgil remained at Salzburg. In time the people and neighboring Bishops urged him to accept consecration, and he became their Bishop.
+
+Alongside his work at Salzburg, Virgil cared for Christians in Carantania, a Slav country to the south-east. Bavarian armies had helped its people against invaders and brought them under foreign rule. Members of its ruling family had learnt the Christian faith while held as hostages in Bavaria. One of those rulers later asked Virgil to come and strengthen the Christian life of his people.
+
+Virgil answered the request by sending Bishop Modestus with Priests and other clergy. Modestus received authority to consecrate churches and ordain ministers. The missionaries established places of worship, including a church dedicated to the Blessed Virgin Mary, and Modestus remained among the people until his death.
+
+After Modestus died, the ruler asked Virgil to come himself. Virgil declined to travel during an uprising and sent a Priest instead. Another revolt led the Priest to withdraw. After the ruler's death, further unrest left the people without a Priest for several years. When his successor asked Salzburg for help, Virgil sent another company of clergy. He continued to send ministers so that the communities could receive teaching and gather for the worship of God.
+
+Throughout his ministry, Virgil also sustained the life of his monastery at Salzburg. Its community preserved the names of Irish Abbots and saints for remembrance in prayer.
+
+He died at Salzburg on November 27, 784.
+
+At the font, Christ receives us into his own life. His Spirit binds us to neighbors whose language and history differ from our own, and sustains the Church where its people feel far from home.
+
+## Collect
+
+Almighty God, who called your servant Virgil from his own country to tend your people and send ministers of the Gospel to new lands: Give us wisdom to cherish the grace of baptism, patience to sustain those whose faith is tried, and love to gather your scattered children into one fellowship; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.

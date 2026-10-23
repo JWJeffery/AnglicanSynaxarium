@@ -1,0 +1,52 @@
+---
+import { dayByKey, entries, titleOf } from '../lib/data';
+import { keyOf, MONTHS } from '../lib/church-year';
+interface Props { key: string; }
+const { key } = Astro.props;
+const d = dayByKey.get(key)!;
+const title = titleOf(d);
+const dayNum = d.day;
+const monthName = MONTHS[d.month - 1];
+---
+<section id="print" class="print-section" data-print-section data-key={key}>
+  <div class="wrap">
+    <div class="print-copy">
+      <h2>Print the Saint of the Day and read about them beside your Prayer Book</h2>
+      <p class="lead">Print today’s Saint of the Day to tuck into your Prayer Book to be read alongside Morning or Evening Prayer.</p>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <span class="lab" style="color:var(--ink-muted)">Choose a sheet</span>
+        <div class="seg" role="group" aria-label="Choose a sheet">
+          <button type="button" data-sheet="day" aria-pressed="true">Saint of the Day</button>
+          <button type="button" data-sheet="week" aria-pressed="false">The Week</button>
+        </div>
+        <p class="print-note" data-print-when>{monthName} {dayNum}</p>
+      </div>
+      <div class="opts" role="group" aria-label="Options">
+        <button type="button" class="opt" data-opt="collect" aria-pressed="true"><span class="box"></span>Include the collect</button>
+        <button type="button" class="opt" data-opt="others" aria-pressed="false"><span class="box"></span>Include other saints commemorated today</button>
+        <button type="button" class="opt" data-opt="large" aria-pressed="false"><span class="box"></span>Large print</button>
+        <button type="button" class="opt" data-opt="notes" aria-pressed="true"><span class="box"></span>Leave room for notes</button>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;padding-top:4px">
+        <a class="btn btn-primary" data-print-go href={`/print/day/?d=${key}&collect=1&others=0&large=0&notes=1&print=1`}>Print the Saint of the Day</a>
+      </div>
+      <p class="print-note">Your browser’s print preview opens next, where you choose the printer and paper size.</p>
+    </div>
+    <div class="print-preview" aria-hidden="true">
+      <div class="thumb">
+        <div class="thumb-run"><span data-thumb-date>{monthName} {dayNum}</span><span>An Anglican Synaxarium</span></div>
+        <div class="thumb-head"><span class="thumb-num" data-thumb-num>{dayNum}</span><span class="thumb-name" data-thumb-name>{title}</span></div>
+        <div class="thumb-line"></div><div class="thumb-line"></div><div class="thumb-line" style="width:90%"></div><div class="thumb-line"></div><div class="thumb-line" style="width:70%"></div>
+        <div class="thumb-line" style="margin-top:6px"></div><div class="thumb-line"></div><div class="thumb-line" style="width:85%"></div>
+      </div>
+      <div class="thumb">
+        <div class="thumb-run"><span>The week</span><span>An Anglican Synaxarium</span></div>
+        {[0,1,2,3,4].map((i) => (<><div class="thumb-name" style={i ? 'margin-top:3px' : ''}>&nbsp;</div><div class="thumb-line" style={`width:${[60,70,50,40,45][i]}%`}></div></>))}
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  import { initPrintSection } from '../scripts/print-chooser';
+  initPrintSection();
+</script>

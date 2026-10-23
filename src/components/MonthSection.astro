@@ -1,0 +1,20 @@
+---
+import { kalendarIndex, entries } from '../lib/data';
+import { MONTHS, MONTH_SLUGS, keyOf } from '../lib/church-year';
+import { monthGridHtml } from '../lib/grid';
+interface Props { year: number; month: number; todayKey?: string | null; selectedKey?: string | null; heading?: 'h1' | 'h2'; }
+const { year, month, todayKey = null, selectedKey = null, heading = 'h2' } = Astro.props;
+const index = new Map(kalendarIndex().map((r) => [r.k, r]));
+const prev = month === 1 ? 12 : month - 1, next = month === 12 ? 1 : month + 1;
+const Tag = heading;
+---
+<div class="kal-body" data-kal data-year={year} data-month={month}>
+  <div class="kal-head">
+    <Tag data-kal-title>{MONTHS[month - 1]} {year}</Tag>
+    <div class="kal-nav">
+      <a class="btn" data-kal-prev href={`/kalendar/${MONTH_SLUGS[prev - 1]}/`} aria-label={`Previous month, ${MONTHS[prev - 1]}`}>‹ {MONTHS[prev - 1]}</a>
+      <a class="btn" data-kal-next href={`/kalendar/${MONTH_SLUGS[next - 1]}/`} aria-label={`Next month, ${MONTHS[next - 1]}`}>{MONTHS[next - 1]} ›</a>
+    </div>
+  </div>
+  <div class="month-grid" data-kal-grid set:html={monthGridHtml(year, month, index, todayKey, selectedKey)}></div>
+</div>

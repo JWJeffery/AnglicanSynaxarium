@@ -1,0 +1,40 @@
+/* Design tokens from design/tokens.css. Light is the default; dark follows the system. */
+@font-face { font-family: "Fraunces"; src: url("/fonts/fraunces-latin-opsz-normal.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Fraunces"; src: url("/fonts/fraunces-latin-opsz-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("/fonts/newsreader-latin-opsz-normal.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url("/fonts/newsreader-latin-opsz-italic.woff2") format("woff2"); font-weight: 200 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url("/fonts/instrument-sans-latin-wght-normal.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+
+:root {
+ --surface: #F3F2EE; --surface-raised: #FBFAF7; --surface-sunken: #E8E6DF;
+ --ink: #1C2020; --ink-muted: #545A58; --hairline: #CBC8BD; --border-strong: #767B78;
+ --rubric: #A12A1E; --focus: #2A5FB0;
+ --season-advent: #4F3C8C; --on-season-advent: #FFFFFF; --season-advent-tint: #E4DFF3;
+ --season-festal: #7D5C06; --on-season-festal: #FFFFFF; --season-festal-tint: #F1E6C4;
+ --season-lent: #5E524B; --on-season-lent: #FFFFFF; --season-lent-tint: #E2DDD8;
+ --season-holyweek: #7A1B2D; --on-season-holyweek: #FFFFFF; --season-holyweek-tint: #F0D9DC;
+ --season-pentecost: #AC2B1A; --on-season-pentecost: #FFFFFF; --season-pentecost-tint: #F6DDD6;
+ --season-ordinary: #2B6540; --on-season-ordinary: #FFFFFF; --season-ordinary-tint: #D8E9DC;
+ --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 72px;
+ --radius-sm: 2px; --radius-md: 4px; --radius-lg: 8px;
+ --measure-prose: 34rem; --measure-wide: 46rem;
+ --shadow-leaf: 0 1px 2px rgba(28,32,32,0.10), 0 8px 24px rgba(28,32,32,0.08);
+ --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+ --font-text: "Newsreader", Georgia, "Times New Roman", serif;
+ --font-sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
+ color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+ :root {
+ --surface: #151819; --surface-raised: #1D2123; --surface-sunken: #0F1112;
+ --ink: #ECEAE4; --ink-muted: #A7ABA7; --hairline: #2F3537; --border-strong: #838885;
+ --rubric: #F2907F; --focus: #8DB4F2;
+ --season-advent: #BBA9F2; --on-season-advent: #1B1530; --season-advent-tint: #2A2342;
+ --season-festal: #E2BE5A; --on-season-festal: #241A02; --season-festal-tint: #3A2F10;
+ --season-lent: #BDB2AA; --on-season-lent: #1F1B18; --season-lent-tint: #2E2926;
+ --season-holyweek: #F0909E; --on-season-holyweek: #2B0910; --season-holyweek-tint: #3B1820;
+ --season-pentecost: #F59A86; --on-season-pentecost: #2E0E08; --season-pentecost-tint: #40201A;
+ --season-ordinary: #8CCB9F; --on-season-ordinary: #0C2015; --season-ordinary-tint: #1B3223;
+ color-scheme: dark;
+ }
+}

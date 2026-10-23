@@ -1,0 +1,54 @@
+---
+key: "11-24"
+title: "Catherine of Alexandria, Barbara of Nicomedia, and Margaret of Antioch Martyrs"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Catherine of Alexandria, Barbara of Nicomedia, and Margaret of Antioch. Their stories tell how they confessed Christ when rulers and fathers demanded another allegiance.
+
+Catherine lived at Alexandria in Egypt. She had studied the learning of her time and had become a Christian. When the Emperor ordered people to offer sacrifice to the gods, she saw Christians going to the temples in fear. She went before him and rebuked the worship of things made by human hands. She confessed the one God and Jesus Christ, who had become human for the salvation of the world.
+
+The Emperor summoned fifty scholars to argue against her. Catherine stood alone before them. She answered their objections and spoke of the crucified and risen Lord. The scholars found that they could not overcome her, and they confessed the faith she had taught them.
+
+The Emperor ordered them to be burnt. They feared dying without baptism. Catherine assured them that the blood they shed for Christ would stand in its place. They received her encouragement and went to the fire.
+
+The Emperor then tried to win Catherine for himself. He offered her wealth and honor if she would abandon Christ. She refused. He had her beaten and imprisoned, and ordered that no one give her food.
+
+A dove came to feed her, and Christ appeared with Angels. The Emperor summoned Catherine again. She came before him alive and strengthened by Christ.
+
+He ordered a machine of wheels and sharp blades prepared to tear her body apart. Catherine prayed, and an Angel shattered it. The wheels broke with such force that they killed four thousand people. The Emperor then commanded that she be beheaded. Before her death she prayed for those who would call upon Christ through her witness. The executioner struck off her head, and Angels carried her body to Mount Sinai.
+
+Barbara lived at Nicomedia. Her father, Dioscorus, worshiped the old gods. He kept her in a tower because of her beauty. Men came to ask him for her hand in marriage. Barbara refused. She had given herself to Christ.
+
+While her father was away, workmen built a bath house on his estate. He had ordered two windows. Barbara came down from the tower, saw the building, and told them to add a third. The men feared her father's anger, but she promised to answer for their work.
+
+When Dioscorus returned, he demanded to know why she had changed his plan. Barbara told him that the three windows honored the Father, the Son, and the Holy Spirit: three Persons, one God, whose light reached all creation.
+
+Her father drew his sword against her. Barbara prayed, and the rock opened to shelter her. He pursued her, found her, dragged her away by the hair, and delivered her to the Judge.
+
+The Judge offered her a choice between sacrifice to the gods and torture. Barbara answered that she offered herself to Jesus Christ, the Maker of heaven and earth. The men who served the Judge stripped her and beat her. In prison Christ appeared to her and healed her wounds.
+
+They brought her out again, tore her body, and led her through the city. She prayed that Christ would cover her nakedness. An Angel clothed her, and the people could no longer see the body her tormentors had exposed.
+
+The Judge condemned her to death. Dioscorus took his daughter up a mountain and beheaded her with his own sword. On his way down, lightning struck and killed him.
+
+Margaret lived at Antioch. Her father was a pagan priest, but the woman who nursed her was a Christian. She prayed that the water would be for her a baptism into everlasting life. She lived with her nurse and tended sheep.
+
+The Governor, Olybrius, saw her and ordered his servants to bring her to him. He intended to marry her if she was free, or to take her as a concubine if she was enslaved. When he questioned her, Margaret named herself as a Christian.
+
+He mocked her faith in a crucified God. Margaret answered that Christ had willingly suffered for the world's redemption and now lived in glory. Olybrius demanded that she worship his gods. She refused. The Lord whom she worshiped had made the earth, and the sea and winds obeyed him.
+
+Olybrius threatened to tear her body apart. Margaret answered that Christ had given himself to death for her, and that she was ready to die for him. His men beat her and tore her flesh with iron instruments. Then they shut her in prison.
+
+There Satan came against her in the form of a dragon and swallowed her. Margaret held the cross, and its power split the dragon apart. She came out alive. Christ had preserved her through the enemy's attempt to consume her.
+
+The Governor continued to torture her. His men bound her and plunged her into a vessel of water. The earth shook, and she came out unharmed. She prayed that through the water she might share in the death and resurrection of Christ. Those who saw what God had done confessed Christ. The Governor ordered them to be killed, and at last condemned Margaret to beheading.
+
+Before she died, Margaret prayed for those who would call upon God through her witness, especially women in childbirth. Then she bowed her head to the sword.
+
+Catherine offered her learning to Christ. Barbara confessed the Holy Trinity. Margaret held fast to the Crucified. Their fellowship belongs also to the Church that prays today, and their Lord is our refuge when faith becomes costly.
+
+## Collect
+
+Embolden your church, O God, with the stories of your saints Catherine, Barbara, and Margaret, that we might face all trials and adversities with a fearless mind and an unbroken spirit, knowing that we are more than conquerors through Jesus Christ who strengthens us. Through the same Jesus Christ our Lord. Amen.

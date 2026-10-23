@@ -1,0 +1,28 @@
+---
+key: "11-04"
+title: "Adeline Blanchard Tyler and her Companions, Deaconesses"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Adeline Blanchard Tyler and her companions, Caroline Elizabeth Guild, Eveline Black, and Catherine Minard, among the first women set apart as deaconesses in the Episcopal Church.
+
+Adeline’s preparation for this work began in Boston. At Trinity Church she helped establish a Sunday school for poor children and took part in the Episcopal City Mission. Later, at the Church of the Advent, she served as matron of a parish school for children whose families could not provide for them. The school included children of Black parishioners as well as white children. There she came to know Caroline Guild, whom she sponsored for baptism and who would become her steadfast companion in ministry.
+
+In Baltimore, meanwhile, Eveline Black and Catherine Minard had already begun their ministry at Saint Andrew’s Church under its rector, the Reverend Horace Stringfellow. They had served there since 1855. When Adeline and Caroline arrived the following September, the four women joined their lives in a common vocation of worship, nursing, teaching, and care for the poor. On November 4, 1856, Bishop William Whittingham formally assumed pastoral oversight of the sisterhood, its infirmary, and its schools. Under his authority, the four women became among the first deaconesses of the Episcopal Church.
+
+Their charge bound them to Jesus Christ and to the people they would serve. They were to be servants of the Lord Jesus; servants of the sick, the poor, and the needy of every class, for Jesus' sake; and servants to one another. The four women became known as the United deaconesses of Maryland. Two associates, Miss Hickey and Miss Martin, soon joined their work.
+
+At Saint Andrew’s, the deaconesses cared for men, women, and children, Black and white. They nursed the sick, taught children, distributed clothing and shoes, and visited families in their homes. In their first year, they cared for more than a hundred patients in and beyond the infirmary, made more than seven hundred visits, and taught ninety-three children in the charity school. They also helped patients enter the Church’s sacramental life: five were baptized, four confirmed, and eight received Holy Communion for the first time.
+
+Their calling was tested severely when the Civil War began. In April 1861, soldiers of the Sixth Massachusetts Regiment were attacked while passing through Baltimore. Some of the wounded were held at the city’s central police station. Adeline went to the station and demanded permission to care for them. One soldier had been shot in the hip; another had suffered a terrible wound to his neck. When officials resisted, she refused to leave the men without proper care. At last, she secured their release and arranged to bring them to the deaconess house, where she nursed them through their recovery.
+
+As the war widened, the deaconesses served in military hospitals in Baltimore, Chester, and Annapolis. They tended Union and Confederate soldiers alike. Her refusal to distinguish between wounded men according to their loyalties brought accusations of sympathy for the Confederacy and cost her a position at a Baltimore military hospital. Yet she continued to serve the wounded wherever she was called. At times as many as a thousand wounded men were under Adeline’s care.
+
+The work eventually exhausted her. In 1864, illness forced Adeline to resign from the hospital at Annapolis and travel to Europe to recover. After the war, Adeline became superintendent of the Children's Hospital in Boston, and later served women in need through New York City's Midnight Mission. Stricken with cancer, she retired from her duties and died on January 9, 1875.
+
+Adeline and her companions served Christ in those whom others neglected, recognizing no division of race, class, or allegiance that could release them from the duty of love. Their witness asks us whether we, too, will recognize our Lord in the stranger, the sick, and even the enemy. May God grant us the courage to receive those who suffer as Christ himself, and the charity to remain faithful when mercy demands a sacrifice.
+
+## Collect
+
+Merciful God, who endowed Adeline and her companions with faith and courage, wisdom and humility, and called them to serve you as deaconesses, ministering to the sick, the oppressed, and the poor: by your grace, grant that we, following their example, may live to serve you as they did, revealing your steadfast love to the world; through our Lord Jesus Christ. Amen.

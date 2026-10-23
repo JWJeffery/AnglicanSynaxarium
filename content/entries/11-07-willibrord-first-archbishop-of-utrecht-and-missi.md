@@ -1,0 +1,28 @@
+---
+key: "11-07"
+title: "Willibrord, First Archbishop of Utrecht and Missionary to Frisia"
+status: approved
+opening: church
+---
+
+Today the Church commemorates Willibrord, the first Archbishop of Utrecht and missionary to Frisia.
+
+Willibrord was born in Northumbria around 658 and was brought up at Wilfrid’s monastery at Ripon. In 678, he went to Ireland both to study and to embrace the white martyrdom of *peregrinatio pro Christo*. By leaving his native country and all that was familiar to him, he became a voluntary exile for Christ, seeking his true homeland in the kingdom of God. He remained in Ireland for twelve years before setting out to preach among the Frisians.
+
+In 690, Willibrord and eleven companions sailed from Ireland and landed at the mouth of the Rhine. They entered the southern part of Frisia, in the modern Netherlands, where the Frankish ruler Pippin II had recently conquered territory from the Frisian King Radbod.
+
+They first went to Utrecht, but, finding Radbod and his people still pagan, sought Pippin’s help. With his support, Willibrord began preaching in lands under Frankish rule. In 695, Pope Sergius I consecrated him Archbishop of the Frisians, gave him the name Clement, and established his episcopal see at Utrecht. Today, Utrecht is the seat of the Old Catholic Archbishop who presides over the Union of Utrecht, whose churches are in full communion with the Anglican Communion. In 698, Willibrord founded the monastery of Echternach, in what is now Luxembourg, as a house of prayer and a base for the continuing mission.
+
+Willibrord also carried his preaching beyond the lands protected by the Franks and went among the Danes. On the voyage back, a storm drove his ship to Heligoland. The islanders held a spring and the cattle that grazed there sacred to their god. They would draw water only in silence, and they dared not touch the animals. Willibrord baptized three people in the spring and ordered cattle to be slaughtered to feed his company. The islanders waited for the strangers to fall mad or die. When they remained unharmed, the islanders reported them to King Radbod.
+
+For three days, Radbod cast lots three times each day to decide who should die for the affront. The lot fell upon one of Willibrord’s companions, who was put to death. Radbod summoned Willibrord and demanded an answer for what he had done. Willibrord called the King to renounce his idols and believe in the one God who had made heaven and earth. Radbod refused his preaching, but sent him back to the Franks.
+
+At Walcheren, Willibrord broke an idol before its keeper. The keeper struck him on the head with a sword, but the blow did him no harm. Willibrord’s companions rushed to kill the man, but Willibrord restrained them and allowed his attacker to go free.
+
+The mission remained exposed to the conflict between Frisians and Franks. After Pippin’s death, Radbod recovered territory, churches were destroyed, and Willibrord withdrew to Echternach. When he was able to return, he resumed his preaching among the Frisians. From 719 to 722, Boniface worked alongside him, helping strengthen the mission.
+
+Willibrord died at Echternach in 739, after nearly fifty years of missionary labor. He had left his homeland for Christ, gathered fellow workers, baptized new Christians, built churches, and returned to work that war had interrupted. May God grant us his courage to proclaim Christ, his mercy toward those who oppose us, and his perseverance in the work entrusted to us.
+
+## Collect
+
+O Lord our God, you call whom you will and send them where you choose: We thank you for sending your servant Willibrord to be an apostle to the Low Countries, to turn them from the worship of idols to serve you, the living God; and we entreat you to preserve us from the temptation to exchange the perfect freedom of your service for servitude to false gods and to idols of our own devising; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.
