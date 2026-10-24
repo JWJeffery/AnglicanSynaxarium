@@ -15,7 +15,7 @@ In 746 a dispute arose over some baptisms. A Priest who did not understand Latin
 
 Virgil and his fellow Priest Sidonius appealed to Pope Zachary. The Pope answered that, if the Priest had intended no false teaching and had simply made a mistake through ignorance, the baptisms should stand. He told Boniface to cease ordering their repetition. The people were to retain the gift they had already received.
 
-Boniface accused Virgil of teaching that another world lay beneath this one, with other people and its own sun and moon. The Pope warned that, if the report were true, Virgil could be barred from the Church's communion. Virgil remained at Salzburg. In time the people and neighboring Bishops urged him to accept consecration, and he became their Bishop.
+Virgil remained at Salzburg. In time the people and neighboring Bishops urged him to accept consecration, and he became their Bishop.
 
 Alongside his work at Salzburg, Virgil cared for Christians in Carantania, a Slav country to the south-east. Bavarian armies had helped its people against invaders and brought them under foreign rule. Members of its ruling family had learnt the Christian faith while held as hostages in Bavaria. One of those rulers later asked Virgil to come and strengthen the Christian life of his people.
 
