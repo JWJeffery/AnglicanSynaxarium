@@ -1,6 +1,14 @@
 {
   "episodes": [
     {
+      "key": "welcome",
+      "file": "welcome.mp3",
+      "bytes": 2334592,
+      "seconds": 145.7,
+      "published": "2026-10-24T22:33:00Z",
+      "kind": "trailer"
+    },
+    {
       "key": "11-01",
       "file": "11-01.mp3",
       "bytes": 7383542,
