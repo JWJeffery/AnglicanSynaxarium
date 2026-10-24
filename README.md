@@ -25,7 +25,7 @@ Static site (Astro) for anglicansynaxarium.com. Build it, then upload the conten
 
 The audio and the feed live on this site, so the show does not depend on any outside service. Apple Podcasts, Spotify, YouTube and every other app only read the feed, `https://anglicansynaxarium.com/feed.xml`; submit that address to each once.
 
-**Adding recordings** (do this in the Codespace):
+**Adding recordings** (do this in the Codespace). To add a short welcome episode, name its file `Welcome - ....aif` (any text after Welcome); it is released as soon as it is scheduled and marked as a trailer in the feed, which lets you submit the feed to Apple and Spotify before the first daily episode (Apple requires at least one episode). Its title and description can be set under Settings.
 
 1. Drag the recordings (WAV or MP3) into a folder named `incoming/` (it is never committed). File names such as `November 18 - Hilda of Whitby.wav` or `11-18.mp3` both work.
 2. Once ever: `pip install mutagen ffmpeg-normalize`, and if `ffmpeg -version` says command not found, `sudo apt-get update && sudo apt-get install -y ffmpeg`.

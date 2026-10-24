@@ -23,6 +23,8 @@
     "art": "/podcast-cover.jpg",
     "release_time": "06:00",
     "release_zone": "America/Los_Angeles",
-    "transcripts": true
+    "transcripts": true,
+    "welcome_title": "",
+    "welcome_description": ""
   }
 }

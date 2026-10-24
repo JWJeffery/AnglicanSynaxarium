@@ -34,11 +34,14 @@ export async function GET() {
     items: [...episodes].reverse().map((e) => {
       const d = dayByKey.get(e.key);
       const entry = entries.get(e.key);
-      const [m, day] = e.key.split('-').map(Number);
-      const page = `${site.site}/saint/${e.key}/`;
-      const title = d ? titleOf(d) : e.key;
+      const trailer = e.kind === 'trailer';  // the welcome episode: not a day, so it links to the home page
+      const [m, day] = trailer ? [0, 0] : e.key.split('-').map(Number);
+      const page = trailer ? `${site.site}/` : `${site.site}/saint/${e.key}/`;
+      const title = trailer ? (feed.welcome_title || `Welcome to ${feed.title}`) : d ? titleOf(d) : e.key;
       const lede = entry ? plain(entry.body[0]) : '';
-      const description = `${MONTHS[m - 1]} ${day}. ${lede}${lede ? ' ' : ''}Read the full entry: ${page}`.slice(0, 4000);
+      const description = trailer
+        ? (feed.welcome_description || feed.description)
+        : `${MONTHS[m - 1]} ${day}. ${lede}${lede ? ' ' : ''}Read the full entry: ${page}`.slice(0, 4000);
       return {
         title,
         link: page,
@@ -47,9 +50,9 @@ export async function GET() {
         enclosure: { url: audioUrl(e), length: e.bytes, type: 'audio/mpeg' },
         customData:
           `<itunes:duration>${clock(e.seconds)}</itunes:duration>` +
-          `<itunes:episodeType>full</itunes:episodeType>` +
+          `<itunes:episodeType>${trailer ? 'trailer' : 'full'}</itunes:episodeType>` +
           `<itunes:explicit>${feed.explicit ? 'true' : 'false'}</itunes:explicit>` +
-          (feed.transcripts && entry ? `<podcast:transcript url="${esc(page)}" type="text/html"/>` : ''),
+          (feed.transcripts && entry && !trailer ? `<podcast:transcript url="${esc(page)}" type="text/html"/>` : ''),
       };
     }),
   });

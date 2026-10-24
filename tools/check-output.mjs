@@ -60,7 +60,7 @@ if (episodes.length) {
     const local = `audio/${e.file}`;
     if (fs2.existsSync(local) && fs2.statSync(local).size !== e.bytes) problems.push(`${local} on this machine is ${fs2.statSync(local).size} bytes but data/episodes.json says ${e.bytes}; run tools/add-episodes.py again for that day`);
     const page = `dist/saint/${e.key}/index.html`;
-    if (!fs2.existsSync(page) || !fs2.readFileSync(page, 'utf-8').includes('data-hear')) problems.push(`${e.key}: the player is missing from its page`);
+    if (e.kind !== 'trailer' && (!fs2.existsSync(page) || !fs2.readFileSync(page, 'utf-8').includes('data-hear'))) problems.push(`${e.key}: the player is missing from its page`);
   }
   const missing = episodes.filter((e) => !fs2.existsSync(`audio/${e.file}`)).length;
   if (missing) console.log(`podcast: ${missing} of ${episodes.length} audio files are not on this machine (fine if they are already on the server)`);

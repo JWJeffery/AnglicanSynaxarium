@@ -6,6 +6,8 @@ Usage:   python3 tools/add-episodes.py incoming/            (a folder of MP3 fil
 
 What it does for each MP3:
   1. Reads the day from the file name: "November 18 - Hilda of Whitby.mp3" or "11-18.mp3".
+     A file named "Welcome - ...mp3" is the show's welcome (trailer) episode: it is not tied to a day,
+     is released as soon as it is scheduled, and is marked as a trailer in the feed.
   2. Checks that the day exists in data/calendar.json.
   3. Copies the file to audio/MM-DD.mp3 (your original is never changed) and writes the
      title, artist, album and year into the copy's ID3 tags.
@@ -17,7 +19,7 @@ What it does for each MP3:
 Then upload everything in audio/ to the /audio/ folder on the server (see README).
 """
 import argparse, json, os, re, shutil, sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 try:
@@ -45,6 +47,12 @@ def day_from_name(name):
             if mo.lower() == m.group(1).lower() or mo[:3].lower() == m.group(1).lower():
                 return i, int(m.group(2))
     return None
+
+
+def special_from_name(name):
+    """A file named 'Welcome ...' (or 'Trailer ...') is the show's welcome episode, not a day."""
+    base = os.path.splitext(os.path.basename(name))[0]
+    return "welcome" if re.match(r"^\s*(welcome|trailer)\b", base, re.I) else None
 
 
 def release_instant(month, day, start, hhmm, zone):
@@ -91,13 +99,14 @@ def main():
     seen, problems, done = {}, 0, 0
     for f in files:
         label = os.path.basename(f)
-        md = day_from_name(f)
-        if not md:
-            print(f"SKIPPED  {label}: cannot read a date from the file name (use 'November 18 - Name.mp3' or '11-18.mp3')")
+        special = special_from_name(f)
+        md = None if special else day_from_name(f)
+        if not special and not md:
+            print(f"SKIPPED  {label}: cannot read a date from the file name (use 'November 18 - Name.mp3', '11-18.mp3', or 'Welcome - Name.mp3' for the welcome episode)")
             problems += 1
             continue
-        key = f"{md[0]:02d}-{md[1]:02d}"
-        if key not in cal:
+        key = special or f"{md[0]:02d}-{md[1]:02d}"
+        if not special and key not in cal:
             print(f"SKIPPED  {label}: {key} is not a day in the calendar")
             problems += 1
             continue
@@ -119,13 +128,16 @@ def main():
         if info.bitrate and info.bitrate < 48000: notes.append(f"low bitrate ({info.bitrate // 1000} kbps)")
         if info.sample_rate not in (22050, 24000, 32000, 44100, 48000): notes.append(f"unusual sample rate ({info.sample_rate} Hz)")
 
-        title = cal[key]["name"].split(" / ")[0]
-        entry_md = [x for x in os.listdir(os.path.join(ROOT, "content", "entries")) if x.startswith(key + "-")] if os.path.isdir(os.path.join(ROOT, "content", "entries")) else []
+        title = (feed.get("welcome_title") or f"Welcome to {feed['title']}") if special else cal[key]["name"].split(" / ")[0]
+        entry_md = [x for x in os.listdir(os.path.join(ROOT, "content", "entries")) if x.startswith(key + "-")] if (not special and os.path.isdir(os.path.join(ROOT, "content", "entries"))) else []
         if entry_md:
             m = re.search(r'^title:\s*"(.*)"\s*$', open(os.path.join(ROOT, "content", "entries", entry_md[0]), encoding="utf-8").read(), re.M)
             if m: title = json.loads('"' + m.group(1) + '"')
 
-        when, shifted = release_instant(md[0], md[1], start, feed["release_time"], feed["release_zone"])
+        if special:  # the welcome episode goes out as soon as the site is updated; change its time on the Schedule page if you like
+            when, shifted = datetime.now(timezone.utc).replace(microsecond=0), False
+        else:
+            when, shifted = release_instant(md[0], md[1], start, feed["release_time"], feed["release_zone"])
         dest = os.path.join(OUT, f"{key}.mp3")
         if a.dry_run:
             print(f"WOULD ADD {label} -> audio/{key}.mp3  ({info.length / 60:.1f} min, {info.bitrate // 1000} kbps)  release {when:%Y-%m-%d %H:%M} UTC")
@@ -145,6 +157,8 @@ def main():
         prev = have.get(key)
         published = prev["published"] if prev and not a.reschedule else when.strftime("%Y-%m-%dT%H:%M:%SZ")
         have[key] = {"key": key, "file": f"{key}.mp3", "bytes": os.path.getsize(dest), "seconds": round(final.info.length, 1), "published": published}
+        if special:
+            have[key]["kind"] = "trailer"
         done += 1
         extra = f"  [{'; '.join(notes)}]" if notes else ""
         shift = "  (no February 29 next year: released the evening of Feb 28)" if shifted else ""

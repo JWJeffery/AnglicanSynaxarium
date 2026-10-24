@@ -9,6 +9,7 @@ export interface Episode {
   bytes: number;      // exact size of the served file (the feed's enclosure length)
   seconds: number;    // running time
   published: string;  // ISO time in UTC when the episode goes live
+  kind?: string;      // 'trailer' for the welcome episode; otherwise a normal daily episode
 }
 
 export const feed = cfg.feed;

@@ -62,6 +62,9 @@ def calendar():
 
 
 def title_for(key):
+    if key == "welcome":
+        f = read_json(CONFIG, {}).get("feed", {})
+        return f.get("welcome_title") or "Welcome to " + f.get("title", "the podcast")
     d = calendar().get(key)
     title = d["name"].split(" / ")[0] if d else key
     entries = os.path.join(ROOT, "content", "entries")
@@ -330,6 +333,8 @@ TEMPLATES = {
 <label>Owner name</label><input type="text" name="owner_name" value="{{ f.owner_name }}">
 <label>Owner email</label><input type="email" name="owner_email" value="{{ f.owner_email }}">
 <label>Show description <span class="hint">(the text under the show title in podcast apps)</span></label><textarea name="description" rows="3">{{ f.description }}</textarea>
+<label>Welcome episode title <span class="hint">(optional; otherwise "Welcome to ...")</span></label><input type="text" name="welcome_title" value="{{ f.welcome_title }}">
+<label>Welcome episode description <span class="hint">(optional; otherwise the show description is used)</span></label><textarea name="welcome_description" rows="3">{{ f.welcome_description }}</textarea>
 <label>Copyright line <span class="hint">(optional)</span></label><input type="text" name="copyright" value="{{ f.copyright }}">
 <label>Release time of day <span class="hint">({{ f.release_zone }}; used when new episodes are added)</span></label><input type="time" name="release_time" value="{{ f.release_time }}" style="width:10rem">
 <label><input type="checkbox" name="transcripts" {% if f.transcripts %}checked{% endif %} style="width:auto"> Offer the written entry as the transcript in apps that show one</label>
@@ -396,6 +401,8 @@ def recordings():
         md = ADD.day_from_name(f)
         key = f"{md[0]:02d}-{md[1]:02d}" if md else None
         day = f"{ADD.MONTHS[md[0] - 1]} {md[1]}: {title_for(key)}" if key and key in cal else None
+        if not md and ADD.special_from_name(f):
+            day = "Welcome episode (goes out as soon as it is scheduled; marked as a trailer)"
         rows.append({"name": f, "day": day, "size": mb(os.path.getsize(os.path.join(INCOMING, f))), "mastered": os.path.splitext(f)[0] in done})
     return page("recordings.html", "recordings", "Recordings", files=rows)
 
@@ -520,6 +527,8 @@ def settings_save():
     feed["owner_email"] = email
     feed["description"] = request.form.get("description", "").strip()
     feed["copyright"] = request.form.get("copyright", "").strip()
+    feed["welcome_title"] = request.form.get("welcome_title", "").strip()
+    feed["welcome_description"] = request.form.get("welcome_description", "").strip()
     if time_of_day:
         feed["release_time"] = time_of_day
     feed["transcripts"] = "transcripts" in request.form
