@@ -12,19 +12,19 @@
   "feed": {
     "title": "An Anglican Synaxarium",
     "author": "An Anglican Synaxarium",
-    "owner_name": "",
-    "owner_email": "",
-    "description": "One saint for every day of the year, read in the Anglican manner. Each episode is a short devotional reading of the day’s entry, followed by its collect.",
+    "owner_name": "Joshua Ward Jeffery",
+    "owner_email": "josh@jwjeffery.org",
+    "description": "An Anglican Synaxarium Podcast exists to provide Episcopalians and other Anglicans with devotional resources focused upon our Great Cloud of Witnesses, the Saints. Each day, An Anglican Synaxarium will provide a podcast episode telling the life of at least one Saint, or, alternatively, commemorating a major feast of the church. An Anglican Synaxarium builds upon the sanctoral calendar of the Episcopal Church in the United States, using sanctoral kalendar resources from throughout the Anglican Communion, as well as the Great Church tradition as a whole (the Church of the East, along with the Latin, Eastern Orthodox, and Oriental Orthodox communions).\r\n\r\nWhy the title An Anglican Synaxarium? A Synaxarium is a sanctoral book of the Coptic Orthodox Church, containing the lives of the Saints. One of my inspirations for building An Anglican Synaxarium was hearing a Coptic priest say that his parishioners who have relationships with the Saints and read the Synaxarium have the strongest relationships with God. I combined that with the experience of reading the “Person of the Day” in my parish on Wednesday mornings when we have a Healing Mass service.",
     "language": "en-us",
     "category": "Religion & Spirituality",
     "subcategory": "Christianity",
     "explicit": false,
-    "copyright": "",
+    "copyright": "Audio Recordings - All Rights Reserved. Written text: CC BY-NC-SA, 2026.",
     "art": "/podcast-cover.jpg",
-    "release_time": "06:00",
+    "release_time": "01:00",
     "release_zone": "America/Los_Angeles",
     "transcripts": true,
-    "welcome_title": "",
+    "welcome_title": "An Anglican Synaxarium",
     "welcome_description": ""
   }
 }
