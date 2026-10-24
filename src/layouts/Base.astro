@@ -1,6 +1,6 @@
 ---
 import '../styles/site.css';
-import { site, hasPodcast } from '../lib/data';
+import { site, hasPodcast, hasAbout, elsewhere } from '../lib/data';
 interface Props { title: string; description: string; path: string; }
 const { title, description, path } = Astro.props;
 const url = new URL(path, site.site).toString();
@@ -31,14 +31,14 @@ const og = new URL('/og.png', site.site).toString();
     <header class="site-header">
       <div class="wrap">
         <a class="wordmark" href="/" aria-label="An Anglican Synaxarium, home">
-          <span class="wordmark-top">An Anglican</span>
-          <span class="wordmark-main">Synaxarium</span>
+          <span class="wordmark-main">An Anglican Synaxarium</span>
         </a>
         <nav class="nav" aria-label="Main">
           <a href="/#today">Saint of the Day</a>
           <a href="/kalendar/">Kalendar</a>
           <a href="/print/">Print</a>
           {hasPodcast && <a href="/#listen">Listen</a>}
+          {hasAbout && <a href="/about/">About</a>}
         </nav>
       </div>
     </header>
@@ -50,6 +50,10 @@ const og = new URL('/og.png', site.site).toString();
           {hasPodcast && <a href="/#listen">Podcast</a>}
           <a href="/print/">Print</a>
           <a href="/kalendar/">Kalendar</a>
+          {hasAbout && <a href="/about/">About</a>}
+        </nav>
+        <nav aria-label="Elsewhere" class="elsewhere">
+          {elsewhere.map((l) => <a href={l.url} rel="noopener">{l.italic ? <em>{l.name}</em> : l.name}</a>)}
         </nav>
       </div>
     </footer>

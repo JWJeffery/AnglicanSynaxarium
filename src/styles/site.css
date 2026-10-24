@@ -199,3 +199,49 @@ a { color: inherit; }
   * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* One-line wordmark */
+.wordmark { padding: 14px 0; }
+.wordmark-main { font-size: 28px; line-height: 32px; letter-spacing: -.01em; }
+@media (max-width: 700px) { .wordmark-main { font-size: 22px; line-height: 26px; } }
+
+/* Season band: the day's liturgical color sits behind the date and name */
+.season-band { background: var(--season-wash); border-bottom: 3px solid var(--season); }
+.today .season-band .wrap { padding-top: 18px; padding-bottom: 18px; display: block; }
+.season-band .stepper { border-bottom: 0; padding-bottom: 0; align-items: center; }
+.stepper-mid { flex-direction: column; gap: 2px; text-align: center; }
+.date-big { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 36px; letter-spacing: -.01em; color: var(--season); }
+.day-name { font-family: var(--font-text); font-style: italic; font-size: 20px; line-height: 28px; color: var(--ink); }
+.today .hero-wrap { padding-top: 40px; }
+@media (max-width: 700px) {
+  .date-big { font-size: 24px; line-height: 30px; }
+  .day-name { font-size: 18px; line-height: 24px; }
+  .stepper-mid { order: -1; flex-basis: 100%; }
+}
+.entry-meta .date-label { font-size: 15px; line-height: 20px; }
+.entry-head .day-name { margin-top: -4px; }
+.about .prose h2, .about .prose h3 { font-family: var(--font-display); font-weight: 600; margin: 1.4em 0 .5em; }
+
+/* Footer: elsewhere */
+.site-footer .elsewhere { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.site-footer .elsewhere a { font-family: var(--font-sans); font-size: 15px; color: #ECEAE4; padding: 10px 0; }
+:root[data-theme="dark"] .site-footer .elsewhere a { color: var(--ink); }
+
+/* Home: stained-glass lancets behind the saint, veiled so the type stays easy to read */
+.today { position: relative; overflow: hidden; }
+.today > * { position: relative; z-index: 1; }
+.today::before {
+  content: ''; position: absolute; z-index: 0; inset: 0 0 auto 0; height: 640px; pointer-events: none;
+  background:
+    linear-gradient(to right, rgba(243,242,238,.72) 0%, rgba(243,242,238,.3) 60%, rgba(243,242,238,0) 100%),
+    linear-gradient(to bottom, rgba(243,242,238,.5), rgba(243,242,238,.88) 62%, var(--surface)),
+    url('/images/york-lancets.jpg') center 30% / cover no-repeat;
+  filter: saturate(.7);
+}
+@media (max-width: 700px) { .today::before { height: 520px; background-position: center 20%; } }
+.about .prose ul { margin: 0 0 1em; padding-left: 1.2em; }
+.about .prose li { margin: 0 0 .35em; }
+.about .prose a { color: var(--season-ordinary); }
+
+/* Italics inside the italic opening line read upright, as in print. */
+.hero-lede em, .prose p.lede em, .sheet .body p.lede em { font-style: normal; }

@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { aboutHtml, hasAbout } from '../lib/data';
+export function getStaticPaths() { return hasAbout ? [{ params: { page: 'about' } }] : []; }
+const body = aboutHtml();
+---
+<Base title="About | An Anglican Synaxarium" description="About An Anglican Synaxarium." path="/about/">
+  <main class="entry-wrap" style="flex:1">
+    <article class="entry-card about">
+      <h1 class="entry-title">About</h1>
+      <div class="prose" set:html={body}></div>
+    </article>
+  </main>
+</Base>

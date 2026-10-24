@@ -1,4 +1,4 @@
-import { MONTHS, MONTH_SLUGS, RANK_LABEL, dateLabelFor, seasonName, seasonOf, stepKey } from '../lib/church-year';
+import { MONTHS, MONTH_SLUGS, RANK_LABEL, dateLabelFor, liturgicalDayName, seasonOf, stepKey } from '../lib/church-year';
 import { monthGridHtml } from '../lib/grid';
 import { fetchDay, localToday, readIndex } from './common';
 
@@ -15,7 +15,7 @@ export async function initHome() {
   a.href = `/saint/${prev.k}/`; q('[data-prev-name]')!.textContent = prev.n;
   b.href = `/saint/${next.k}/`; q('[data-next-name]')!.textContent = next.n;
   q('[data-date-label]')!.textContent = dateLabelFor(t.year, t.month, t.day);
-  q('[data-season-label]')!.textContent = seasonName(t.year, t.month, t.day);
+  q('[data-day-name]')!.textContent = liturgicalDayName(t.year, t.month, t.day);
   hero.dataset.season = seasonOf(t.year, t.month, t.day);
 
   // Calendar for the visitor's month

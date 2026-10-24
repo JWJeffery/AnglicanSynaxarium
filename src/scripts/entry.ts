@@ -1,4 +1,4 @@
-import { dateLabelFor, seasonOf, stepKey } from '../lib/church-year';
+import { dateLabelFor, liturgicalDayName, seasonOf, stepKey } from '../lib/church-year';
 import { localToday, readIndex } from './common';
 
 export function initEntry() {
@@ -10,6 +10,8 @@ export function initEntry() {
   main.dataset.season = seasonOf(t.year, m, d);
   const label = main.querySelector('[data-date-label]');
   if (label) label.textContent = dateLabelFor(t.year, m, d);
+  const dn = main.querySelector('[data-day-name]');
+  if (dn) dn.textContent = liturgicalDayName(t.year, m, d);
   if (key !== t.key) main.querySelectorAll<HTMLAnchorElement>('[data-today-link]').forEach((a) => (a.hidden = false));
 
   // Text size, remembered between visits where the browser allows it.

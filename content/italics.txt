@@ -1,0 +1,35 @@
+# Titles and terms the site shows in italics when they are not already italic in the approved entry.
+# Display only: no word of any entry changes. One per line. "MM-DD | phrase" limits a line to one entry.
+# Remove a line to stop italicizing that phrase.
+11-02 | theosis
+11-03 | A Christian Letter
+11-12 | The Excellency of the Liturgy
+11-21 | The Book of Special Grace
+11-21 | The Herald of Divine Love
+11-22 | Mere Christianity
+11-22 | The Screwtape Letters
+11-22 | A Grief Observed
+11-22 | The Chronicles of Narnia
+11-29 | The Catholic Worker
+12-04 | The Fount of Knowledge
+12-05 | Who Is the Rich Man That Shall Be Saved?
+12-05 | The Instructor
+12-05 | Exhortation to the Greeks
+12-05 | Miscellanies
+12-05 | Stromata
+12-08 | The Temple
+12-08 | Four Quartets
+12-10 | The Seven Storey Mountain
+12-12 | Introduction to the Devout Life
+12-12 | Treatise on the Love of God
+12-14 | The Ascent of Mount Carmel
+12-14 | The Dark Night
+12-14 | The Spiritual Canticle
+12-14 | Spiritual Canticle
+12-14 | The Living Flame of Love
+12-17 | Whose Body?
+12-17 | The Zeal of Thy House
+12-17 | The Man Born to Be King
+12-17 | The Mind of the Maker
+12-17 | Divine Comedy
+12-18 | Hymns on the Lord's Supper

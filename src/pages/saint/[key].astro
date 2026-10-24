@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Stepper from '../../components/Stepper.astro';
 import KalIndex from '../../components/KalIndex.astro';
 import { days, dayByKey, entries, rankOf, titleOf, inline, hasPodcast } from '../../lib/data';
-import { MONTHS, MONTH_SLUGS, seasonOf, weekdayOf, RANK_LABEL } from '../../lib/church-year';
+import { MONTHS, MONTH_SLUGS, seasonOf, weekdayOf, liturgicalDayName, RANK_LABEL } from '../../lib/church-year';
 export function getStaticPaths() { return days.map((d) => ({ params: { key: d.key } })); }
 const { key } = Astro.params as { key: string };
 const d = dayByKey.get(key)!;
@@ -37,6 +37,7 @@ const first = entry ? entry.body[0].replace(/<[^>]+>|\*/g, '') : `${title}.`;
             <span class="lab date-label" data-date-label>{weekdayOf(year, d.month, d.day)}, {MONTHS[d.month - 1]} {d.day}</span>
             <span class="rank" data-rank={rank}>{RANK_LABEL[rank]}</span>
           </div>
+          <p class="day-name" data-day-name>{liturgicalDayName(year, d.month, d.day)}</p>
           <h1 class="entry-title">{title}</h1>
           {d.period && <p class="entry-period">{d.period}</p>}
         </header>

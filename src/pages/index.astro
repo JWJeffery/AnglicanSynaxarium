@@ -22,8 +22,8 @@ const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k])
 <Base title="An Anglican Synaxarium" description="One saint for every day of the year, read in the Anglican manner." path="/">
   <main id="top">
     <section id="today" class="today" data-season={seasonOf(year, month, day)} data-hero data-key={key} data-year={year} data-month={month}>
-      <div class="wrap">
-        <Stepper key={key} year={year} />
+      <div class="season-band"><div class="wrap"><Stepper key={key} year={year} /></div></div>
+      <div class="wrap hero-wrap">
         <div class="hero-row">
           <div class="hero-main">
             <span class="rank" data-rank={rank} data-slot="rank">{RANK_LABEL[rank]}</span>

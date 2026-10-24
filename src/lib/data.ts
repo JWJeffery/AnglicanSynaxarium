@@ -32,14 +32,33 @@ function parseEntry(file: string): Entry {
     fm[line.slice(0, i).trim()] = line.slice(i + 1).trim();
   }
   const [bodyText, collectText = ''] = m[2].split(/\n## Collect\n/);
-  const paras = (t: string) => t.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  const key = JSON.parse(fm.key);
+  const paras = (t: string) => t.split(/\n\s*\n/).map((p) => italicize(p.trim(), key)).filter(Boolean);
   return {
-    key: JSON.parse(fm.key),
+    key,
     title: JSON.parse(fm.title),
     opening: fm.opening,
     body: paras(bodyText),
     collect: paras(collectText),
   };
+}
+
+// Titles to show in italics (content/italics.txt). Applied only to text that is not already italic.
+const italicRules: { key: string | null; phrase: string }[] = (() => {
+  const f = path.resolve('content/italics.txt');
+  if (!fs.existsSync(f)) return [];
+  return fs.readFileSync(f, 'utf-8').split('\n').map((l) => l.trim()).filter((l) => l && !l.startsWith('#')).map((l) => {
+    const m = l.match(/^(\d\d-\d\d)\s*\|\s*(.+)$/);
+    return m ? { key: m[1], phrase: m[2] } : { key: null, phrase: l };
+  });
+})();
+const escRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+function italicize(text: string, key: string): string {
+  const phrases = italicRules.filter((r) => r.key === null || r.key === key).map((r) => r.phrase).sort((a, b) => b.length - a.length);
+  if (!phrases.length) return text;
+  const re = new RegExp(`(?<![\\w*])(${phrases.map(escRe).join('|')})(?![\\w*])`, 'g');
+  // Leave anything already inside *...* alone.
+  return text.split(/(\*[^*]+\*)/).map((seg, i) => (i % 2 === 1 ? seg : seg.replace(re, '*$1*'))).join('');
 }
 
 const dir = path.resolve('content/entries');
@@ -94,3 +113,30 @@ export function dayPayload(key: string) {
 }
 
 export const hasPodcast = Object.values(cfg.podcast).some(Boolean);
+
+// About page: written by the curator in content/about.md. No file or an empty file means no page and no link.
+const aboutPath = path.resolve('content/about.md');
+export const aboutSource = fs.existsSync(aboutPath) ? fs.readFileSync(aboutPath, 'utf-8').trim() : '';
+export const hasAbout = aboutSource.length > 0;
+
+function inlineMd(text: string): string {
+  const esc = curl(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return esc
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]*)\)/g, '<a href="$2">$1</a>')
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+}
+export function aboutHtml(): string {
+  return aboutSource.split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean).map((b) => {
+    if (/^- /.test(b)) {
+      return '<ul>' + b.split('\n').filter((l) => l.trim()).map((l) => `<li>${inlineMd(l.replace(/^- /, ''))}</li>`).join('') + '</ul>';
+    }
+    const h = b.match(/^(#{1,3})\s+(.+)$/);
+    if (h) return `<h${h[1].length + 1}>${inlineMd(h[2])}</h${h[1].length + 1}>`;
+    return `<p>${inlineMd(b.replace(/\n/g, ' '))}</p>`;
+  }).join('\n');
+}
+export const elsewhere = [
+  { name: 'Musings, Ancient and Modern', url: 'https://musingsancientandmodern.substack.com', italic: true },
+  { name: 'The Universal Office', url: 'https://theuniversaloffice.com', italic: false },
+];
