@@ -1,0 +1,4 @@
+# Python add-ons for the podcast tools: pip install -r tools/requirements.txt
+flask
+mutagen
+ffmpeg-normalize

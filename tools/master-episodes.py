@@ -90,8 +90,9 @@ def main():
         os.makedirs(OUT, exist_ok=True)
 
     rows, problems = [], 0
-    for f in files:
+    for n, f in enumerate(files, 1):
         name = os.path.basename(f)
+        print(f"[{n} of {len(files)}] {name}", flush=True)
         before = measure(f)
         if not before:
             print(f"SKIPPED  {name}: could not be read as audio")

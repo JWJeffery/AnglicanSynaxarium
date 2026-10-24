@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "cover": "node tools/make-cover-images.mjs",
     "podcast-art": "node tools/make-podcast-art.mjs",
-    "icons": "node tools/make-app-icons.mjs"
+    "icons": "node tools/make-app-icons.mjs",
+    "studio": "python3 tools/studio.py"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

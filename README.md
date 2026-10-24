@@ -21,6 +21,8 @@ Static site (Astro) for anglicansynaxarium.com. Build it, then upload the conten
 
 ## The podcast
 
+**Podcast Studio (point and click).** Everything below can be done from one page instead of the terminal. Once ever: `pip install -r tools/requirements.txt` (and `sudo apt-get update && sudo apt-get install -y ffmpeg` if `ffmpeg -version` is not found). Then, in the Codespace terminal, run `npm run studio` and open port 8765 from the **Ports** tab (click the globe icon; keep the port **Private**). Five steps: Recordings (drag in your GarageBand exports), Volume (evens out loudness and lets you listen to every result), Schedule (adds episodes and lets you change release times), Settings (owner name and email, description), Publish (builds the site, makes `site.zip` and `audio.zip` to download, and saves your schedule and settings to GitHub). It runs the same tools described below, and every button also works from the terminal. Press Ctrl+C in the terminal to stop it.
+
 The audio and the feed live on this site, so the show does not depend on any outside service. Apple Podcasts, Spotify, YouTube and every other app only read the feed, `https://anglicansynaxarium.com/feed.xml`; submit that address to each once.
 
 **Adding recordings** (do this in the Codespace):
