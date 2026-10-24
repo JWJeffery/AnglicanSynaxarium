@@ -26,3 +26,7 @@ await full('icon-192.png', 192);
 await full('icon-512.png', 512);
 await padded('icon-maskable-512.png', 512, 0.66);
 await full('apple-touch-icon.png', 180);
+// For browsers that make plain home-screen shortcuts from the page header (Samsung Internet): the cover with a margin,
+// so rounded launcher corners and the browser's badge do not cut the title.
+await padded('shortcut-192.png', 192, 0.66);
+await padded('shortcut-512.png', 512, 0.66);
