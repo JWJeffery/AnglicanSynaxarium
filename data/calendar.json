@@ -328,8 +328,8 @@
    "key": "02-06",
    "month": 2,
    "day": 6,
-   "name": "The Martyrs of Japan / Paul Miki and Companions",
-   "designation": "Martyrs",
+   "name": "The Martyrs of Japan",
+   "designation": "",
    "period": "1597",
    "alternates": []
   },
@@ -1339,7 +1339,7 @@
    "key": "05-27",
    "month": 5,
    "day": 27,
-   "name": "Melangell / Monacella",
+   "name": "Melangell (Monacella)",
    "designation": "Abbess",
    "period": "7th century",
    "alternates": []
@@ -1582,7 +1582,7 @@
    "key": "06-23",
    "month": 6,
    "day": 23,
-   "name": "Etheldreda / Audrey of Ely",
+   "name": "Etheldreda (Audrey of Ely)",
    "designation": "Abbess",
    "period": "679",
    "alternates": []
@@ -1906,7 +1906,7 @@
    "key": "07-29",
    "month": 7,
    "day": 29,
-   "name": "Mary, Martha, and Lazarus / Mary and Martha of Bethany",
+   "name": "Mary, Martha, and Lazarus",
    "designation": "Biblical household / disciples",
    "period": "",
    "alternates": []
@@ -2629,8 +2629,8 @@
    "key": "10-16",
    "month": 10,
    "day": 16,
-   "name": "Current LFF Reformation Martyrs form: Hugh Latimer Nicholas Ridley and Thomas Cranmer",
-   "designation": "Bishops / Archbishop and Martyrs",
+   "name": "Hugh Latimer, Nicholas Ridley, and Thomas Cranmer",
+   "designation": "Bishops and Martyrs",
    "period": "1555, 1556",
    "alternates": []
   },
@@ -2729,7 +2729,7 @@
    "month": 10,
    "day": 27,
    "name": "Odran of Iona",
-   "designation": "Monastic martyr?",
+   "designation": "",
    "period": "c. 563",
    "alternates": []
   },
@@ -2782,7 +2782,7 @@
    "key": "11-02",
    "month": 11,
    "day": 2,
-   "name": "All Souls / All the Faithful Departed",
+   "name": "All Souls",
    "designation": "Commemoration of the Dead",
    "period": "",
    "alternates": []
@@ -3175,7 +3175,7 @@
    "key": "12-15",
    "month": 12,
    "day": 15,
-   "name": "Nino of Georgia / Christiana",
+   "name": "Nino of Georgia",
    "designation": "Evangelist of Georgia",
    "period": "c. 332",
    "alternates": []

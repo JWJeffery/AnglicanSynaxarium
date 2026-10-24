@@ -254,3 +254,14 @@ a { color: inherit; }
 .site-footer .credits { flex-basis: 100%; margin: 0; padding-top: 16px; border-top: 1px solid rgba(236,234,228,.18); font-family: var(--font-sans); font-size: 13px; line-height: 20px; color: rgba(236,234,228,.78); }
 .site-footer .credits a { color: inherit; }
 :root[data-theme="dark"] .site-footer .credits { color: var(--ink-muted); border-top-color: var(--hairline); }
+
+/* Credits and Permissions */
+.credits-page .prose h2 { font-family: var(--font-display); font-weight: 600; font-size: 24px; line-height: 30px; margin: 2em 0 .5em; }
+.credits-page .prose h3 { font-family: var(--font-display); font-weight: 600; font-size: 19px; line-height: 26px; margin: 1.6em 0 .4em; }
+.credits-page .prose a { color: var(--season-ordinary); }
+.credit-block { display: grid; grid-template-columns: max-content 1fr; gap: 6px 24px; margin: 0 0 1em; padding: 0; }
+.credit-block dt { font-family: var(--font-sans); font-size: 13px; line-height: 24px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-muted); }
+.credit-block dd { margin: 0; font-family: var(--font-text); font-size: 18px; line-height: 24px; }
+.credit-line { font-family: var(--font-text); font-weight: 600; }
+.citation { padding-left: 1.2em; text-indent: -1.2em; margin-left: 1.2em; }
+@media (max-width: 600px) { .credit-block { grid-template-columns: 1fr; gap: 0; } .credit-block dd { margin-bottom: 10px; } }

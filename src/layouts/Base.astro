@@ -51,6 +51,7 @@ const og = new URL('/og.png', site.site).toString();
           <a href="/print/">Print</a>
           <a href="/kalendar/">Kalendar</a>
           {hasAbout && <a href="/about/">About</a>}
+          <a href="/credits/">Credits and Permissions</a>
         </nav>
         <nav aria-label="Elsewhere" class="elsewhere">
           {elsewhere.map((l) => <a href={l.url} rel="noopener">{l.italic ? <em>{l.name}</em> : l.name}</a>)}
