@@ -1,3 +1,4 @@
+import linksFile from '../../data/podcast-links.json';
 import fs from 'node:fs';
 import path from 'node:path';
 import calendarJson from '../../data/calendar.json';
@@ -17,7 +18,10 @@ export interface Entry { key: string; title: string; opening: string; body: stri
 export const days: Day[] = (calendarJson as { days: Day[] }).days;
 export const dayByKey = new Map(days.map((d) => [d.key, d]));
 // The RSS button appears as soon as the first episode exists, unless a different address is set in site.config.json.
-const podcast = { ...cfg.podcast, rss: cfg.podcast.rss || (hasFeed ? feedUrl : '') };
+// Where the show is listed: data/podcast-links.json (blank entries are ignored; a link there wins over site.config.json).
+const listed = Object.fromEntries(Object.entries(linksFile as Record<string, string>).filter(([, v]) => v));
+const podcast = { ...cfg.podcast, ...listed } as Record<string, string>;
+podcast.rss = podcast.rss || (hasFeed ? feedUrl : '');
 export const site = { ...cfg, podcast };
 export { episodeByKey, episodes, feedUrl, hasFeed };
 

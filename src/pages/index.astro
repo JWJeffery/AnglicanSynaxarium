@@ -17,7 +17,7 @@ const key = keyOf(month, day);
 const d = dayByKey.get(key)!;
 const entry = entries.get(key);
 const rank = rankOf(key);
-const names: [string, string][] = [['spotify', 'Spotify'], ['apple_podcasts', 'Apple Podcasts'], ['youtube', 'YouTube'], ['substack', 'Substack'], ['rss', 'RSS feed']];
+const names: [string, string][] = [['spotify', 'Spotify'], ['apple_podcasts', 'Apple Podcasts'], ['pocket_casts', 'Pocket Casts'], ['youtube', 'YouTube'], ['substack', 'Substack'], ['rss', 'RSS feed']];
 const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k]);
 // The welcome recording (a file named "Welcome - ...") has no calendar day, so it is played here.
 const welcome = episodeByKey.get('welcome');

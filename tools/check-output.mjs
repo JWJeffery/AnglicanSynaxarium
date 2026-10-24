@@ -94,3 +94,14 @@ if (!(feedCfg.owner_name || '').trim()) {
 const creditsHtml = fs2.readFileSync('dist/credits/index.html', 'utf-8');
 if (!creditsHtml.includes('creativecommons.org/licenses/by-nc-sa/4.0') || !/©\s*\d{4}\s+\S/.test(creditsHtml)) { console.error('Licence check failed: the Credits page is missing the licence statement or the copyright holder.'); process.exit(1); }
 console.log('licence: Credits page states CC BY-NC-SA 4.0 for the entry text, all rights reserved for the recordings');
+
+// Listing links guard: data/podcast-links.json must hold only full https addresses.
+if (fs2.existsSync('data/podcast-links.json')) {
+  const listed = JSON.parse(fs2.readFileSync('data/podcast-links.json', 'utf-8'));
+  const bad = Object.entries(listed).filter(([, v]) => v && !/^https:\/\/[^\s]+$/.test(v)).map(([k]) => k);
+  if (bad.length) { console.error('Podcast links check failed: these entries in data/podcast-links.json are not full https:// addresses: ' + bad.join(', ')); process.exit(1); }
+  const home = fs2.readFileSync('dist/index.html', 'utf-8');
+  const missing = Object.entries(listed).filter(([k, v]) => v && k !== 'rss' && !home.includes(`href="${v}"`)).map(([k]) => k);
+  if (missing.length) { console.error('Podcast links check failed: these links are not on the home page: ' + missing.join(', ')); process.exit(1); }
+  console.log('podcast links: ' + Object.values(listed).filter(Boolean).length + ' listing link(s) present on the home page');
+}
