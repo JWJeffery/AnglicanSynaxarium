@@ -1,3 +1,4 @@
+import unicodedata
 #!/usr/bin/env python3
 """Turn approved Google Doc text (content/source/MM-DD.txt) into content/entries/MM-DD-slug.md.
 
@@ -25,6 +26,7 @@ def title_case(t):
     return " ".join(out)
 
 def slug(t):
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()  # Dũng-Lạc -> Dung-Lac
     s = re.sub(r"[^a-z0-9]+", "-", t.lower().replace("’", "")).strip("-")
     return s[:48].rstrip("-")
 
@@ -49,7 +51,7 @@ for path in sorted(glob.glob("content/source/*.txt")):
     for r in RANKS:
         if title.endswith(r):
             title = title[: -len(r)]
-    title = re.sub(r",\s*(?:c\.\s*)?\d{3,4}(?:\s+and\s+\d{3,4})*$|,\s*(?:First Century|About \d{3,4})$", "", title)  # a year in the heading is shown separately as the period
+    title = re.sub(r",\s*(?:c\.\s*)?\d{3,4}(?:\s+and\s+\d{3,4}|\s*[–-]\s*\d{3,4})*$|,\s*(?:First Century|About \d{3,4})$", "", title)  # a year in the heading is shown separately as the period
     title = title_case(title)
     pray = [i for i, b in enumerate(blocks) if b == "Let us pray."]
     assert len(pray) == 1, f"{key}: need exactly one 'Let us pray.' line"

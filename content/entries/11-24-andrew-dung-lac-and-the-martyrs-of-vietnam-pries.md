@@ -1,0 +1,52 @@
+---
+key: "11-24"
+title: "Andrew Dũng-Lạc and the Martyrs of Vietnam, Priest and Companions, Martyrs"
+status: approved
+opening: greater-church
+---
+
+Today the Greater Church commemorates Andrew Dũng-Lạc and the Martyrs of Vietnam, whose faithfulness to Christ sustained the Church through generations of persecution.
+
+Andrew was born in northern Vietnam. His family was poor, and when he was a boy, his parents moved to Hanoi in search of work. There he came into the care of a Christian catechist, a lay teacher of the faith. The catechist gave him an education and taught him about Jesus Christ.
+
+Andrew received baptism and later taught the Christian faith as a catechist. In 1823, he was ordained a priest.
+
+As a priest, Andrew preached, celebrated the Eucharist, and cared for the Christians entrusted to him. He lived simply and became known for his generosity.
+
+In 1833, the emperor Minh Mạng ordered Christians to abandon their faith. Officials were instructed to demand that Christians trample upon a cross as a public denial of Christ.
+
+Andrew continued his ministry.
+
+In 1835, officials arrested him. His parishioners gathered money and paid the authorities to secure his release.
+
+To avoid recognition, Andrew added Lạc to his Vietnamese name, Dũng, and continued his ministry.
+
+Four years later, he went to visit another Vietnamese priest, Peter Trương Văn Thi, to make his confession. Even in a time when priests were hunted, Andrew sought the mercy of Christ in the sacrament of reconciliation.
+
+The authorities arrested the two priests. Christians again raised money to obtain their freedom, but the release did not last. The authorities arrested them again and took them to Hanoi.
+
+In Hanoi, officials imprisoned Andrew and Peter and demanded that they renounce Christianity. Both priests refused.
+
+On December 21, 1839, the two priests were beheaded.
+
+Andrew, Peter, and 117 Vietnamese martyrs who were killed between 1745 and 1862 are remembered by the church together for their witness to Christ. They included eight bishops, fifty priests, and fifty-nine lay Christians, among them catechists. Most were Vietnamese; others had come from Spain and France.
+
+They did not all endure the same ordeal. Some died in prison. Others were executed for refusing to renounce Christ. The persecution reached into homes and villages, separating families, destroying communities, and threatening those who sheltered or assisted Christians.
+
+One of those lay martyrs was Agnes Lê Thị Thành, a Vietnamese Christian woman. She sheltered a priest in her home during the persecution. Officials arrested her, and she died in prison on July 12, 1841.
+
+Another martyr, Paul Lê Bảo Tịnh, was not yet a priest when officials imprisoned him in 1841. Two years later, he wrote from captivity to seminarians, men preparing for ordination.
+
+Paul described iron chains, cruelty, and hatred in prison. Yet he wrote that God had given him joy in the midst of suffering.
+
+Paul was released in 1848 and subsequently ordained a priest. He became a teacher and rector of a seminary, helping prepare other men to serve the Church.
+
+He continued that work until his arrest in 1857. Officials executed Paul on April 6 of that year.
+
+Andrew and Peter went to their deaths confessing the Lord whom they had served at the altar. Paul, who had known the misery of prison, continued to form priests until imprisonment and death claimed him also. Agnes had sheltered a priest.
+
+Christ had joined them to himself in baptism. In the Eucharist he had fed them with his own life. Through suffering and death, they remained members of his Body, awaiting the resurrection promised to all who belong to him. The same Lord receives us in his mercy and draws us toward the fullness of life they sought in him.
+
+## Collect
+
+Almighty God, who strengthened Andrew Dũng-Lạc and the martyrs of Vietnam to remain faithful to your Son through persecution and death: Sustain your Church by the same grace; that, through their prayers and example, we may persevere in faith and serve one another in charity; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.

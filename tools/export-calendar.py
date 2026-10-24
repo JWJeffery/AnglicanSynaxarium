@@ -22,6 +22,8 @@ OVERRIDES = {
     "06-23": {"name": "Etheldreda (Audrey of Ely)"},
     "07-29": {"name": "Mary, Martha, and Lazarus"},
     "11-02": {"name": "All Souls"},
+    "11-24": {"name": "Andrew Dũng-Lạc and the Martyrs of Vietnam", "designation": "Priest and Companions, Martyrs", "period": "1745–1862",
+              "alternates": [{"name": "Lucy Menzies", "designation": "Scholar and Mystic", "period": "1954"}]},  # curator's rewritten entry, Oct 24
     "12-15": {"name": "Nino of Georgia"},
     "08-14": {"name": "Jonathan Myrick Daniels", "designation": "Seminarian and Martyr", "period": "1965",
               "alternates": [{"name": "Maximilian Kolbe", "designation": "Priest and Martyr", "period": "1941"}]},  # Kolbe kept as another commemoration (curator, Oct 23)
