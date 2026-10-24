@@ -6,6 +6,7 @@ import PrintSection from '../components/PrintSection.astro';
 import KalIndex from '../components/KalIndex.astro';
 import Cover from '../components/Cover.astro';
 import { dayByKey, entries, rankOf, titleOf, inline, site, hasPodcast } from '../lib/data';
+import { episodeByKey, audioUrl, feed } from '../lib/podcast';
 import { keyOf, seasonOf, RANK_LABEL } from '../lib/church-year';
 import fs from 'node:fs';
 const heroArt = !hasPodcast && fs.existsSync('public/cover-800.png');
@@ -18,6 +19,10 @@ const entry = entries.get(key);
 const rank = rankOf(key);
 const names: [string, string][] = [['spotify', 'Spotify'], ['apple_podcasts', 'Apple Podcasts'], ['youtube', 'YouTube'], ['substack', 'Substack'], ['rss', 'RSS feed']];
 const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k]);
+// The welcome recording (a file named "Welcome - ...") has no calendar day, so it is played here.
+const welcome = episodeByKey.get('welcome');
+const welcomeTitle = feed.welcome_title || `Welcome to ${feed.title}`;
+const welcomeReleased = !!welcome && new Date(welcome.published).getTime() <= Date.now();
 ---
 <Base title="An Anglican Synaxarium" description="One saint for every day of the year, read in the Anglican manner." path="/">
   <main id="top">
@@ -49,6 +54,13 @@ const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k])
                     <p>Hear this saint’s story read aloud.</p>
                   </div>
                 </div>
+                {welcome && (
+                  <div class="hear" id="welcome" data-hear data-published={welcome.published} hidden={!welcomeReleased}>
+                    <p class="lab">{welcomeTitle}</p>
+                    <audio controls preload="none" src={audioUrl(welcome)}>Your browser cannot play audio here. <a href={audioUrl(welcome)}>Download the recording.</a></audio>
+                    <a class="hear-dl" href={audioUrl(welcome)} download>Download the recording (MP3)</a>
+                  </div>
+                )}
                 <div class="platforms">
                   {links.map(([k, label]) => <a class="platform" href={(site.podcast as Record<string, string>)[k]} rel="noopener"><span>{label}</span><span aria-hidden="true">→</span></a>)}
                 </div>

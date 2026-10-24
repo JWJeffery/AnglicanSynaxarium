@@ -17,6 +17,10 @@ export async function initHome() {
     listen.href = `/saint/${t.key}/#hear`;
   }
 
+  // Welcome recording: shown once its release time has passed.
+  const welcome = document.querySelector<HTMLElement>('[data-hear]');
+  if (welcome && Date.now() >= Date.parse(welcome.dataset.published || '')) welcome.hidden = false;
+
   // Day stepper
   const prev = map.get(stepKey(t.key, -1))!, next = map.get(stepKey(t.key, 1))!;
   const a = q<HTMLAnchorElement>('[data-prev]')!, b = q<HTMLAnchorElement>('[data-next]')!;
