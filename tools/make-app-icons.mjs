@@ -1,25 +1,28 @@
-// Makes the home-screen icons from the compass rose on the green cover.
+// Makes the home-screen icons from the cover art (the title and the compass rose together).
 // Writes public/icons/: icon-192.png, icon-512.png, icon-maskable-512.png, apple-touch-icon.png.
-// "Maskable" icons keep the rose inside the middle 60% so Android can round or crop the corners freely.
+// "Maskable" icons shrink the cover to 66% on matching green so Android can round or crop the
+// corners freely without cutting into the title or the rose.
 import sharp from 'sharp';
 import fs from 'node:fs';
 
 const src = 'public/assets/synaxarium-cover-green-3000.png';
 if (!fs.existsSync(src)) { console.error(`Missing ${src}`); process.exit(1); }
-const GREEN = { r: 31, g: 74, b: 51 }; // #1F4A33, the cover and favicon green
-// The compass rose sits in the lower right of the 3000 px cover.
-const rose = await sharp(src).extract({ left: 2258, top: 2278, width: 594, height: 594 }).toBuffer();
+const GREEN = { r: 31, g: 74, b: 51 }; // #1F4A33, the cover green
+fs.mkdirSync('public/icons', { recursive: true });
 
-async function icon(file, size, fill) {
-  const inner = Math.round(size * fill);
-  const r = await sharp(rose).resize(inner, inner).toBuffer();
-  await sharp({ create: { width: size, height: size, channels: 3, background: GREEN } })
-    .composite([{ input: r, left: Math.round((size - inner) / 2), top: Math.round((size - inner) / 2) }])
-    .png().toFile(`public/icons/${file}`);
+async function full(file, size) {
+  await sharp(src).resize(size, size).png().toFile(`public/icons/${file}`);
   console.log(`public/icons/${file} ${size} x ${size}`);
 }
-fs.mkdirSync('public/icons', { recursive: true });
-await icon('icon-192.png', 192, 0.72);
-await icon('icon-512.png', 512, 0.72);
-await icon('icon-maskable-512.png', 512, 0.56);
-await icon('apple-touch-icon.png', 180, 0.72);
+async function padded(file, size, fill) {
+  const inner = Math.round(size * fill);
+  const art = await sharp(src).resize(inner, inner).toBuffer();
+  await sharp({ create: { width: size, height: size, channels: 3, background: GREEN } })
+    .composite([{ input: art, left: Math.round((size - inner) / 2), top: Math.round((size - inner) / 2) }])
+    .png().toFile(`public/icons/${file}`);
+  console.log(`public/icons/${file} ${size} x ${size} (cover at ${Math.round(fill * 100)}%)`);
+}
+await full('icon-192.png', 192);
+await full('icon-512.png', 512);
+await padded('icon-maskable-512.png', 512, 0.66);
+await full('apple-touch-icon.png', 180);

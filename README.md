@@ -45,6 +45,6 @@ The site is an installable web app. On a phone, open anglicansynaxarium.com and 
 
 - `npm run build` now also writes `dist/sw.js` (the offline copy, made with Workbox, the same tool the Universal Office uses) and checks that all 366 pages are stored and the audio and feed are not.
 - When a new release is uploaded, the app downloads it quietly and offers "Update now" or "Later".
-- `npm run icons` remakes the home-screen icons in `public/icons/` from the compass rose on the cover.
+- `npm run icons` remakes the home-screen icons in `public/icons/` from the cover art (title and compass rose).
 - Upload `dist/` complete each time, including `sw.js` and the `workbox-....js` file next to it. `public/.htaccess` makes sure `sw.js` is never served from a stale cache; if it is missing from the server, updates will not reach installed copies.
 - The first visit downloads about 5 MB (22 MB stored). Only changed pages download again after later releases.

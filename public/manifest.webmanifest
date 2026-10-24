@@ -1,7 +1,7 @@
 {
   "id": "/",
   "name": "An Anglican Synaxarium",
-  "short_name": "Synaxarium",
+  "short_name": "An Anglican Synaxarium",
   "description": "One saint for every day of the year, read in the Anglican manner.",
   "lang": "en",
   "start_url": "/",
