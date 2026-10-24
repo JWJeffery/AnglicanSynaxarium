@@ -38,3 +38,13 @@ Episodes appear in the feed, and the player and Listen buttons appear on the sit
 **After the first upload, check once:**
 - `https://anglicansynaxarium.com/feed.xml` shows XML. If it says Not Found, use `https://anglicansynaxarium.com/feed.php` instead (same content).
 - `curl -I -H "Range: bytes=0-1" https://anglicansynaxarium.com/audio/11-01.mp3` answers `206 Partial Content`. Apple requires it.
+
+## Installable app (works offline)
+
+The site is an installable web app. On a phone, open anglicansynaxarium.com and choose Add to Home Screen (iPhone: Share, then Add to Home Screen; Android: the browser menu, then Install app). After the first visit every page and entry reads with no connection. Recordings always need a connection.
+
+- `npm run build` now also writes `dist/sw.js` (the offline copy, made with Workbox, the same tool the Universal Office uses) and checks that all 366 pages are stored and the audio and feed are not.
+- When a new release is uploaded, the app downloads it quietly and offers "Update now" or "Later".
+- `npm run icons` remakes the home-screen icons in `public/icons/` from the compass rose on the cover.
+- Upload `dist/` complete each time, including `sw.js` and the `workbox-....js` file next to it. `public/.htaccess` makes sure `sw.js` is never served from a stale cache; if it is missing from the server, updates will not reach installed copies.
+- The first visit downloads about 5 MB (22 MB stored). Only changed pages download again after later releases.

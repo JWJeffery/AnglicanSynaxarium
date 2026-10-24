@@ -7,14 +7,18 @@
     "entries": "python3 tools/convert-entries.py",
     "calendar": "python3 tools/export-calendar.py ../PrayerAppNew/data/kalendar/synaxarium/decisions.json",
     "dev": "astro dev",
-    "build": "python3 tools/convert-entries.py && astro build && node tools/check-output.mjs",
+    "build": "python3 tools/convert-entries.py && astro build && node tools/build-service-worker.mjs && node tools/check-output.mjs",
     "preview": "astro preview",
     "cover": "node tools/make-cover-images.mjs",
-    "podcast-art": "node tools/make-podcast-art.mjs"
+    "podcast-art": "node tools/make-podcast-art.mjs",
+    "icons": "node tools/make-app-icons.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "astro": "^5.0.0",
     "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "workbox-build": "^7.4.1"
   }
 }

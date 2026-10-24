@@ -67,3 +67,20 @@ if (episodes.length) {
 }
 if (problems.length) { console.error('Podcast check failed:\n  ' + problems.join('\n  ')); process.exit(1); }
 console.log(`podcast: ${episodes.length} episode(s) in the feed, scheduler and settings present`);
+
+// Offline app guard: manifest, icons and a service worker that stores every page but never the audio or feed.
+const app = [];
+for (const f of ['manifest.webmanifest', 'sw.js', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png']) {
+  if (!fs2.existsSync(`dist/${f}`)) app.push(`dist/${f} is missing`);
+}
+if (fs2.existsSync('dist/sw.js')) {
+  const sw = fs2.readFileSync('dist/sw.js', 'utf-8');
+  const pages = new Set([...sw.matchAll(/\{url:"(saint\/\d\d-\d\d\/index\.html)"/g)].map((m) => m[1]));
+  if (pages.size !== 366) app.push(`the service worker stores ${pages.size} saint pages, expected 366`);
+  for (const must of ['index.html', 'kalendar/index.html', 'manifest.webmanifest']) if (!sw.includes(`{url:"${must}"`)) app.push(`the service worker does not store ${must}`);
+  for (const never of ['audio/', 'feed.xml', 'feed.php', 'feed-source.xml', 'podcast-cover.jpg']) if (sw.includes(`{url:"${never}`)) app.push(`the service worker must not store ${never}`);
+}
+const manifest = JSON.parse(fs2.readFileSync('dist/manifest.webmanifest', 'utf-8'));
+for (const i of manifest.icons) if (!fs2.existsSync(`dist${i.src}`)) app.push(`manifest icon ${i.src} is missing`);
+if (app.length) { console.error('Offline app check failed:\n  ' + app.join('\n  ')); process.exit(1); }
+console.log('offline app: manifest, icons and service worker present; 366 saint pages stored');
