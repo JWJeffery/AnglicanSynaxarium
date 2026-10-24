@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Offline check</title>
+<style>
+body { font: 16px/1.5 system-ui, sans-serif; margin: 16px; max-width: 40rem; }
+h1 { font-size: 20px; }
+pre { white-space: pre-wrap; word-break: break-word; background: #eee; padding: 12px; border-radius: 6px; font-size: 14px; }
+button { font: inherit; padding: 10px 16px; margin: 4px 8px 4px 0; }
+</style>
+</head>
+<body>
+<h1>Offline check</h1>
+<p>A diagnostic page for the offline copy of this site. Nothing on it is saved or sent anywhere.</p>
+<pre id="out">Checking…</pre>
+<button id="reg" type="button">Try registering the offline copy now</button>
+<button id="again" type="button">Check again</button>
+<script>
+(function () {
+  var out = document.getElementById('out');
+  var extra = '';
+  function line(k, v) { return k + ': ' + v + '\n'; }
+
+  async function check() {
+    var t = '';
+    t += line('Time', new Date().toString());
+    t += line('Online (browser says)', navigator.onLine);
+    t += line('Browser', navigator.userAgent);
+    t += line('Secure page (https)', location.protocol === 'https:');
+    t += line('Service workers supported', 'serviceWorker' in navigator);
+    if ('serviceWorker' in navigator) {
+      try {
+        var regs = await navigator.serviceWorker.getRegistrations();
+        t += line('Registrations found', regs.length);
+        regs.forEach(function (r, i) {
+          var n = '  #' + (i + 1) + ' ';
+          t += line(n + 'scope', r.scope);
+          t += line(n + 'active', r.active ? r.active.state + ' (' + r.active.scriptURL + ')' : 'none');
+          t += line(n + 'installing', r.installing ? r.installing.state : 'none');
+          t += line(n + 'waiting', r.waiting ? r.waiting.state : 'none');
+        });
+        t += line('This page is controlled by the worker', !!navigator.serviceWorker.controller);
+      } catch (e) {
+        t += line('Registration lookup failed', (e && e.message) || e);
+      }
+    }
+    if ('caches' in window) {
+      try {
+        var names = await caches.keys();
+        t += line('Cache stores', names.length);
+        for (var i = 0; i < names.length; i++) {
+          var c = await caches.open(names[i]);
+          var keys = await c.keys();
+          t += line('  ' + names[i], keys.length + ' files');
+        }
+      } catch (e) {
+        t += line('Cache lookup failed', (e && e.message) || e);
+      }
+    } else {
+      t += line('Cache storage supported', false);
+    }
+    if (navigator.storage && navigator.storage.estimate) {
+      try {
+        var est = await navigator.storage.estimate();
+        t += line('Storage used (MB)', (est.usage / 1048576).toFixed(1));
+        t += line('Storage allowed (MB)', (est.quota / 1048576).toFixed(0));
+      } catch (e) { /* ignore */ }
+    }
+    try {
+      var r = await fetch('/saint/11-01/', { cache: 'no-store' });
+      t += line('Fetch of a saint page', r.status);
+    } catch (e) {
+      t += line('Fetch of a saint page', 'failed: ' + ((e && e.message) || e));
+    }
+    out.textContent = t + extra;
+  }
+
+  document.getElementById('again').addEventListener('click', check);
+  document.getElementById('reg').addEventListener('click', async function () {
+    extra += '\nRegister attempt at ' + new Date().toLocaleTimeString() + ': ';
+    try {
+      var r = await navigator.serviceWorker.register('/sw.js');
+      extra += 'finished. Scope: ' + r.scope + '\n';
+    } catch (e) {
+      extra += 'FAILED: ' + ((e && e.name) || '') + ' - ' + ((e && e.message) || e) + '\n';
+    }
+    out.textContent += extra;
+    setTimeout(check, 4000);
+  });
+  check();
+})();
+</script>
+</body>
+</html>
