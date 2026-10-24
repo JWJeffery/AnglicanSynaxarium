@@ -3,6 +3,13 @@ AddType audio/mpeg .mp3
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
+# Samsung Internet builds its own Android wrapper app when it installs a web app, and Google Play Protect
+# flags that wrapper ("built for an older version of Android"). Hiding the manifest from that one browser
+# makes it offer a plain home-screen shortcut instead. Every other browser is unaffected.
+RewriteCond %{HTTP_USER_AGENT} SamsungBrowser [NC]
+RewriteRule ^manifest\.webmanifest$ - [G,L]
+
 RewriteRule ^feed\.xml$ feed.php [L]
 </IfModule>
 
@@ -21,6 +28,9 @@ Deny from all
 <IfModule mod_headers.c>
 <FilesMatch "^(sw\.js|manifest\.webmanifest)$">
 Header set Cache-Control "no-cache"
+</FilesMatch>
+<FilesMatch "^manifest\.webmanifest$">
+Header append Vary User-Agent
 </FilesMatch>
 </IfModule>
 AddType application/manifest+json .webmanifest

@@ -12,7 +12,8 @@ const { count, size, warnings } = await generateSW({
   globDirectory: dist,
   swDest: path.join(dist, 'sw.js'),
   globPatterns: ['**/*.{html,js,css,json,woff2,svg,webmanifest}', 'icons/*.png', 'favicon.svg', 'cover-400.png'],
-  globIgnores: ['feed-source.xml', 'feed.php', 'sw.js', '**/*.map', 'data/day/**/*.map'],
+  // The manifest is not stored: Samsung Internet is served none (see public/.htaccess), and a missing file would stop the worker installing there.
+  globIgnores: ['manifest.webmanifest', 'feed-source.xml', 'feed.php', 'sw.js', '**/*.map', 'data/day/**/*.map'],
   maximumFileSizeToCacheInBytes: 2 * 1024 * 1024,
   // Print pages are one page read with different ?d=... settings; any query string gets the same page.
   ignoreURLParametersMatching: [/.*/],

@@ -48,3 +48,5 @@ The site is an installable web app. On a phone, open anglicansynaxarium.com and 
 - `npm run icons` remakes the home-screen icons in `public/icons/` from the cover art (title and compass rose).
 - Upload `dist/` complete each time, including `sw.js` and the `workbox-....js` file next to it. `public/.htaccess` makes sure `sw.js` is never served from a stale cache; if it is missing from the server, updates will not reach installed copies.
 - The first visit downloads about 5 MB (22 MB stored). Only changed pages download again after later releases.
+
+**Samsung Internet.** That browser builds its own Android wrapper when it installs a web app, and Google Play Protect warns about that wrapper ("built for an older version of Android"). `public/.htaccess` therefore tells Samsung Internet (and only it) that `manifest.webmanifest` does not exist, so it offers a plain home-screen shortcut instead. Chrome, Edge, Firefox and the rest still get the full install. The offline copy works the same in all of them. To undo this, delete the `SamsungBrowser` rule near the top of `public/.htaccess`.

@@ -77,8 +77,8 @@ if (fs2.existsSync('dist/sw.js')) {
   const sw = fs2.readFileSync('dist/sw.js', 'utf-8');
   const pages = new Set([...sw.matchAll(/\{url:"(saint\/\d\d-\d\d\/index\.html)"/g)].map((m) => m[1]));
   if (pages.size !== 366) app.push(`the service worker stores ${pages.size} saint pages, expected 366`);
-  for (const must of ['index.html', 'kalendar/index.html', 'manifest.webmanifest']) if (!sw.includes(`{url:"${must}"`)) app.push(`the service worker does not store ${must}`);
-  for (const never of ['audio/', 'feed.xml', 'feed.php', 'feed-source.xml', 'podcast-cover.jpg']) if (sw.includes(`{url:"${never}`)) app.push(`the service worker must not store ${never}`);
+  for (const must of ['index.html', 'kalendar/index.html']) if (!sw.includes(`{url:"${must}"`)) app.push(`the service worker does not store ${must}`);
+  for (const never of ['audio/', 'feed.xml', 'feed.php', 'feed-source.xml', 'podcast-cover.jpg', 'manifest.webmanifest']) if (sw.includes(`{url:"${never}`)) app.push(`the service worker must not store ${never}`);
 }
 const manifest = JSON.parse(fs2.readFileSync('dist/manifest.webmanifest', 'utf-8'));
 for (const i of manifest.icons) if (!fs2.existsSync(`dist${i.src}`)) app.push(`manifest icon ${i.src} is missing`);
