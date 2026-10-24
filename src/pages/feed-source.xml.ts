@@ -8,6 +8,8 @@ import { audioUrl, clock, episodes, feed, feedUrl } from '../lib/podcast';
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (s: string) => s.replace(/\*/g, '').replace(/\s+/g, ' ').trim();
 const art = new URL(feed.art, site.site).toString();
+// Unless a line is set under Settings, the feed states the licence: recordings reserved, entry text CC BY-NC-SA.
+const copyright = feed.copyright || `© ${new Date(site.launch).getUTCFullYear()} ${feed.owner_name}. Recordings: all rights reserved. Entry text: CC BY-NC-SA 4.0 (${site.site}/credits/).`;
 
 export async function GET() {
   const xml = await getRssString({
@@ -23,7 +25,7 @@ export async function GET() {
     customData: [
       `<language>${esc(feed.language)}</language>`,
       `<atom:link href="${esc(feedUrl)}" rel="self" type="application/rss+xml"/>`,
-      feed.copyright ? `<copyright>${esc(feed.copyright)}</copyright>` : '',
+      `<copyright>${esc(copyright)}</copyright>`,
       `<itunes:author>${esc(feed.author)}</itunes:author>`,
       `<itunes:owner><itunes:name>${esc(feed.owner_name)}</itunes:name><itunes:email>${esc(feed.owner_email)}</itunes:email></itunes:owner>`,
       `<itunes:image href="${esc(art)}"/>`,

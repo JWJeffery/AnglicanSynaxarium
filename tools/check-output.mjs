@@ -84,3 +84,12 @@ const manifest = JSON.parse(fs2.readFileSync('dist/manifest.webmanifest', 'utf-8
 for (const i of manifest.icons) if (!fs2.existsSync(`dist${i.src}`)) app.push(`manifest icon ${i.src} is missing`);
 if (app.length) { console.error('Offline app check failed:\n  ' + app.join('\n  ')); process.exit(1); }
 console.log('offline app: manifest, icons and service worker present; 366 saint pages stored');
+
+// Licence guard: the Credits page and the feed name the copyright holder (the Owner name on the Settings page).
+if (!(feedCfg.owner_name || '').trim()) {
+  console.error('Licence check failed:\n  The Credits page and the podcast feed need a copyright holder. Fill in Owner name under 4 Settings in Podcast Studio (or feed.owner_name in site.config.json), then build again.');
+  process.exit(1);
+}
+const creditsHtml = fs2.readFileSync('dist/credits/index.html', 'utf-8');
+if (!creditsHtml.includes('creativecommons.org/licenses/by-nc-sa/4.0') || !/©\s*\d{4}\s+\S/.test(creditsHtml)) { console.error('Licence check failed: the Credits page is missing the licence statement or the copyright holder.'); process.exit(1); }
+console.log('licence: Credits page states CC BY-NC-SA 4.0 for the entry text, all rights reserved for the recordings');

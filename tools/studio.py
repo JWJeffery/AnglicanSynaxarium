@@ -330,12 +330,12 @@ TEMPLATES = {
 <h2>4. Settings</h2>
 <form method="post" action="/settings/save" class="card"><input type="hidden" name="t" value="{{ token }}">
 <p class="hint">These go in the podcast feed. Apple and Spotify require an owner name and email, and the email is <b>public</b> in the feed.</p>
-<label>Owner name</label><input type="text" name="owner_name" value="{{ f.owner_name }}">
+<label>Owner name <span class="hint">(also the copyright holder named on the Credits page and in the feed)</span></label><input type="text" name="owner_name" value="{{ f.owner_name }}">
 <label>Owner email</label><input type="email" name="owner_email" value="{{ f.owner_email }}">
 <label>Show description <span class="hint">(the text under the show title in podcast apps)</span></label><textarea name="description" rows="3">{{ f.description }}</textarea>
 <label>Welcome episode title <span class="hint">(optional; otherwise "Welcome to ...")</span></label><input type="text" name="welcome_title" value="{{ f.welcome_title }}">
 <label>Welcome episode description <span class="hint">(optional; otherwise the show description is used)</span></label><textarea name="welcome_description" rows="3">{{ f.welcome_description }}</textarea>
-<label>Copyright line <span class="hint">(optional)</span></label><input type="text" name="copyright" value="{{ f.copyright }}">
+<label>Copyright line <span class="hint">(optional; if left blank the feed says "© year Owner name. Recordings: all rights reserved. Entry text: CC BY-NC-SA 4.0")</span></label><input type="text" name="copyright" value="{{ f.copyright }}">
 <label>Release time of day <span class="hint">({{ f.release_zone }}; used when new episodes are added)</span></label><input type="time" name="release_time" value="{{ f.release_time }}" style="width:10rem">
 <label><input type="checkbox" name="transcripts" {% if f.transcripts %}checked{% endif %} style="width:auto"> Offer the written entry as the transcript in apps that show one</label>
 <p><button class="primary">Save settings</button></p></form>

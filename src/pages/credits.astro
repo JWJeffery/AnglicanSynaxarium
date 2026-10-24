@@ -1,5 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
+import { site } from '../lib/data';
+// The copyright holder is the Owner name from site.config.json (set on the Settings page); the build refuses to finish without it.
+const holder = site.feed.owner_name;
+const year = new Date(site.launch).getUTCFullYear();
 ---
 <Base title="Credits and Permissions | An Anglican Synaxarium" description="Sources, permissions and attributions for the audio, liturgical texts and images used by An Anglican Synaxarium." path="/credits/">
   <main class="entry-wrap" style="flex:1">
@@ -7,6 +11,13 @@ import Base from '../layouts/Base.astro';
       <h1 class="entry-title">Credits and Permissions</h1>
       <div class="prose">
         <p><em>An Anglican Synaxarium</em> is a non-commercial project of Christian education, devotion, and spiritual formation. Its hagiographical entries are original compositions unless otherwise noted. Certain audio, liturgical texts, and images are used from other sources under their respective permissions, licenses, or copyright provisions.</p>
+
+        <h2>Licence</h2>
+        <h3>Text</h3>
+        <p>The written entries on this site are © {year} {holder} and are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>. You may copy, print and share them, and adapt them (for example, translate them or adapt them for your parish), for non-commercial purposes, provided that you credit {holder} and <em>An Anglican Synaxarium</em>, say what you changed, and share any adaptation under the same licence.</p>
+        <p>This licence does not cover the audio recordings; the collects and liturgical texts taken from published sources, credited below; the images and the Compass Rose emblem; or the BBC bell.</p>
+        <h3>Recordings</h3>
+        <p>The podcast recordings are © {year} {holder}. All rights reserved. You are welcome to listen and subscribe in any podcast app; please do not copy or republish the recordings without permission. The opening bell is © BBC and is used under the licence described below.</p>
 
         <h2>Audio</h2>
         <p>The podcast opens with a bell from the BBC Sound Effects Library.</p>
