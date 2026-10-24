@@ -25,11 +25,12 @@ The audio and the feed live on this site, so the show does not depend on any out
 
 **Adding recordings** (do this in the Codespace):
 
-1. Drag the MP3 files into a folder named `incoming/` (it is never committed). File names such as `November 18 - Hilda of Whitby.mp3` or `11-18.mp3` both work.
-2. Once ever: `pip install mutagen`
-3. Run `python3 tools/add-episodes.py incoming/`. It copies each file to `audio/MM-DD.mp3`, writes its title tags, measures it, and records it in `data/episodes.json` with a release time of 6:00 a.m. Pacific on the day itself. Add `--dry-run` to preview. Changing a release time later: edit `published` for that day in `data/episodes.json` (times are UTC).
-4. Download the `audio/` folder's files and upload them into `audio/` on the web root at Spaceship (cPanel File Manager). The site's own upload never deletes them.
-5. `npm run build`, then upload `dist/` as usual. The build refuses to finish if the feed has a problem.
+1. Drag the recordings (WAV or MP3) into a folder named `incoming/` (it is never committed). File names such as `November 18 - Hilda of Whitby.wav` or `11-18.mp3` both work.
+2. Once ever: `pip install mutagen ffmpeg-normalize`, and if `ffmpeg -version` says command not found, `sudo apt-get update && sudo apt-get install -y ffmpeg`.
+3. Even out the volume: `python3 tools/master-episodes.py incoming/`. It brings every recording to the podcast standard (stereo -16 LUFS, mono -19 LUFS, peaks under -1 dBTP; two-pass EBU R128 through the open-source `ffmpeg-normalize`), writes MP3s to `mastered/` (originals untouched), and prints a before/after table plus the loudness spread across the files. Anything it flags, such as a recording with a loud cough or mic bump that cannot be raised to target, needs that spike fixed in an audio editor first. `python3 tools/master-episodes.py --check-only audio/` measures finished files without changing them. This evens out volume only: it does not remove noise, trim silence, or add the bell.
+4. Run `python3 tools/add-episodes.py mastered/`. It copies each file to `audio/MM-DD.mp3`, writes its title tags, measures it, and records it in `data/episodes.json` with a release time of 6:00 a.m. Pacific on the day itself. Add `--dry-run` to preview. Changing a release time later: edit `published` for that day in `data/episodes.json` (times are UTC).
+5. Download the `audio/` folder's files and upload them into `audio/` on the web root at Spaceship (cPanel File Manager). The site's own upload never deletes them.
+6. `npm run build`, then upload `dist/` as usual. The build refuses to finish if the feed has a problem.
 
 Episodes appear in the feed, and the player and Listen buttons appear on the site, at their release time; no new upload is needed on the day. This is done by `feed.php`, which serves `feed-source.xml` as `/feed.xml` with unreleased episodes removed (see `public/.htaccess`).
 
