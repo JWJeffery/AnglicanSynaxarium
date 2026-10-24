@@ -245,3 +245,7 @@ a { color: inherit; }
 
 /* Italics inside the italic opening line read upright, as in print. */
 .hero-lede em, .prose p.lede em, .sheet .body p.lede em { font-style: normal; }
+
+/* The title of the work is always italic. */
+.wordmark-main, .site-footer .name { font-style: italic; }
+.sheet .run em, .thumb-run em { font-style: italic; }

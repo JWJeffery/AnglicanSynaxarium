@@ -1,6 +1,8 @@
 # Titles and terms the site shows in italics when they are not already italic in the approved entry.
 # Display only: no word of any entry changes. One per line. "MM-DD | phrase" limits a line to one entry.
 # Remove a line to stop italicizing that phrase.
+11-01 | An Anglican Synaxarium
+11-01 | synaxarium
 11-02 | theosis
 11-03 | A Christian Letter
 11-12 | The Excellency of the Liturgy

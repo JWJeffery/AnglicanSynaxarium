@@ -23,7 +23,7 @@ function daySheet(year: number, month: number, day: number, p: DayPayload, o: Op
     : '';
   const notes = o.notes ? `<div class="notes" aria-hidden="true">${'<i></i>'.repeat(6)}</div>` : '';
   return `<section class="sheet${o.large ? ' large' : ''}${brk ? ' break' : ''}" data-season="${season}">
-    <div class="run"><span>An Anglican Synaxarium</span><span>${esc(dateLabelFor(year, month, day))}</span></div>
+    <div class="run"><span><em>An Anglican Synaxarium</em></span><span>${esc(dateLabelFor(year, month, day))}</span></div>
     <div class="head">
       <h1>${esc(p.title)}</h1>
       <div class="sub">${p.period ? `<span>${esc(p.period)}</span>` : ''}<span class="rank" data-rank="${p.rank}">${RANK_LABEL[p.rank]}</span></div>
@@ -67,7 +67,7 @@ export async function initSheet() {
     }).join('');
     const season = seasonOf(first.getFullYear(), first.getMonth() + 1, first.getDate());
     html = `<section class="sheet${o.large ? ' large' : ''}" data-season="${season}">
-      <div class="run"><span>An Anglican Synaxarium</span><span>The week</span></div>
+      <div class="run"><span><em>An Anglican Synaxarium</em></span><span>The week</span></div>
       <h1>The week at a glance</h1>
       <div class="sub"><span>${esc(range)}</span></div>
       <div class="rule"></div>

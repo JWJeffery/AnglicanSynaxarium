@@ -34,13 +34,13 @@ const monthName = MONTHS[d.month - 1];
     </div>
     <div class="print-preview" aria-hidden="true">
       <div class="thumb">
-        <div class="thumb-run"><span data-thumb-date>{monthName} {dayNum}</span><span>An Anglican Synaxarium</span></div>
+        <div class="thumb-run"><span data-thumb-date>{monthName} {dayNum}</span><span><em>An Anglican Synaxarium</em></span></div>
         <div class="thumb-head"><span class="thumb-num" data-thumb-num>{dayNum}</span><span class="thumb-name" data-thumb-name>{title}</span></div>
         <div class="thumb-line"></div><div class="thumb-line"></div><div class="thumb-line" style="width:90%"></div><div class="thumb-line"></div><div class="thumb-line" style="width:70%"></div>
         <div class="thumb-line" style="margin-top:6px"></div><div class="thumb-line"></div><div class="thumb-line" style="width:85%"></div>
       </div>
       <div class="thumb">
-        <div class="thumb-run"><span>The week</span><span>An Anglican Synaxarium</span></div>
+        <div class="thumb-run"><span>The week</span><span><em>An Anglican Synaxarium</em></span></div>
         {[0,1,2,3,4].map((i) => (<><div class="thumb-name" style={i ? 'margin-top:3px' : ''}>&nbsp;</div><div class="thumb-line" style={`width:${[60,70,50,40,45][i]}%`}></div></>))}
       </div>
     </div>
