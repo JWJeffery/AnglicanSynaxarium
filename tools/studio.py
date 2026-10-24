@@ -233,10 +233,55 @@ TEMPLATES = {
 <h2>1. Recordings</h2>
 <div class="card">
 <p>Add your finished exports here (the bell already mixed in). In GarageBand: <b>Share, then Export Song to Disk</b>, and choose <b>WAV</b> or <b>AIFF</b> (best quality for the next step; MP3 also works). Name each file with its day, like <code>November 18 - Hilda of Whitby.wav</code>.</p>
-<form method="post" action="/recordings/upload" enctype="multipart/form-data">
-<input type="hidden" name="t" value="{{ token }}">
-<input type="file" name="files" multiple accept=".wav,.aif,.aiff,.mp3,.m4a,.flac,.ogg,.aac"> <button class="primary">Upload</button>
-</form></div>
+<input type="file" id="pick" multiple accept=".wav,.aif,.aiff,.mp3,.m4a,.flac,.ogg,.aac"> <button class="primary" id="go" type="button">Upload</button>
+<div id="prog" style="margin-top:12px"></div>
+<p class="hint">Large files are sent in small pieces so the connection cannot refuse them. Keep this page open until it says it is finished. (You can also drag files straight into the <b>incoming</b> folder in the Codespace file list.)</p>
+<script>
+(function () {
+  var TOKEN = "{{ token }}";
+  var pick = document.getElementById('pick'), go = document.getElementById('go'), prog = document.getElementById('prog');
+  var MIN = 256 * 1024;
+
+  async function sendChunk(name, offset, blob, last) {
+    var fd = new FormData();
+    fd.append('t', TOKEN); fd.append('name', name); fd.append('offset', String(offset)); fd.append('last', last ? '1' : '0');
+    fd.append('chunk', blob, 'chunk');
+    return fetch('/recordings/chunk', { method: 'POST', body: fd });
+  }
+
+  async function uploadFile(file, row) {
+    var size = file.size, offset = 0, chunk = 8 * 1024 * 1024;
+    while (true) {
+      var end = Math.min(offset + chunk, size), last = end >= size;
+      var r = await sendChunk(file.name, offset, file.slice(offset, end), last);
+      if (r.status === 413) {
+        if (chunk <= MIN) throw new Error('the connection refuses even very small pieces (413)');
+        chunk = Math.max(MIN, Math.floor(chunk / 2));
+        continue;
+      }
+      if (!r.ok) { throw new Error('the server said ' + r.status + ': ' + (await r.text()).slice(0, 160)); }
+      offset = end;
+      row.textContent = file.name + ': ' + (size ? Math.round(offset / size * 100) : 100) + '%';
+      if (last) return;
+    }
+  }
+
+  go.addEventListener('click', async function () {
+    var files = Array.prototype.slice.call(pick.files || []);
+    if (!files.length) { prog.textContent = 'Choose one or more files first.'; return; }
+    go.disabled = true; pick.disabled = true; prog.textContent = '';
+    var done = 0, failed = 0;
+    for (var i = 0; i < files.length; i++) {
+      var row = document.createElement('div'); row.textContent = files[i].name + ': waiting'; prog.appendChild(row);
+      try { await uploadFile(files[i], row); done++; row.textContent = files[i].name + ': done'; }
+      catch (e) { failed++; row.textContent = files[i].name + ': FAILED, ' + e.message; }
+    }
+    var msg = 'Uploaded ' + done + ' file' + (done === 1 ? '' : 's') + (failed ? ', ' + failed + ' failed (see the list above the table).' : '.');
+    if (!failed) { window.location.href = '/recordings?msg=' + encodeURIComponent(msg); }
+    else { var p = document.createElement('p'); p.innerHTML = '<b>' + msg + '</b> <a href="/recordings">Reload the list</a>'; prog.appendChild(p); go.disabled = false; pick.disabled = false; }
+  });
+})();
+</script></div>
 <div class="card"><h3>In the incoming folder ({{ files|length }})</h3>
 {% if files %}<table><tr><th>File</th><th>Day</th><th>Size</th><th>Mastered?</th><th></th></tr>
 {% for f in files %}<tr><td>{{ f.name }}</td>
@@ -355,19 +400,31 @@ def recordings():
     return page("recordings.html", "recordings", "Recordings", files=rows)
 
 
-@app.post("/recordings/upload")
-def upload():
-    os.makedirs(INCOMING, exist_ok=True)
-    saved = skipped = 0
-    for f in request.files.getlist("files"):
-        name = clean_name(f.filename or "")
-        if not name.lower().endswith(AUDIO_EXT):
-            skipped += bool(name)
-            continue
-        f.save(os.path.join(INCOMING, name))
-        saved += 1
-    msg = f"Uploaded {saved} file{'' if saved == 1 else 's'}." + (f" Skipped {skipped} that were not audio." if skipped else "")
-    return redirect("/recordings?msg=" + msg.replace(" ", "+"))
+@app.post("/recordings/chunk")
+def upload_chunk():
+    """Receives one piece of a file at a byte offset. The last piece moves the finished file into incoming/."""
+    name = clean_name(request.form.get("name", ""))
+    if not name.lower().endswith(AUDIO_EXT):
+        abort(400, "Not an audio file: " + name)
+    try:
+        offset = int(request.form.get("offset", "0"))
+    except ValueError:
+        abort(400, "Bad offset")
+    chunk = request.files.get("chunk")
+    if chunk is None or offset < 0:
+        abort(400, "No data received")
+    parts = os.path.join(INCOMING, ".parts")
+    os.makedirs(parts, exist_ok=True)
+    part = os.path.join(parts, name + ".part")
+    if offset == 0:
+        open(part, "wb").close()
+    elif not os.path.exists(part) or os.path.getsize(part) != offset:
+        abort(409, "Pieces arrived out of order. Upload this file again.")
+    with open(part, "ab") as fh:
+        fh.write(chunk.read())
+    if request.form.get("last") == "1":
+        os.replace(part, os.path.join(INCOMING, name))
+    return {"ok": True}
 
 
 @app.post("/recordings/delete")

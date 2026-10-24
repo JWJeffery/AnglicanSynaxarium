@@ -6,3 +6,4 @@ audio/
 incoming/
 mastered/
 studio-downloads/
+__pycache__/
