@@ -2,12 +2,15 @@
 import Base from '../../layouts/Base.astro';
 import Stepper from '../../components/Stepper.astro';
 import KalIndex from '../../components/KalIndex.astro';
-import { days, dayByKey, entries, rankOf, titleOf, inline, hasPodcast } from '../../lib/data';
+import { days, dayByKey, entries, rankOf, titleOf, inline, hasPodcast, episodeByKey } from '../../lib/data';
+import { audioUrl } from '../../lib/podcast';
 import { MONTHS, MONTH_SLUGS, seasonOf, weekdayOf, liturgicalDayName, RANK_LABEL } from '../../lib/church-year';
 export function getStaticPaths() { return days.map((d) => ({ params: { key: d.key } })); }
 const { key } = Astro.params as { key: string };
 const d = dayByKey.get(key)!;
 const entry = entries.get(key);
+const episode = episodeByKey.get(key);
+const released = !!episode && new Date(episode.published).getTime() <= Date.now();
 const rank = rankOf(key);
 const year = new Date().getUTCFullYear();
 const season = seasonOf(year, d.month, d.day);
@@ -24,7 +27,7 @@ const first = entry ? entry.body[0].replace(/<[^>]+>|\*/g, '') : `${title}.`;
             <button type="button" data-size="normal" aria-pressed="true" aria-label="Normal text" style="font-size:15px">A</button>
             <button type="button" data-size="large" aria-pressed="false" aria-label="Large text" style="font-size:21px">A</button>
           </div>
-          {hasPodcast && <a class="btn" href="/#listen">Listen</a>}
+          {episode ? <a class="btn" href="#hear">Listen</a> : hasPodcast && <a class="btn" href="/#listen">Listen</a>}
           {entry && <a class="btn btn-primary" href={`/print/day/?d=${key}&collect=1&others=0&large=0&notes=1&print=1`}>Print</a>}
         </div>
       </div>
@@ -41,6 +44,13 @@ const first = entry ? entry.body[0].replace(/<[^>]+>|\*/g, '') : `${title}.`;
           <h1 class="entry-title">{title}</h1>
           {d.period && <p class="entry-period">{d.period}</p>}
         </header>
+        {episode && (
+          <div class="hear" id="hear" data-hear data-published={episode.published} hidden={!released}>
+            <p class="lab">Listen to this entry</p>
+            <audio controls preload="none" src={audioUrl(episode)}>Your browser cannot play audio here. <a href={audioUrl(episode)}>Download the recording.</a></audio>
+            <a class="hear-dl" href={audioUrl(episode)} download>Download the recording (MP3)</a>
+          </div>
+        )}
         {entry ? (
           <>
             <div class="prose" data-prose>

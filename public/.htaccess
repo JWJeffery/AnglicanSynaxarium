@@ -1,0 +1,18 @@
+# anglicansynaxarium.com: feed address, feed source protection, audio type.
+AddType audio/mpeg .mp3
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^feed\.xml$ feed.php [L]
+</IfModule>
+
+# The full feed (with unreleased episodes) is read by feed.php only.
+<Files "feed-source.xml">
+<IfModule mod_authz_core.c>
+Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+Order allow,deny
+Deny from all
+</IfModule>
+</Files>

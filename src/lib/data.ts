@@ -5,6 +5,7 @@ import rankJson from '../../data/rank.json';
 import receptionJson from '../../data/reception.json';
 import cfg from '../../site.config.json';
 import { stepKey } from './church-year';
+import { episodeByKey, episodes, feedUrl, hasFeed } from './podcast';
 
 export interface Day {
   key: string; month: number; day: number;
@@ -15,7 +16,10 @@ export interface Entry { key: string; title: string; opening: string; body: stri
 
 export const days: Day[] = (calendarJson as { days: Day[] }).days;
 export const dayByKey = new Map(days.map((d) => [d.key, d]));
-export const site = cfg;
+// The RSS button appears as soon as the first episode exists, unless a different address is set in site.config.json.
+const podcast = { ...cfg.podcast, rss: cfg.podcast.rss || (hasFeed ? feedUrl : '') };
+export const site = { ...cfg, podcast };
+export { episodeByKey, episodes, feedUrl, hasFeed };
 
 export function rankOf(key: string): string {
   return (rankJson as { default: string; dates: Record<string, string> }).dates[key] ?? 'commemoration';
@@ -99,6 +103,7 @@ export function kalendarIndex() {
   return days.map((d) => ({
     k: d.key, n: d.name.split(' / ')[0], t: titleOf(d), p: d.period, r: rankOf(d.key),
     e: entries.has(d.key) ? 1 : 0,
+    u: episodeByKey.get(d.key)?.published ?? '',
     a: d.alternates.map((a) => a.name),
   }));
 }
@@ -112,7 +117,7 @@ export function dayPayload(key: string) {
   };
 }
 
-export const hasPodcast = Object.values(cfg.podcast).some(Boolean);
+export const hasPodcast = Object.values(podcast).some(Boolean);
 
 // About page: written by the curator in content/about.md. No file or an empty file means no page and no link.
 const aboutPath = path.resolve('content/about.md');

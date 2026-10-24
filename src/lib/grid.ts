@@ -1,7 +1,7 @@
 // Month grid markup. Used at build time (Astro) and in the browser, so both agree exactly.
 import { MONTHS, WEEKDAYS, daysInMonth, keyOf, seasonOf, weekdayOf } from './church-year';
 
-export interface IndexRow { k: string; n: string; t: string; p: string; r: string; e: number; a: string[]; }
+export interface IndexRow { k: string; n: string; t: string; p: string; r: string; e: number; u?: string; a: string[]; }
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 

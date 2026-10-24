@@ -14,6 +14,10 @@ export function initEntry() {
   if (dn) dn.textContent = liturgicalDayName(t.year, m, d);
   if (key !== t.key) main.querySelectorAll<HTMLAnchorElement>('[data-today-link]').forEach((a) => (a.hidden = false));
 
+  // The recording appears at its release time, even on a page that was built earlier.
+  const hear = main.querySelector<HTMLElement>('[data-hear]');
+  if (hear && Date.now() >= Date.parse(hear.dataset.published || '')) hear.hidden = false;
+
   // Text size, remembered between visits where the browser allows it.
   let size = 'normal';
   try { size = localStorage.getItem('syn-size') === 'large' ? 'large' : 'normal'; } catch { /* storage unavailable */ }

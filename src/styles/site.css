@@ -265,3 +265,9 @@ a { color: inherit; }
 .credit-line { font-family: var(--font-text); font-weight: 600; }
 .citation { padding-left: 1.2em; text-indent: -1.2em; margin-left: 1.2em; }
 @media (max-width: 600px) { .credit-block { grid-template-columns: 1fr; gap: 0; } .credit-block dd { margin-bottom: 10px; } }
+
+.hear { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border: 1px solid var(--hairline); border-radius: 8px; background: var(--surface-sunken); }
+.hear[hidden] { display: none; }
+.hear .lab { margin: 0; }
+.hear audio { width: 100%; }
+.hear-dl { font-family: var(--font-sans); font-size: 14px; color: var(--ink-muted); }

@@ -1,6 +1,6 @@
 ---
 import '../styles/site.css';
-import { site, hasPodcast, hasAbout, elsewhere } from '../lib/data';
+import { site, hasPodcast, hasAbout, elsewhere, hasFeed, feedUrl } from '../lib/data';
 interface Props { title: string; description: string; path: string; }
 const { title, description, path } = Astro.props;
 const url = new URL(path, site.site).toString();
@@ -23,6 +23,7 @@ const og = new URL('/og.png', site.site).toString();
   <meta name="twitter:card" content="summary" />
   <meta name="color-scheme" content="light" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  {hasFeed && <link rel="alternate" type="application/rss+xml" title={site.name} href={feedUrl} />}
   <link rel="preload" href="/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin />
 </head>

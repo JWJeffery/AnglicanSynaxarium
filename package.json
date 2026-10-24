@@ -9,9 +9,11 @@
     "dev": "astro dev",
     "build": "python3 tools/convert-entries.py && astro build && node tools/check-output.mjs",
     "preview": "astro preview",
-    "cover": "node tools/make-cover-images.mjs"
+    "cover": "node tools/make-cover-images.mjs",
+    "podcast-art": "node tools/make-podcast-art.mjs"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
     "astro": "^5.0.0",
     "sharp": "^0.34.5"
   }

@@ -9,6 +9,14 @@ export async function initHome() {
   const t = localToday();
   const q = <T extends HTMLElement>(sel: string) => hero.querySelector<T>(sel);
 
+  // Listen button: only when today's recording has been released.
+  const listen = q<HTMLAnchorElement>('[data-slot="listen"]');
+  if (listen) {
+    const u = map.get(t.key)?.u;
+    listen.hidden = !(u && Date.now() >= Date.parse(u));
+    listen.href = `/saint/${t.key}/#hear`;
+  }
+
   // Day stepper
   const prev = map.get(stepKey(t.key, -1))!, next = map.get(stepKey(t.key, 1))!;
   const a = q<HTMLAnchorElement>('[data-prev]')!, b = q<HTMLAnchorElement>('[data-next]')!;

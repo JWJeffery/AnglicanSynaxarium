@@ -34,6 +34,7 @@ const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k])
             <p class="hero-first" data-slot="prep" hidden={!!entry} style="color:var(--ink-muted)">The entry for this day is in preparation.</p>
             <div class="hero-actions" data-slot="actions" hidden={!entry}>
               <a class="btn btn-primary" data-slot="read" href={`/saint/${key}/`}>Read the full entry</a>
+              <a class="btn" data-slot="listen" href="/#today" hidden>Listen</a>
               <a class="btn" href="#print">Print this saint</a>
             </div>
           </div>

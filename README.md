@@ -18,3 +18,23 @@ Static site (Astro) for anglicansynaxarium.com. Build it, then upload the conten
 - `python3 tools/verify-entries.py <zip>` compares every entry with the approved Google Docs, word for word. Download Completed Hagiographies from Drive as a zip, run `pip install python-docx` once, then run the script on the zip.
 - `npm run cover` makes `public/cover-400.png` and `public/og.png` from `public/assets/synaxarium-cover-green-3000.png`.
 - Season names follow the 1979 Book of Common Prayer (Calendar, pp. 30-33); the BCP does not use "Ordinary Time".
+
+## The podcast
+
+The audio and the feed live on this site, so the show does not depend on any outside service. Apple Podcasts, Spotify, YouTube and every other app only read the feed, `https://anglicansynaxarium.com/feed.xml`; submit that address to each once.
+
+**Adding recordings** (do this in the Codespace):
+
+1. Drag the MP3 files into a folder named `incoming/` (it is never committed). File names such as `November 18 - Hilda of Whitby.mp3` or `11-18.mp3` both work.
+2. Once ever: `pip install mutagen`
+3. Run `python3 tools/add-episodes.py incoming/`. It copies each file to `audio/MM-DD.mp3`, writes its title tags, measures it, and records it in `data/episodes.json` with a release time of 6:00 a.m. Pacific on the day itself. Add `--dry-run` to preview. Changing a release time later: edit `published` for that day in `data/episodes.json` (times are UTC).
+4. Download the `audio/` folder's files and upload them into `audio/` on the web root at Spaceship (cPanel File Manager). The site's own upload never deletes them.
+5. `npm run build`, then upload `dist/` as usual. The build refuses to finish if the feed has a problem.
+
+Episodes appear in the feed, and the player and Listen buttons appear on the site, at their release time; no new upload is needed on the day. This is done by `feed.php`, which serves `feed-source.xml` as `/feed.xml` with unreleased episodes removed (see `public/.htaccess`).
+
+**Settings** are in `site.config.json` under `feed`: owner name and email (required by Apple and Spotify, and public in the feed), description, category, copyright, release time. `npm run podcast-art` remakes `public/podcast-cover.jpg` (3000 x 3000, no transparency) from the green cover.
+
+**After the first upload, check once:**
+- `https://anglicansynaxarium.com/feed.xml` shows XML. If it says Not Found, use `https://anglicansynaxarium.com/feed.php` instead (same content).
+- `curl -I -H "Range: bytes=0-1" https://anglicansynaxarium.com/audio/11-01.mp3` answers `206 Partial Content`. Apple requires it.

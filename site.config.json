@@ -8,5 +8,21 @@
     "youtube": "",
     "substack": "",
     "rss": ""
+  },
+  "feed": {
+    "title": "An Anglican Synaxarium",
+    "author": "An Anglican Synaxarium",
+    "owner_name": "",
+    "owner_email": "",
+    "description": "One saint for every day of the year, read in the Anglican manner. Each episode is a short devotional reading of the day’s entry, followed by its collect.",
+    "language": "en-us",
+    "category": "Religion & Spirituality",
+    "subcategory": "Christianity",
+    "explicit": false,
+    "copyright": "",
+    "art": "/podcast-cover.jpg",
+    "release_time": "06:00",
+    "release_zone": "America/Los_Angeles",
+    "transcripts": true
   }
 }
