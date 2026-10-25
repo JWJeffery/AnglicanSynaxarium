@@ -105,3 +105,12 @@ if (fs2.existsSync('data/podcast-links.json')) {
   if (missing.length) { console.error('Podcast links check failed: these links are not on the home page: ' + missing.join(', ')); process.exit(1); }
   console.log('podcast links: ' + Object.values(listed).filter(Boolean).length + ' listing link(s) present on the home page');
 }
+
+// Badge guard: every /badges/ image the home page refers to must exist in the built site.
+{
+  const homeHtml = fs2.readFileSync('dist/index.html', 'utf-8');
+  const used = [...new Set([...homeHtml.matchAll(/src="(\/badges\/[^"]+)"/g)].map((m) => m[1]))];
+  const gone = used.filter((u) => !fs2.existsSync('dist' + u));
+  if (gone.length) { console.error('Badge check failed: missing from the built site: ' + gone.join(', ')); process.exit(1); }
+  console.log('badges: ' + (used.length ? used.join(', ') : 'none supplied, listing links show as text buttons'));
+}

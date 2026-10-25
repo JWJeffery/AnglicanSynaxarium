@@ -9,6 +9,7 @@ import { dayByKey, entries, rankOf, titleOf, inline, site, hasPodcast } from '..
 import { episodeByKey, audioUrl, feed } from '../lib/podcast';
 import { keyOf, seasonOf, RANK_LABEL } from '../lib/church-year';
 import fs from 'node:fs';
+import { badgeFor } from '../lib/badges';
 const heroArt = !hasPodcast && fs.existsSync('public/cover-800.png');
 
 const now = new Date();
@@ -19,6 +20,7 @@ const entry = entries.get(key);
 const rank = rankOf(key);
 const names: [string, string][] = [['spotify', 'Spotify'], ['apple_podcasts', 'Apple Podcasts'], ['pocket_casts', 'Pocket Casts'], ['youtube', 'YouTube'], ['substack', 'Substack'], ['rss', 'RSS feed']];
 const links = names.filter(([k]) => (site.podcast as Record<string, string>)[k]);
+const listing = links.map(([k, label]) => ({ label, href: (site.podcast as Record<string, string>)[k], badge: badgeFor(k) }));
 // The welcome recording (a file named "Welcome - ...") has no calendar day, so it is played here.
 const welcome = episodeByKey.get('welcome');
 const welcomeTitle = feed.welcome_title || `Welcome to ${feed.title}`;
@@ -63,7 +65,12 @@ const welcomeReleased = !!welcome && new Date(welcome.published).getTime() <= Da
                   </div>
                 )}
                 <div class="platforms">
-                  {links.map(([k, label]) => <a class="platform" href={(site.podcast as Record<string, string>)[k]} rel="noopener"><span>{label}</span><span aria-hidden="true">→</span></a>)}
+                  {listing.map((p) => p.badge.light
+                    ? <a class={p.badge.dark ? 'platform badge has-dark' : 'platform badge'} href={p.href} rel="noopener" aria-label={`Listen on ${p.label}`}>
+                        <img class="for-light" src={p.badge.light} alt={`Listen on ${p.label}`} height="40" />
+                        {p.badge.dark && <img class="for-dark" src={p.badge.dark} alt="" height="40" />}
+                      </a>
+                    : <a class="platform text" href={p.href} rel="noopener">{p.label}</a>)}
                 </div>
               </section>
             )}
