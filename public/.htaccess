@@ -26,7 +26,7 @@ Deny from all
 
 # The service worker and manifest must be re-checked every visit, or app updates would not arrive.
 <IfModule mod_headers.c>
-<FilesMatch "^(sw\.js|manifest\.webmanifest)$">
+<FilesMatch "^(sw\.js|sw-push\.js|manifest\.webmanifest)$">
 Header set Cache-Control "no-cache"
 </FilesMatch>
 <FilesMatch "^manifest\.webmanifest$">

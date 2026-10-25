@@ -17,6 +17,8 @@ const { count, size, warnings } = await generateSW({
   maximumFileSizeToCacheInBytes: 2 * 1024 * 1024,
   // Print pages are one page read with different ?d=... settings; any query string gets the same page.
   ignoreURLParametersMatching: [/.*/],
+  // Reminder notifications (public/sw-push.js): shows the daily reminder when the server sends it.
+  importScripts: ['sw-push.js'],
   cleanupOutdatedCaches: true,
   clientsClaim: true,
   skipWaiting: false,

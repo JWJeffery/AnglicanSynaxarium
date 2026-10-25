@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../lib/data';
+const times: { value: string; label: string }[] = [];
+for (let m = 0; m < 1440; m += 15) {
+  const h = Math.floor(m / 60), mm = String(m % 60).padStart(2, '0');
+  times.push({ value: `${String(h).padStart(2, '0')}:${mm}`, label: `${h % 12 === 0 ? 12 : h % 12}:${mm} ${h < 12 ? 'a.m.' : 'p.m.'}` });
+}
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+---
+<Base title="Daily Reminder | An Anglican Synaxarium" description="Get a notification each day, at the time you choose, to read the day’s saint." path="/reminders/">
+  <main class="suggest">
+    <div class="wrap suggest-wrap" data-reminders data-api={(site as any).reminders?.api ?? ''}>
+      <h1 class="saints-title">Daily Reminder</h1>
+      <p class="saints-lead">Choose a time, and a notification will tell you that the day’s saint is ready to read. It arrives at that time on your own clock, wherever you are, even when the site is closed.</p>
+
+      <p class="notice notice-bad" data-unsupported hidden></p>
+
+      <div class="rem-form" data-form>
+        <div class="field">
+          <label for="rem-time">Remind me at</label>
+          <select id="rem-time" data-time>
+            {times.map((t) => <option value={t.value} selected={t.value === '07:00'}>{t.label}</option>)}
+          </select>
+        </div>
+
+        <div class="field">
+          <p class="rem-legend" id="rem-days-label">On these days</p>
+          <div class="rem-days" role="group" aria-labelledby="rem-days-label">
+            {days.map((d, i) => <button class="rem-day" type="button" data-day={i} aria-pressed="true">{d}</button>)}
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="button" data-on>Turn on reminder</button>
+          <button class="btn" type="button" data-test hidden>Send a test</button>
+          <button class="btn" type="button" data-off hidden>Turn off reminder</button>
+        </div>
+        <p class="notice" role="status" aria-live="polite" data-status hidden></p>
+        <p class="print-note">Only your chosen time and your time zone are sent to the server. No name, no email. A reminder can be turned off here at any time. On an iPhone or iPad, first add this site to your Home Screen (Share, then “Add to Home Screen”), open it from there, and return to this page.</p>
+      </div>
+    </div>
+  </main>
+  <script>
+    import { initReminders } from '../../scripts/reminders';
+    initReminders();
+  </script>
+</Base>

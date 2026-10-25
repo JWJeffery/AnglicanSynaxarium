@@ -380,3 +380,16 @@ html { scroll-padding-top: 12px; }
   html { scroll-padding-top: 80px; }
   .site-header { position: sticky; top: 0; z-index: 50; }
 }
+
+/* ── Daily reminder ───────────────────────────────────────────────────────────────────────────────────────── */
+.rem-form { display: flex; flex-direction: column; gap: 22px; margin-top: 28px; }
+.rem-form .field { display: flex; flex-direction: column; gap: 6px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.rem-form label, .rem-legend { font-family: var(--font-sans); font-size: 16px; font-weight: 600; margin: 0; }
+.rem-form select { font: inherit; font-family: var(--font-sans); font-size: 17px; color: var(--ink); background: var(--surface-raised);
+  border: 1.5px solid var(--border-strong); border-radius: 4px; padding: 11px 14px; min-height: 48px; max-width: 16rem; }
+.rem-form select:focus-visible, .rem-day:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.rem-days { display: flex; flex-wrap: wrap; gap: 8px; }
+.rem-day { min-width: 56px; min-height: 48px; padding: 0 14px; font: inherit; font-family: var(--font-sans); font-size: 16px; border-radius: 4px; cursor: pointer;
+  border: 1.5px solid var(--border-strong); background: transparent; color: var(--ink); }
+.rem-day[aria-pressed="true"] { background: var(--season-ordinary); border-color: var(--season-ordinary); color: var(--on-season-ordinary); }
+.rem-form [hidden], [data-unsupported][hidden] { display: none; }

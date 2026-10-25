@@ -2,6 +2,7 @@
   "name": "An Anglican Synaxarium",
   "launch": "2026-11-01",
   "site": "https://anglicansynaxarium.com",
+  "reminders": { "api": "https://theuniversaloffice.com/api/v1" },
   "podcast": {
     "spotify": "",
     "apple_podcasts": "",
