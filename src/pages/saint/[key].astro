@@ -28,6 +28,7 @@ const first = entry ? entry.body[0].replace(/<[^>]+>|\*/g, '') : `${title}.`;
             <button type="button" data-size="large" aria-pressed="false" aria-label="Large text" style="font-size:21px">A</button>
           </div>
           {episode ? <a class="btn" href="#hear">Listen</a> : hasPodcast && <a class="btn" href="/#listen">Listen</a>}
+          <a class="btn" data-uo href={`https://theuniversaloffice.com/?entry=anglican&date=${year}-${key}&utm_source=anglicansynaxarium`} rel="noopener">Pray the Office</a>
           {entry && <a class="btn btn-primary" href={`/print/day/?d=${key}&collect=1&others=0&large=0&notes=1&print=1`}>Print</a>}
         </div>
       </div>

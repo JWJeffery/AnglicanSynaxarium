@@ -1,9 +1,19 @@
 import { dateLabelFor, seasonOf, RANK_LABEL } from '../lib/church-year';
-import { fetchDay, localToday, readIndex, type DayPayload } from './common';
+import qrcode from 'qrcode-generator';
+import { fetchDay, localToday, readIndex, uoLink, type DayPayload } from './common';
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 interface Opts { collect: boolean; others: boolean; large: boolean; notes: boolean; }
+
+// Small QR code to pray this day's Office in The Universal Office.
+function uoQr(year: number, month: number, day: number): string {
+  const key = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+  const qr = qrcode(0, 'M');
+  qr.addData(uoLink(year, key));
+  qr.make();
+  return `<div class="uo-qr"><div class="uo-qr-code" role="img" aria-label="QR code: pray this day's Office at theuniversaloffice.com">${qr.createSvgTag({ cellSize: 2, margin: 0, scalable: true })}</div><p>Pray today’s Office with <em>The Universal Office</em><br>theuniversaloffice.com</p></div>`;
+}
 
 function daySheet(year: number, month: number, day: number, p: DayPayload, o: Opts, brk: boolean): string {
   const season = seasonOf(year, month, day);
@@ -30,6 +40,7 @@ function daySheet(year: number, month: number, day: number, p: DayPayload, o: Op
       <div class="rule"></div>
     </div>
     <div class="body">${body}</div>${collect}${others}${notes}
+    ${uoQr(year, month, day)}
     <p class="foot">Read beside the Book of Common Prayer: ☐ before the Office ☐ after the Office</p>
   </section>`;
 }

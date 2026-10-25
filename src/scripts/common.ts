@@ -25,3 +25,10 @@ export async function fetchDay(key: string): Promise<DayPayload | null> {
     return r.ok ? ((await r.json()) as DayPayload) : null;
   } catch { return null; }
 }
+
+// Opens the same day in The Universal Office (sister app): the Anglican Daily Office for that date.
+export function uoLink(year: number, key: string, hour?: string): string {
+  const q = new URLSearchParams({ entry: 'anglican', date: `${year}-${key}`, utm_source: 'anglicansynaxarium' });
+  if (hour) q.set('hour', hour);
+  return `https://theuniversaloffice.com/?${q}`;
+}

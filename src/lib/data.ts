@@ -6,7 +6,7 @@ import rankJson from '../../data/rank.json';
 import receptionJson from '../../data/reception.json';
 import cfg from '../../site.config.json';
 import { stepKey } from './church-year';
-import { episodeByKey, episodes, feedUrl, hasFeed } from './podcast';
+import { audioUrl, episodeByKey, episodes, feedUrl, hasFeed } from './podcast';
 
 export interface Day {
   key: string; month: number; day: number;
@@ -113,11 +113,13 @@ export function kalendarIndex() {
 }
 
 export function dayPayload(key: string) {
-  const d = dayByKey.get(key)!, e = entries.get(key);
+  const d = dayByKey.get(key)!, e = entries.get(key), ep = episodeByKey.get(key);
   return {
     key, title: titleOf(d), period: d.period, rank: rankOf(key),
     alternates: d.alternates.map((a) => ({ name: a.name, designation: a.designation, period: a.period })),
     entry: e ? { body: e.body.map(inline), collect: e.collect.map(inline) } : null,
+    // Read by The Universal Office. It shows its "Listen" card only once `published` has passed.
+    episode: ep ? { url: audioUrl(ep), page: `${site.site}/saint/${key}/#hear`, seconds: ep.seconds, published: ep.published, listen: podcast } : null,
   };
 }
 

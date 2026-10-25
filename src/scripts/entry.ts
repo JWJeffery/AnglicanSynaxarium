@@ -1,5 +1,5 @@
 import { dateLabelFor, liturgicalDayName, seasonOf, stepKey } from '../lib/church-year';
-import { localToday, readIndex } from './common';
+import { localToday, readIndex, uoLink } from './common';
 
 export function initEntry() {
   const main = document.querySelector<HTMLElement>('[data-entry]');
@@ -13,6 +13,8 @@ export function initEntry() {
   const dn = main.querySelector('[data-day-name]');
   if (dn) dn.textContent = liturgicalDayName(t.year, m, d);
   if (key !== t.key) main.querySelectorAll<HTMLAnchorElement>('[data-today-link]').forEach((a) => (a.hidden = false));
+
+  main.querySelectorAll<HTMLAnchorElement>('[data-uo]').forEach((a) => (a.href = uoLink(t.year, key)));
 
   // The recording appears at its release time, even on a page that was built earlier.
   const hear = main.querySelector<HTMLElement>('[data-hear]');

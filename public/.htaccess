@@ -33,6 +33,12 @@ Header set Cache-Control "no-cache"
 Header append Vary User-Agent
 </FilesMatch>
 </IfModule>
+# The Universal Office (sister app) reads the per-day JSON to offer a "Listen" link.
+<IfModule mod_headers.c>
+<FilesMatch "\.json$">
+Header set Access-Control-Allow-Origin "https://theuniversaloffice.com"
+</FilesMatch>
+</IfModule>
 AddType application/manifest+json .webmanifest
 
 # Send text files compressed; the offline copy downloads about four times faster.

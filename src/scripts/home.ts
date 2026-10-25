@@ -1,6 +1,6 @@
 import { MONTHS, MONTH_SLUGS, RANK_LABEL, dateLabelFor, liturgicalDayName, seasonOf, stepKey } from '../lib/church-year';
 import { monthGridHtml } from '../lib/grid';
-import { fetchDay, localToday, readIndex } from './common';
+import { fetchDay, localToday, readIndex, uoLink } from './common';
 
 export async function initHome() {
   const hero = document.querySelector<HTMLElement>('[data-hero]');
@@ -8,6 +8,9 @@ export async function initHome() {
   const { map } = readIndex();
   const t = localToday();
   const q = <T extends HTMLElement>(sel: string) => hero.querySelector<T>(sel);
+
+  const uo = q<HTMLAnchorElement>('[data-slot="uo"]');
+  if (uo) uo.href = uoLink(t.year, t.key);
 
   // Listen button: only when today's recording has been released.
   const listen = q<HTMLAnchorElement>('[data-slot="listen"]');
