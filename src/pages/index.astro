@@ -58,7 +58,7 @@ const listenLive = 'A saint’s life, read aloud each day.';
             <p class="hero-period" data-slot="period" hidden={!d.period}>{d.period}</p>
             <p class="hero-lede" data-slot="lede" hidden={!entry} set:html={entry ? inline(entry.body[0]) : ''}></p>
             <p class="hero-first" data-slot="first" hidden={!entry} set:html={entry ? inline(entry.body[1] ?? '') : ''}></p>
-            <p class="hero-first" data-slot="prep" hidden={!!entry} style="color:var(--ink-muted)">The entry for this day is in preparation.</p>
+            <p class="hero-first" data-slot="prep" hidden={!!entry} style="color:var(--ink-muted)"><span class="lab">Coming soon</span><br />This saint’s entry is still being written.</p>
             <div class="hero-actions" data-slot="actions" hidden={!entry}>
               <a class="btn btn-primary" data-slot="read" href={`/saint/${key}/`}>Read the full entry</a>
               <a class="btn" data-slot="listen" href="/#today" hidden>Listen</a>

@@ -1,0 +1,94 @@
+---
+import Base from '../../layouts/Base.astro';
+import { MONTHS } from '../../lib/church-year';
+---
+<Base title="Suggest a Saint | An Anglican Synaxarium" description="Tell us about a saint who should be commemorated in An Anglican Synaxarium." path="/suggest/">
+  <main class="suggest">
+    <div class="wrap suggest-wrap">
+      <h1 class="saints-title">Suggest a Saint Commemoration</h1>
+      <p class="saints-lead">An Anglican Synaxarium builds on the sanctoral calendar of the Episcopal Church, with kalendars from across the Anglican Communion and the wider Church. If someone who ought to be remembered is missing, tell us about them. Every suggestion is read by the curator. Not every one can be added, but each is weighed.</p>
+
+      <div id="thanks" class="notice notice-good" role="status" tabindex="-1" data-thanks>
+        <p class="lab">Thank you</p>
+        <p>Your suggestion has been sent. If you left an email address we may write to ask a question.</p>
+      </div>
+      <div class="notice notice-bad" role="alert" data-problem hidden></div>
+
+      <form class="suggest-form" method="post" action="/suggest.php" data-suggest novalidate>
+        <div class="field">
+          <label for="s-name">Saint’s name <span class="fld-note">required</span></label>
+          <input id="s-name" name="name" type="text" maxlength="200" required autocomplete="off" />
+        </div>
+
+        <fieldset class="field">
+          <legend>When is this saint remembered? <span class="fld-note">if you know</span></legend>
+          <div class="row">
+            <label class="sr-only" for="s-month">Month</label>
+            <select id="s-month" name="month">
+              <option value="">Month</option>
+              {MONTHS.map((m, i) => <option value={i + 1}>{m}</option>)}
+            </select>
+            <label class="sr-only" for="s-day">Day</label>
+            <input id="s-day" name="day" type="number" min="1" max="31" placeholder="Day" inputmode="numeric" />
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="s-period">Dates or century <span class="fld-note">optional</span></label>
+          <input id="s-period" name="period" type="text" maxlength="120" placeholder="for example, 1819 to 1902, or fourth century" />
+        </div>
+
+        <div class="field">
+          <label for="s-why">Who were they, and why should they be remembered? <span class="fld-note">required</span></label>
+          <textarea id="s-why" name="why" rows="6" maxlength="4000" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="s-sources">Where is this saint already remembered, and where can we read more? <span class="fld-note">optional</span></label>
+          <textarea id="s-sources" name="sources" rows="4" maxlength="3000" placeholder="Kalendars, books, or web addresses"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="s-tradition">Church tradition <span class="fld-note">optional</span></label>
+          <select id="s-tradition" name="tradition">
+            <option value="">Not sure</option>
+            <option>Anglican or Episcopal</option>
+            <option>Roman Catholic</option>
+            <option>Eastern Orthodox</option>
+            <option>Oriental Orthodox</option>
+            <option>Church of the East</option>
+            <option>Lutheran or Reformed</option>
+            <option>Other or across traditions</option>
+          </select>
+        </div>
+
+        <div class="field-pair">
+          <div class="field">
+            <label for="s-from">Your name <span class="fld-note">optional</span></label>
+            <input id="s-from" name="from" type="text" maxlength="120" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="s-email">Your email <span class="fld-note">optional, only to reply</span></label>
+            <input id="s-email" name="email" type="email" maxlength="200" autocomplete="email" />
+          </div>
+        </div>
+
+        <!-- A trap for automatic form-fillers: people never see or fill this. -->
+        <div class="hp" aria-hidden="true">
+          <label for="s-site">Leave this empty</label>
+          <input id="s-site" name="website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+        <input type="hidden" name="t" value="" data-t />
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit" data-send>Send suggestion</button>
+          <p class="print-note">Your email address is used only to reply about this suggestion.</p>
+        </div>
+      </form>
+    </div>
+  </main>
+  <script>
+    import { initSuggest } from '../../scripts/suggest';
+    initSuggest();
+  </script>
+</Base>

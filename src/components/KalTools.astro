@@ -1,0 +1,17 @@
+---
+// Ways into the Kalendar other than the grid: browse as a list, search, suggest a saint. Shown on the Kalendar pages.
+interface Props { current?: 'calendar'; }
+---
+<div class="kal-tools">
+  <nav class="kal-views" aria-label="Ways to browse the saints">
+    <a href="/kalendar/" aria-current="page">Calendar</a>
+    <a href="/saints/">List by date</a>
+    <a href="/saints/?sort=az">A to Z</a>
+    <a href="/suggest/">Suggest a saint</a>
+  </nav>
+  <form class="kal-search" action="/saints/" method="get" role="search">
+    <label class="sr-only" for="kal-q">Search the saints</label>
+    <input id="kal-q" type="search" name="q" placeholder="Search the saints" autocomplete="off" />
+    <button class="btn" type="submit">Search</button>
+  </form>
+</div>
