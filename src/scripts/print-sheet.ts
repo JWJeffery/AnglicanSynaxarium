@@ -19,7 +19,7 @@ function daySheet(year: number, month: number, day: number, p: DayPayload, o: Op
   const season = seasonOf(year, month, day);
   const body = p.entry
     ? p.entry.body.map((t, i) => `<p${i === 0 ? ' class="lede"' : ''}>${t}</p>`).join('')
-    : '<p>The entry for this day is in preparation.</p>';
+    : '<p>This saint’s entry is coming soon.</p>';
   let collect = '';
   if (o.collect && p.entry && p.entry.collect.length) {
     collect = '<div class="collect-block"><p class="let">Let us pray</p>' +

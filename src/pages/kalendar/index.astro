@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import MonthSection from '../../components/MonthSection.astro';
+import KalTools from '../../components/KalTools.astro';
 import KalIndex from '../../components/KalIndex.astro';
 import { keyOf, MONTHS, MONTH_SLUGS } from '../../lib/church-year';
 const now = new Date();
@@ -11,6 +12,7 @@ const key = keyOf(month, now.getUTCDate());
   <main>
     <section class="kal-section" style="border-top:0">
       <div class="wrap">
+        <KalTools />
         <MonthSection year={year} month={month} todayKey={key} heading="h1" />
         <nav aria-label="Months" class="kal-nav" style="flex-wrap:wrap">
           {MONTHS.map((m, i) => <a class="btn" href={`/kalendar/${MONTH_SLUGS[i]}/`}>{m}</a>)}

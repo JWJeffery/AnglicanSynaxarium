@@ -68,7 +68,10 @@ const first = entry ? entry.body[0].replace(/<[^>]+>|\*/g, '') : `${title}.`;
             )}
           </>
         ) : (
-          <p class="empty">The entry for this day is in preparation.</p>
+          <div class="soon">
+            <p class="lab">Coming soon</p>
+            <p>The entry for {d.name.split(' / ')[0]} is still being written. In the meantime you can <a data-uo href={`https://theuniversaloffice.com/?entry=anglican&date=${year}-${key}&utm_source=anglicansynaxarium`} rel="noopener">pray this day’s Office</a> or <a href="/saints/">browse the saints whose entries are ready</a>.</p>
+          </div>
         )}
         {d.alternates.length > 0 && (
           <div class="also">

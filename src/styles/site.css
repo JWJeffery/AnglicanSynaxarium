@@ -292,3 +292,83 @@ a { color: inherit; }
 [data-hero][data-mode=prelaunch] .season-band,
 [data-hero][data-mode=prelaunch] .card.others { display: none; }
 .hear .lab { color: var(--ink-muted); }
+
+/* A day whose entry is not written yet. */
+.soon { border-left: 3px solid var(--season); padding: 4px 0 4px 18px; max-width: 36rem; }
+.soon .lab { color: var(--season); margin: 0 0 6px; }
+.soon p { font-size: 19px; line-height: 31px; color: var(--ink-muted); }
+.soon p + p { margin-top: 0; }
+.soon a { color: var(--season-ordinary); }
+
+/* ── Browsing the saints: Kalendar tools, the Saints list, search ─────────────────────────────────────────── */
+.kal-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 4px 0 20px; }
+.kal-views { display: flex; flex-wrap: wrap; gap: 4px 6px; font-family: var(--font-sans); font-size: 15px; }
+.kal-views a { color: var(--ink); text-decoration: none; padding: 10px 14px; border-radius: 4px; border: 1.5px solid transparent; font-weight: 500; }
+.kal-views a:hover { border-color: var(--border-strong); }
+.kal-views a[aria-current=page] { background: var(--ink); color: var(--surface-raised); }
+.kal-search { display: flex; gap: 8px; flex: 1 1 280px; max-width: 420px; }
+.kal-search input, .saints-search input { flex: 1; min-width: 0; min-height: 48px; padding: 0 14px; font: inherit; font-family: var(--font-sans); font-size: 16px; color: var(--ink); background: var(--surface-raised); border: 1.5px solid var(--border-strong); border-radius: 4px; }
+.kal-search input:focus-visible, .saints-search input:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.kal-search .btn { min-height: 48px; padding: 0 18px; }
+
+.saints .wrap, .suggest .wrap { padding-top: 40px; padding-bottom: 72px; }
+.saints-title { font-family: var(--font-display); font-weight: 600; font-size: 44px; line-height: 50px; letter-spacing: -.01em; }
+.saints-lead { font-size: 19px; line-height: 30px; max-width: 40rem; margin: 10px 0 24px; color: var(--ink); }
+.saints-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-bottom: 8px; }
+.saints-search { flex: 1 1 300px; max-width: 460px; display: flex; }
+.opt-line { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-sans); font-size: 15px; cursor: pointer; }
+.opt-line input { width: 20px; height: 20px; accent-color: var(--season-ordinary); }
+.saints-count { min-height: 24px; margin: 4px 0 8px; font-family: var(--font-sans); font-size: 14px; color: var(--ink-muted); }
+.az-jump { display: flex; flex-wrap: wrap; gap: 2px 4px; margin: 4px 0 24px; font-family: var(--font-sans); }
+.az-jump a { min-width: 36px; min-height: 36px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--hairline); border-radius: 4px; text-decoration: none; color: var(--ink); font-weight: 600; font-size: 14px; background: var(--surface-raised); }
+.az-jump a:hover { border-color: var(--ink); }
+.saint-group { margin: 0 0 32px; }
+.saint-group h2 { font-family: var(--font-display); font-weight: 600; font-size: 26px; line-height: 32px; padding-bottom: 6px; border-bottom: 2px solid var(--season-ordinary); margin-bottom: 4px; scroll-margin-top: 16px; }
+.saint-list { list-style: none; margin: 0; padding: 0; }
+.saint-list li { border-bottom: 1px solid var(--hairline); }
+.saint-list a { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr) auto; align-items: baseline; gap: 2px 14px; padding: 12px 6px; text-decoration: none; color: var(--ink); }
+.saint-list a:hover { background: var(--surface-sunken); }
+.saint-list .s-date { font-family: var(--font-sans); font-size: 14px; color: var(--season-ordinary); font-weight: 600; font-variant-numeric: tabular-nums; }
+.saint-list .s-name { font-size: 19px; line-height: 26px; }
+.saint-list .s-also { font-size: 14px; color: var(--ink-muted); font-style: italic; }
+.saint-list .s-sub { grid-column: 2; font-family: var(--font-sans); font-size: 14px; color: var(--ink-muted); }
+.saint-list .s-flag { grid-column: 3; grid-row: 1; font-family: var(--font-sans); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--season-ordinary); border: 1px solid var(--season-ordinary); border-radius: 2px; padding: 1px 6px; }
+[data-view=az] .saint-list a { grid-template-columns: minmax(0, 1fr) auto auto; }
+[data-view=az] .saint-list .s-name { grid-column: 1; }
+[data-view=az] .saint-list .s-sub { grid-column: 1; }
+[data-view=az] .saint-list .s-date { grid-column: 2; grid-row: 1; }
+[data-view=az] .saint-list .s-flag { grid-column: 3; grid-row: 1; }
+.saints-none, .saints-suggest { font-size: 18px; line-height: 28px; margin-top: 12px; }
+.saints a { color: var(--season-ordinary); }
+.saint-list a, .az-jump a { color: var(--ink); }
+.saint-list a .s-date, .saint-list a .s-flag { color: var(--season-ordinary); }
+@media (max-width: 600px) {
+  .saints-title { font-size: 34px; line-height: 40px; }
+  .saint-list a { grid-template-columns: 3.9rem minmax(0, 1fr); }
+  .saint-list .s-flag { grid-column: 2; grid-row: auto; justify-self: start; margin-top: 4px; }
+  [data-view=az] .saint-list a { grid-template-columns: minmax(0, 1fr); }
+  [data-view=az] .saint-list .s-date, [data-view=az] .saint-list .s-flag { grid-column: 1; grid-row: auto; justify-self: start; }
+}
+
+/* ── Suggest a saint ──────────────────────────────────────────────────────────────────────────────────────── */
+.suggest-wrap { max-width: 44rem; }
+.suggest-form { display: flex; flex-direction: column; gap: 22px; margin-top: 28px; }
+.suggest-form .field { display: flex; flex-direction: column; gap: 6px; border: 0; padding: 0; margin: 0; min-width: 0; }
+.suggest-form label, .suggest-form legend { font-family: var(--font-sans); font-size: 16px; font-weight: 600; padding: 0; }
+.suggest-form .fld-note { font-weight: 400; font-size: 13px; color: var(--ink-muted); margin-left: 6px; }
+.suggest-form input[type=text], .suggest-form input[type=email], .suggest-form input[type=number], .suggest-form select, .suggest-form textarea {
+  font: inherit; font-family: var(--font-sans); font-size: 17px; color: var(--ink); background: var(--surface-raised);
+  border: 1.5px solid var(--border-strong); border-radius: 4px; padding: 11px 14px; min-height: 48px; width: 100%; }
+.suggest-form textarea { line-height: 1.5; resize: vertical; }
+.suggest-form input:focus-visible, .suggest-form select:focus-visible, .suggest-form textarea:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.suggest-form .row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 12px; }
+.suggest-form .field-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+@media (max-width: 600px) { .suggest-form .field-pair { grid-template-columns: 1fr; } }
+.suggest-form .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.notice { border: 1px solid var(--hairline); border-left-width: 4px; border-radius: 4px; padding: 14px 18px; margin: 4px 0 8px; background: var(--surface-raised); font-size: 18px; line-height: 28px; }
+.notice p { margin: 0; }
+.notice .lab { color: var(--season-ordinary); margin-bottom: 2px; }
+.notice-good { border-left-color: var(--season-ordinary); display: none; }
+.notice-good.is-shown, .notice-good:target { display: block; }
+.notice-bad { border-left-color: var(--rubric); }

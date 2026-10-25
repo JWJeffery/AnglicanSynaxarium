@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import MonthSection from '../../components/MonthSection.astro';
+import KalTools from '../../components/KalTools.astro';
 import KalIndex from '../../components/KalIndex.astro';
 import { keyOf, MONTHS, MONTH_SLUGS } from '../../lib/church-year';
 export function getStaticPaths() { return MONTH_SLUGS.map((m, i) => ({ params: { month: m }, props: { n: i + 1 } })); }
@@ -13,6 +14,7 @@ const todayKey = now.getUTCMonth() + 1 === n ? keyOf(n, now.getUTCDate()) : null
   <main>
     <section class="kal-section" style="border-top:0">
       <div class="wrap">
+        <KalTools />
         <MonthSection year={year} month={n} todayKey={todayKey} heading="h1" />
       </div>
     </section>

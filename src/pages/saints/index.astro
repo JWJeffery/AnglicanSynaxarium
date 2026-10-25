@@ -1,0 +1,88 @@
+---
+import Base from '../../layouts/Base.astro';
+import KalIndex from '../../components/KalIndex.astro';
+import { saintRows, byName, letterOf } from '../../lib/saints';
+import { MONTHS } from '../../lib/church-year';
+const rows = saintRows();
+const sorted = byName(rows);
+const letters = [...new Set(sorted.map(letterOf))];
+const shortDate = (m: number, d: number) => `${MONTHS[m - 1].slice(0, 3)} ${d}`;
+const longDate = (m: number, d: number) => `${MONTHS[m - 1]} ${d}`;
+const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+---
+<Base title="The Saints | An Anglican Synaxarium" description="Every saint in the Kalendar, by date or from A to Z, with search." path="/saints/">
+  <main class="saints" data-saints data-view="date">
+    <div class="wrap">
+      <h1 class="saints-title">The Saints</h1>
+      <p class="saints-lead">Every commemoration in the Kalendar, in the order of the year or from A to Z. Search by name, title or century.</p>
+
+      <div class="saints-tools" data-tools hidden>
+        <form class="saints-search" role="search" data-search-form>
+          <label class="sr-only" for="saint-q">Search the saints</label>
+          <input id="saint-q" type="search" placeholder="Search the saints" autocomplete="off" data-q />
+        </form>
+        <div class="seg" role="group" aria-label="Order of the list">
+          <button type="button" data-view-btn="date" aria-pressed="true">By date</button>
+          <button type="button" data-view-btn="az" aria-pressed="false">A to Z</button>
+        </div>
+        <label class="opt-line"><input type="checkbox" data-ready /> <span>Only saints whose entry is written</span></label>
+      </div>
+      <p class="saints-count" data-count aria-live="polite"></p>
+
+      <nav class="az-jump" aria-label="Jump to a letter" data-az-jump hidden>
+        {letters.map((l) => <a href={`#letter-${l === '#' ? 'other' : l}`}>{l}</a>)}
+      </nav>
+
+      <section data-list="date" aria-label="Saints by date">
+        {MONTHS.map((m, i) => {
+          const list = rows.filter((r) => r.month === i + 1);
+          return (
+            <div class="saint-group" data-group>
+              <h2 id={`m-${m.toLowerCase()}`}>{m}</h2>
+              <ul class="saint-list">
+                {list.map((r) => (
+                  <li data-row data-search={r.search} data-written={r.written ? '1' : '0'}>
+                    <a href={`/saint/${r.key}/`}>
+                      <span class="s-date">{shortDate(r.month, r.day)}</span>
+                      <span class="s-name">{r.name}{r.also && <em class="s-also"> (also remembered)</em>}</span>
+                      {r.sub && <span class="s-sub">{r.sub}</span>}
+                      {r.written && <span class="s-flag">Entry</span>}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </section>
+
+      <section data-list="az" aria-label="Saints from A to Z" hidden>
+        {letters.map((l) => (
+          <div class="saint-group" data-group>
+            <h2 id={`letter-${l === '#' ? 'other' : l}`}>{l}</h2>
+            <ul class="saint-list">
+              {sorted.filter((r) => letterOf(r) === l).map((r) => (
+                <li data-row data-search={r.search} data-written={r.written ? '1' : '0'}>
+                  <a href={`/saint/${r.key}/`}>
+                    <span class="s-name">{r.name}{r.also && <em class="s-also"> (also remembered)</em>}</span>
+                    {r.sub && <span class="s-sub">{r.sub}</span>}
+                    <span class="s-date">{longDate(r.month, r.day)}</span>
+                    {r.written && <span class="s-flag">Entry</span>}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+
+      <p class="saints-none" data-none hidden>No saint matches that search. Try a shorter word, or <a href="/suggest/">suggest a saint commemoration</a>.</p>
+      <p class="saints-suggest">Is someone missing? <a href="/suggest/">Suggest a saint commemoration</a>.</p>
+    </div>
+  </main>
+  <KalIndex />
+  <script>
+    import { initSaints } from '../../scripts/saints';
+    initSaints();
+  </script>
+</Base>
