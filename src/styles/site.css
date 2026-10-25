@@ -177,6 +177,10 @@ a { color: inherit; }
 .sheet .others-block ul { margin: 0; padding-left: 1.1em; }
 .sheet .notes { margin-top: 18px; }
 .sheet .notes i { display: block; height: 28px; border-bottom: .5pt solid #8a8e8a; }
+.sheet .uo-qr { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 22px; font-family: var(--font-sans); font-size: 11px; color: #55595a; }
+.sheet .uo-qr-code { width: 64px; height: 64px; flex: none; }
+.sheet .uo-qr-code svg { width: 100%; height: 100%; display: block; }
+.sheet .uo-qr p { margin: 0; text-align: left; }
 .sheet .foot { margin-top: 22px; font-family: var(--font-sans); font-size: 11px; color: #55595a; text-align: center; }
 .sheet .week-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 12pt; }
 .sheet .week-table th { text-align: left; font-family: var(--font-sans); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: #55595a; padding: 6px 8px; border-bottom: .5pt solid #8a8e8a; }
