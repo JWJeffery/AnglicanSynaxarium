@@ -9,6 +9,13 @@ export async function initHome() {
   const t = localToday();
   const q = <T extends HTMLElement>(sel: string) => hero.querySelector<T>(sel);
 
+  // Before the launch date the page is the "coming" page; from the launch date on it is the saint of the day.
+  const todayIso = `${t.year}-${String(t.month).padStart(2, '0')}-${String(t.day).padStart(2, '0')}`;
+  const pre = !!hero.dataset.launch && todayIso < hero.dataset.launch;
+  hero.dataset.mode = pre ? 'prelaunch' : 'live';
+  const sub = document.querySelector<HTMLElement>('[data-slot="listen-sub"]');
+  if (sub) sub.textContent = (pre ? sub.dataset.pre : sub.dataset.live) || sub.textContent;
+
   const uo = q<HTMLAnchorElement>('[data-slot="uo"]');
   if (uo) uo.href = uoLink(t.year, t.key);
 

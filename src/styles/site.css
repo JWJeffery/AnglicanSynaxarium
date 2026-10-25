@@ -283,3 +283,12 @@ a { color: inherit; }
 #update-prompt { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 1000; max-width: min(92vw, 28rem); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: center; padding: 12px 16px; background: var(--surface-raised); color: var(--ink); border: 1px solid var(--border-strong); border-radius: 8px; box-shadow: 0 4px 18px rgba(0, 0, 0, .25); font-family: var(--font-sans); font-size: 15px; line-height: 1.4; }
 #update-prompt button { font: inherit; min-height: 40px; padding: 0 16px; border-radius: 4px; border: 1.5px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; }
 #update-prompt button.primary { background: var(--season-ordinary); border-color: var(--season-ordinary); color: var(--on-season-ordinary); font-weight: 600; }
+
+/* The "coming" page, shown on the home page until the launch date (see index.astro and scripts/home.ts). */
+[data-prelaunch] { display: none; }
+[data-hero][data-mode=prelaunch] .hero-main > :not([data-prelaunch]) { display: none; }
+[data-hero][data-mode=prelaunch] .hero-main > [data-prelaunch] { display: flex; flex-direction: column; gap: 18px; }
+[data-hero][data-mode=prelaunch] .hero-main > [data-prelaunch] .rank { align-self: flex-start; }
+[data-hero][data-mode=prelaunch] .season-band,
+[data-hero][data-mode=prelaunch] .card.others { display: none; }
+.hear .lab { color: var(--ink-muted); }

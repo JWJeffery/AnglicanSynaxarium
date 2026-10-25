@@ -25,14 +25,34 @@ const listing = links.map(([k, label]) => ({ label, href: (site.podcast as Recor
 const welcome = episodeByKey.get('welcome');
 const welcomeTitle = feed.welcome_title || `Welcome to ${feed.title}`;
 const welcomeReleased = !!welcome && new Date(welcome.published).getTime() <= Date.now();
+// Before the launch date the home page is a "coming" page instead of today's (not yet written) saint. The same test
+// is made again in the visitor's browser (scripts/home.ts), so the page changes over on its own at launch.
+const launchKey = String(site.launch).slice(0, 10);
+const todayIso = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+const prelaunch = todayIso < launchKey;
+const launchLabel = new Date(`${launchKey}T00:00:00Z`).toLocaleDateString('en-US', { month: 'long', day: 'numeric', timeZone: 'UTC' });
+const launchIsAllSaints = launchKey.slice(5) === '11-01';
+const trailerMinutes = welcome ? Math.max(1, Math.round(welcome.seconds / 60)) : 0;
+const listenPre = `Daily episodes begin ${launchLabel}. Hear the trailer now.`;
+const listenLive = 'A saint’s life, read aloud each day.';
 ---
 <Base title="An Anglican Synaxarium" description="One saint for every day of the year, read in the Anglican manner." path="/">
   <main id="top">
-    <section id="today" class="today" data-season={seasonOf(year, month, day)} data-hero data-key={key} data-year={year} data-month={month}>
+    <section id="today" class="today" data-season={seasonOf(year, month, day)} data-hero data-key={key} data-year={year} data-month={month} data-launch={launchKey} data-mode={prelaunch ? 'prelaunch' : 'live'}>
       <div class="season-band"><div class="wrap"><Stepper key={key} year={year} /></div></div>
       <div class="wrap hero-wrap">
         <div class="hero-row">
           <div class="hero-main">
+            <div data-prelaunch>
+              <span class="rank" data-rank="principal">Begins {launchLabel}</span>
+              <h1 class="hero-title">A saint for every day of the year.</h1>
+              <p class="hero-lede">An Anglican Synaxarium opens {launchIsAllSaints ? 'on All Saints’ Day' : `on ${launchLabel}`}: the lives of the saints, told in writing and read aloud, one for each day of the church year.</p>
+              <p class="hero-first">The trailer is ready to hear now, and the Kalendar is open to browse.</p>
+              <div class="hero-actions">
+                {welcome && <a class="btn btn-primary" href="#welcome">Hear the trailer</a>}
+                <a class="btn" href="#calendar">Browse the Kalendar</a>
+              </div>
+            </div>
             <span class="rank" data-rank={rank} data-slot="rank">{RANK_LABEL[rank]}</span>
             <h1 class="hero-title" data-slot="title">{titleOf(d)}</h1>
             <p class="hero-period" data-slot="period" hidden={!d.period}>{d.period}</p>
@@ -54,13 +74,13 @@ const welcomeReleased = !!welcome && new Date(welcome.published).getTime() <= Da
                   <Cover />
                   <div class="listen-copy">
                     <h2>Listen to the podcast</h2>
-                    <p>Hear this saint’s story read aloud.</p>
+                    <p data-slot="listen-sub" data-pre={listenPre} data-live={listenLive}>{prelaunch ? listenPre : listenLive}</p>
                   </div>
                 </div>
                 {welcome && (
                   <div class="hear" id="welcome" data-hear data-published={welcome.published} hidden={!welcomeReleased}>
-                    <p class="lab">{welcomeTitle}</p>
-                    <audio controls preload="none" src={audioUrl(welcome)}>Your browser cannot play audio here. <a href={audioUrl(welcome)}>Download the recording.</a></audio>
+                    <p class="lab">The trailer · {trailerMinutes} min</p>
+                    <audio controls preload="none" aria-label={`The trailer for ${feed.title}`} src={audioUrl(welcome)}>Your browser cannot play audio here. <a href={audioUrl(welcome)}>Download the recording.</a></audio>
                     <a class="hear-dl" href={audioUrl(welcome)} download>Download the recording (MP3)</a>
                   </div>
                 )}
