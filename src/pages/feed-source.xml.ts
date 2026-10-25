@@ -41,9 +41,15 @@ export async function GET() {
       const page = trailer ? `${site.site}/` : `${site.site}/saint/${e.key}/`;
       const title = trailer ? (feed.welcome_title || `Welcome to ${feed.title}`) : d ? titleOf(d) : e.key;
       const lede = entry ? plain(entry.body[0]) : '';
+      // Every episode points listeners to the same day's Office in The Universal Office (the trailer, to the Office as a whole).
+      const uo = new URL('https://theuniversaloffice.com/');
+      uo.searchParams.set('entry', 'anglican');
+      if (!trailer) uo.searchParams.set('date', `${new Date(e.published).getUTCFullYear()}-${e.key}`);
+      uo.searchParams.set('utm_source', 'anglicansynaxarium-feed');
+      const pray = `Pray ${trailer ? 'the daily Office' : 'the Office for this day'} in The Universal Office: ${uo}`;
       const description = trailer
-        ? (feed.welcome_description || feed.description)
-        : `${MONTHS[m - 1]} ${day}. ${lede}${lede ? ' ' : ''}Read the full entry: ${page}`.slice(0, 4000);
+        ? `${feed.welcome_description || feed.description}\n\n${pray}`
+        : `${`${MONTHS[m - 1]} ${day}. ${lede}${lede ? ' ' : ''}Read the full entry: ${page}`.slice(0, 3600)}\n\n${pray}`;
       return {
         title,
         link: page,
