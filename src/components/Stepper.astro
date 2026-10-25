@@ -12,7 +12,7 @@ const dateLabel = `${weekdayOf(year, d.month, d.day)}, ${MONTHS[d.month - 1]} ${
   <div class="stepper-mid">
     {mode === 'home' && <span class="date-big" data-date-label>{dateLabel}</span>}
     {mode === 'home' && <span class="day-name" data-day-name>{liturgicalDayName(year, d.month, d.day)}</span>}
-    <a class="step" data-today-link href="/#today" hidden>Back to today</a>
+    <a class="step" data-today-link href="/" hidden>Back to today</a>
   </div>
   <a class="step" data-next href={`/saint/${next.key}/`}><span data-next-name>{next.name}</span><span aria-hidden="true">›</span></a>
 </div>

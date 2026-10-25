@@ -372,3 +372,11 @@ a { color: inherit; }
 .notice-good { border-left-color: var(--season-ordinary); display: none; }
 .notice-good.is-shown, .notice-good:target { display: block; }
 .notice-bad { border-left-color: var(--rubric); }
+
+/* The menu stays in view on tablets and computers, and in-page jumps (Listen, Calendar, Print) land just below it, so
+   following a link never leaves a visitor without the menu. On a phone the header is tall, so it scrolls away as usual. */
+html { scroll-padding-top: 12px; }
+@media (min-width: 701px) {
+  html { scroll-padding-top: 80px; }
+  .site-header { position: sticky; top: 0; z-index: 50; }
+}

@@ -61,7 +61,7 @@ const listenLive = 'A saint’s life, read aloud each day.';
             <p class="hero-first" data-slot="prep" hidden={!!entry} style="color:var(--ink-muted)"><span class="lab">Coming soon</span><br />This saint’s entry is still being written.</p>
             <div class="hero-actions" data-slot="actions" hidden={!entry}>
               <a class="btn btn-primary" data-slot="read" href={`/saint/${key}/`}>Read the full entry</a>
-              <a class="btn" data-slot="listen" href="/#today" hidden>Listen</a>
+              <a class="btn" data-slot="listen" href={`/saint/${key}/#hear`} hidden>Listen</a>
               <a class="btn" href="#print">Print this saint</a>
               <a class="btn" data-slot="uo" href={`https://theuniversaloffice.com/?entry=anglican&date=${year}-${key}&utm_source=anglicansynaxarium`} rel="noopener">Pray today’s Office</a>
             </div>
