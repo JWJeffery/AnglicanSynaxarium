@@ -58,7 +58,8 @@ export async function GET() {
         enclosure: { url: audioUrl(e), length: e.bytes, type: 'audio/mpeg' },
         customData:
           `<itunes:duration>${clock(e.seconds)}</itunes:duration>` +
-          `<itunes:episodeType>${trailer ? 'trailer' : 'full'}</itunes:episodeType>` +
+          // The welcome episode goes out as a full episode: Apple does not document whether a trailer satisfies its one-episode minimum.
+          `<itunes:episodeType>full</itunes:episodeType>` +
           `<itunes:explicit>${feed.explicit ? 'true' : 'false'}</itunes:explicit>` +
           (feed.transcripts && entry && !trailer ? `<podcast:transcript url="${esc(page)}" type="text/html"/>` : ''),
       };
