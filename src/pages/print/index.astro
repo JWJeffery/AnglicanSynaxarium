@@ -7,6 +7,6 @@ const now = new Date();
 const key = keyOf(now.getUTCMonth() + 1, now.getUTCDate());
 ---
 <Base title="Print | An Anglican Synaxarium" description="Print the Saint of the Day or the week to read beside your Prayer Book." path="/print/">
-  <main><PrintSection key={key} /></main>
+  <main><PrintSection key={key} heading="h1" /></main>
   <KalIndex />
 </Base>

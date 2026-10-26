@@ -38,6 +38,7 @@ a { color: inherit; }
 .nav { display: flex; flex-wrap: wrap; gap: 4px 28px; }
 .nav a { color: var(--ink); text-decoration: none; font-family: var(--font-sans); font-size: 15px; font-weight: 500; padding: 12px 4px; border-bottom: 2px solid transparent; }
 .nav a:hover { border-bottom-color: var(--ink); }
+.nav a[aria-current="page"] { border-bottom-color: var(--ink); }
 .site-footer { background: var(--ink); color: #ECEAE4; margin-top: auto; }
 .site-footer .wrap { padding-top: 40px; padding-bottom: 40px; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 24px 64px; }
 .site-footer .name { font-family: var(--font-display); font-weight: 600; font-size: 24px; line-height: 28px; }
@@ -117,7 +118,7 @@ a { color: inherit; }
 .print-section { background: var(--surface-sunken); border-top: 1px solid var(--hairline); }
 .print-section .wrap { padding-top: 56px; padding-bottom: 64px; display: flex; flex-wrap: wrap; gap: 48px; }
 .print-copy { flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
-.print-copy h2 { font-family: var(--font-display); font-weight: 600; font-size: 36px; line-height: 42px; text-wrap: balance; }
+.print-copy h1, .print-copy h2 { font-family: var(--font-display); font-weight: 600; font-size: 36px; line-height: 42px; text-wrap: balance; }
 .print-copy .lead { font-size: 19px; line-height: 30px; max-width: 32rem; }
 .print-note { font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--ink-muted); max-width: 32rem; }
 .seg { display: inline-flex; align-self: flex-start; border: 1.5px solid var(--ink); border-radius: 4px; overflow: hidden; }
@@ -141,7 +142,7 @@ a { color: inherit; }
 .entry-card { background: var(--surface-raised); border: 1px solid var(--hairline); border-radius: 8px; padding: 48px 56px; display: flex; flex-direction: column; gap: 20px; }
 .entry-head { display: flex; flex-direction: column; gap: 12px; padding-bottom: 24px; border-bottom: 3px solid var(--season); }
 .entry-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
-.entry-title { font-family: var(--font-display); font-weight: 600; font-size: 48px; line-height: 52px; letter-spacing: -.01em; text-wrap: balance; }
+.entry-title { font-family: var(--font-display); font-weight: 600; font-size: 48px; line-height: 52px; letter-spacing: -.01em; text-wrap: balance; overflow-wrap: anywhere; }
 .entry-period { font-family: var(--font-sans); font-size: 16px; color: var(--ink-muted); }
 .prose { font-size: 19px; line-height: 31px; max-width: 36rem; }
 .prose[data-size="large"] { font-size: 23px; line-height: 38px; }
