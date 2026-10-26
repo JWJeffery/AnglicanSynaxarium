@@ -1,8 +1,9 @@
 ---
 import { dayByKey, entries, titleOf } from '../lib/data';
 import { keyOf, MONTHS } from '../lib/church-year';
-interface Props { key: string; }
-const { key } = Astro.props;
+interface Props { key: string; heading?: 'h1' | 'h2'; }
+const { key, heading = 'h2' } = Astro.props;
+const Heading = heading;
 const d = dayByKey.get(key)!;
 const title = titleOf(d);
 const dayNum = d.day;
@@ -11,7 +12,7 @@ const monthName = MONTHS[d.month - 1];
 <section id="print" class="print-section" data-print-section data-key={key}>
   <div class="wrap">
     <div class="print-copy">
-      <h2>Print the Saint of the Day and read about them beside your Prayer Book</h2>
+      <Heading>Print the Saint of the Day and read about them beside your Prayer Book</Heading>
       <p class="lead">Print today’s Saint of the Day to tuck into your Prayer Book to be read alongside Morning or Evening Prayer.</p>
       <div style="display:flex;flex-direction:column;gap:6px">
         <span class="lab" style="color:var(--ink-muted)">Choose a sheet</span>

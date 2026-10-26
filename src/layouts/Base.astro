@@ -5,6 +5,7 @@ interface Props { title: string; description: string; path: string; }
 const { title, description, path } = Astro.props;
 const url = new URL(path, site.site).toString();
 const og = new URL('/og.png', site.site).toString();
+const here = (href: string) => (href === '/' ? path === '/' : path.startsWith(href)) ? 'page' : undefined;
 ---
 <!doctype html>
 <html lang="en">
@@ -41,12 +42,12 @@ const og = new URL('/og.png', site.site).toString();
           <span class="wordmark-main">An Anglican Synaxarium</span>
         </a>
         <nav class="nav" aria-label="Main">
-          <a href="/">Saint of the Day</a>
-          <a href="/kalendar/">Kalendar</a>
-          <a href="/saints/">Saints</a>
-          <a href="/print/">Print</a>
+          <a href="/" aria-current={here('/')}>Saint of the Day</a>
+          <a href="/kalendar/" aria-current={here('/kalendar/')}>Kalendar</a>
+          <a href="/saints/" aria-current={here('/saints/')}>Saints</a>
+          <a href="/print/" aria-current={here('/print/')}>Print</a>
           {hasPodcast && <a href="/#listen">Listen</a>}
-          {hasAbout && <a href="/about/">About</a>}
+          {hasAbout && <a href="/about/" aria-current={here('/about/')}>About</a>}
         </nav>
       </div>
     </header>
