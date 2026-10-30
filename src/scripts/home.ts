@@ -27,6 +27,14 @@ export async function initHome() {
     listen.href = `/saint/${t.key}/#hear`;
   }
 
+  // Before launch, today's saint is not shown, so the day's recording is offered here once it has been released.
+  const listenPre = q<HTMLAnchorElement>('[data-slot="listen-pre"]');
+  if (listenPre) {
+    const u = map.get(t.key)?.u;
+    listenPre.hidden = !(u && Date.now() >= Date.parse(u));
+    listenPre.href = `/saint/${t.key}/#hear`;
+  }
+
   // Welcome recording: shown once its release time has passed.
   const welcome = document.querySelector<HTMLElement>('[data-hear]');
   if (welcome && Date.now() >= Date.parse(welcome.dataset.published || '')) welcome.hidden = false;
