@@ -50,6 +50,7 @@ const listenLive = 'A saint’s life, read aloud each day.';
               <p class="hero-lede">An Anglican Synaxarium opens {launchIsAllSaints ? 'on All Saints’ Day' : `on ${launchLabel}`}: the lives of the saints, told in writing and read aloud, one for each day of the church year.</p>
               <p class="hero-first">The trailer is ready to hear now, and the Kalendar is open to browse.</p>
               <div class="hero-actions">
+                <a class="btn btn-primary" data-slot="listen-pre" href={`/saint/${key}/#hear`} hidden>Hear today’s preview episode</a>
                 {welcome && <a class="btn btn-primary" href="#welcome">Hear the trailer</a>}
                 <a class="btn" href="#calendar">Browse the Kalendar</a>
                 <button type="button" class="btn" data-share data-share-url={siteUrl} data-share-title="An Anglican Synaxarium">Share</button>
