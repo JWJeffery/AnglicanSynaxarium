@@ -46,6 +46,10 @@ Episodes appear in the feed, and the player and Listen buttons appear on the sit
 - `https://anglicansynaxarium.com/feed.xml` shows XML. If it says Not Found, use `https://anglicansynaxarium.com/feed.php` instead (same content).
 - `curl -I -H "Range: bytes=0-1" https://anglicansynaxarium.com/audio/11-01.mp3` answers `206 Partial Content`. Apple requires it.
 
+## Sharing
+
+A **Share** button opens one dialog (`src/scripts/share.ts`) with the device's own share sheet where there is one, Copy link, Email, and a QR code for sharing in person. It is on every saint's page (shares that saint), on the home page (shares today's saint, or the site before launch) and in the footer of every page ("Share this app", shares the site). To add one anywhere, give an element `data-share`, `data-share-url` and optionally `data-share-title` and `data-share-text`. Addresses always use `site` from `site.config.json`, so a preview copy never shares a wrong link. The dialog is made in the browser, so it works offline. Link previews in messages and social apps come from the Open Graph tags in `Base.astro` and `public/og.png`.
+
 ## Installable app (works offline)
 
 The site is an installable web app. On a phone, open anglicansynaxarium.com and choose Add to Home Screen (iPhone: Share, then Add to Home Screen; Android: the browser menu, then Install app). After the first visit every page and entry reads with no connection. Recordings always need a connection.
