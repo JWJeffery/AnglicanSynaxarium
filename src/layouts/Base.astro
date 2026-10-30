@@ -61,6 +61,7 @@ const here = (href: string) => (href === '/' ? path === '/' : path.startsWith(hr
           <a href="/kalendar/">Kalendar</a>
           <a href="/saints/">Saints</a>
           <a href="/reminders/">Daily reminder</a>
+          <button type="button" class="link-btn" data-share data-share-url={new URL('/', site.site).toString()} data-share-title="An Anglican Synaxarium">Share this app</button>
           <a href="/suggest/">Suggest a Saint</a>
           {hasAbout && <a href="/about/">About</a>}
           <a href="/credits/">Credits and Permissions</a>
@@ -74,7 +75,9 @@ const here = (href: string) => (href === '/' ? path === '/' : path.startsWith(hr
   </div>
   <script>
     import { initPwa } from '../scripts/pwa';
+    import { initShare } from '../scripts/share';
     initPwa();
+    initShare();
   </script>
 </body>
 </html>

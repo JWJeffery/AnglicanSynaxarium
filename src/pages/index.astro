@@ -10,6 +10,7 @@ import { episodeByKey, audioUrl, feed } from '../lib/podcast';
 import { keyOf, seasonOf, RANK_LABEL } from '../lib/church-year';
 import fs from 'node:fs';
 import { badgeFor } from '../lib/badges';
+const siteUrl = new URL('/', site.site).toString();
 const heroArt = !hasPodcast && fs.existsSync('public/cover-800.png');
 
 const now = new Date();
@@ -51,6 +52,7 @@ const listenLive = 'A saint’s life, read aloud each day.';
               <div class="hero-actions">
                 {welcome && <a class="btn btn-primary" href="#welcome">Hear the trailer</a>}
                 <a class="btn" href="#calendar">Browse the Kalendar</a>
+                <button type="button" class="btn" data-share data-share-url={siteUrl} data-share-title="An Anglican Synaxarium">Share</button>
               </div>
             </div>
             <span class="rank" data-rank={rank} data-slot="rank">{RANK_LABEL[rank]}</span>
@@ -63,6 +65,7 @@ const listenLive = 'A saint’s life, read aloud each day.';
               <a class="btn btn-primary" data-slot="read" href={`/saint/${key}/`}>Read the full entry</a>
               <a class="btn" data-slot="listen" href={`/saint/${key}/#hear`} hidden>Listen</a>
               <a class="btn" href="#print">Print this saint</a>
+              <button type="button" class="btn" data-share data-share-hero data-share-url={siteUrl} data-share-title="An Anglican Synaxarium">Share</button>
               <a class="btn" data-slot="uo" href={`https://theuniversaloffice.com/?entry=anglican&date=${year}-${key}&utm_source=anglicansynaxarium`} rel="noopener">Pray today’s Office</a>
             </div>
           </div>
